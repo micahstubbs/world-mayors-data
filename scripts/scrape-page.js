@@ -10,7 +10,7 @@ function scrapeWikiPage(props) {
   const uri = `${uriStem}${link}`
   const transform = body => cheerio.load(body)
 
-  let page = link.split('of_')[1]
+  let page = link.split('of_')[link.split('of_').length - 1]
 
   const options = {
     uri,
@@ -77,23 +77,42 @@ function scrapeWikiPage(props) {
       const tableIndex = Math.floor(i / columnsCount)
       tablesDataByTable[tableIndex].push(col)
     })
-    // const tablesDataByRow = tablesDataByTable.map(table => {
-    //   return transposeTableData(table)
-    // })
 
-    // function transposeTableData(tableData) {
-    //   //
-    // }
+    const tablesDataByRow = tablesDataByTable.map((table, i) => {
+      return stitchTableData(table, sectionHeadersText[i])
+    })
 
-    // function parseColumn(col) {
-    //   const colObject = {}
-    //   colObject[`col[0]`] = col.slice[(1, col.length)]
-    //   return colObject
-    // }
+    function stitchTableData(tableData, era) {
+      if (tableData.length === 0) return tableData
+      const keys = tableData.map(col => col[0])
+      const values = tableData.map(col => col.splice(1, col.length))
+      console.log('keys', keys)
+      console.log('values', values)
+      const rows = []
+
+      // TODO check that all values are equal length
+      // in other words handle missing values case
+      for (let i = 0; i < values[0].length; i += 1) {
+        const rowObject = {}
+        for (let j = 0; j < keys.length; j += 1) {
+          rowObject[keys[j]] = values[j][i]
+        }
+        rowObject.era = era
+        rows.push(rowObject)
+      }
+
+      return rows
+    }
+
+    function parseColumn(col) {
+      const colObject = {}
+      colObject[`col[0]`] = col.slice[(1, col.length)]
+      return colObject
+    }
 
     console.log('sectionHeadersText', sectionHeadersText)
 
-    return tablesDataByTable
+    return tablesDataByRow
   }
 }
 
