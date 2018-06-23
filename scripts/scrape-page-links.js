@@ -32,6 +32,10 @@ subcategoryLinks.some((link, i) => {
         })
         .get()
 
+      // filter for known good patterns
+      // /wiki/Mayor_of_
+      // /wiki/List_of_mayors_of_
+
       console.log('result', result)
       writeJSON(result, './metadata/page-links', `${place}-page-links.json`)
     })
