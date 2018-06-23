@@ -28,7 +28,11 @@ function scrapeWikiPage(props) {
       // /wiki/List_of_mayors_of_
 
       // console.log('result', result)
-      writeJSON(result, './data', `${category}-${page}-data.json`)
+      writeJSON(
+        result,
+        './data',
+        `${category.toLowerCase()}-${page.toLowerCase()}-data.json`
+      )
     })
     .catch(error => {
       console.error(error)
