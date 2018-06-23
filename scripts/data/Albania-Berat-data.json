@@ -1,154 +1,149 @@
 [
-  [
-    {
-      "No.": "1",
-      "Name": "<a href=\"/wiki/Iliaz_Vrioni\" title=\"Iliaz Vrioni\">Iliaz Vrioni</a>",
-      "Term in office": "1919",
-      "": "1921",
-      "era": "Mayors (1912–1945)"
-    },
-    {
-      "No.": "2",
-      "Name": "Yzedin Vrioni",
-      "Term in office": "1922",
-      "": "1922",
-      "era": "Mayors (1912–1945)"
-    },
-    {
-      "No.": "3",
-      "Name": "Seit Vrioni",
-      "Term in office": "1922",
-      "": "1923",
-      "era": "Mayors (1912–1945)"
-    },
-    {
-      "No.": "4",
-      "Name": "Yzedin Vrioni",
-      "Term in office": "1924",
-      "": "1924",
-      "era": "Mayors (1912–1945)"
-    },
-    {
-      "No.": "5",
-      "Name": "Xhevdet Mehqemeja",
-      "Term in office": "1924",
-      "": "1924",
-      "era": "Mayors (1912–1945)"
-    },
-    {
-      "No.": "6",
-      "Name": "<a href=\"/wiki/Dhimit%C3%ABr_Tutulani\" title=\"Dhimit&#xEB;r Tutulani\">Dhimit&#xEB;r Tutulani</a>",
-      "Term in office": "1925",
-      "": "1925",
-      "era": "Mayors (1912–1945)"
-    },
-    {
-      "No.": "7",
-      "Name": "Yzedin Vrioni",
-      "Term in office": "1925",
-      "": "1925",
-      "era": "Mayors (1912–1945)"
-    },
-    {
-      "No.": "8",
-      "Name": "Neki Starova",
-      "Term in office": "1926",
-      "": "1926",
-      "era": "Mayors (1912–1945)"
-    },
-    {
-      "No.": "9",
-      "Name": "Yzedin Vrioni",
-      "Term in office": "1928",
-      "": "1928",
-      "era": "Mayors (1912–1945)"
-    },
-    {
-      "No.": "10",
-      "Name": "Neki Starova",
-      "Term in office": "1929",
-      "": "1932",
-      "era": "Mayors (1912–1945)"
-    },
-    {
-      "No.": "11",
-      "Name": "Abdyl Dilaveri",
-      "Term in office": "1933",
-      "": "1934",
-      "era": "Mayors (1912–1945)"
-    },
-    {
-      "No.": "12",
-      "Name": "Tef Nara&#xE7;i",
-      "Term in office": "1935",
-      "": "1935",
-      "era": "Mayors (1912–1945)"
-    },
-    {
-      "No.": "13",
-      "Name": "Yzedin Vrioni",
-      "Term in office": "1935",
-      "": "1935",
-      "era": "Mayors (1912–1945)"
-    },
-    {
-      "No.": "14",
-      "Name": "Zenel Prodani",
-      "Term in office": "1937",
-      "": "1937",
-      "era": "Mayors (1912–1945)"
-    },
-    {
-      "No.": "15",
-      "Name": "Yzedin Vrioni",
-      "Term in office": "1937",
-      "": "1937",
-      "era": "Mayors (1912–1945)"
-    },
-    {
-      "No.": "16",
-      "Name": "Zenel Prodani",
-      "Term in office": "1939",
-      "": "1944",
-      "era": "Mayors (1912–1945)"
-    }
-  ],
-  [
-    {
-      "No.": "17",
-      "Name": "Ylli Ruli",
-      "Term in office": "1992",
-      "": "1996",
-      "era": "Mayors (1992–present)"
-    },
-    {
-      "No.": "18",
-      "Name": "Milika Jaho",
-      "Term in office": "1996",
-      "": "2000",
-      "era": "Mayors (1992–present)"
-    },
-    {
-      "No.": "19",
-      "Name": "Nikollaq Mata",
-      "Term in office": "2000",
-      "": "2003",
-      "era": "Mayors (1992–present)"
-    },
-    {
-      "No.": "20",
-      "Name": "Fadil Nasufi",
-      "Term in office": "2003",
-      "": "2015",
-      "era": "Mayors (1992–present)"
-    },
-    {
-      "No.": "21",
-      "Name": "Petrit Sinaj",
-      "Term in office": "2015",
-      "": "<i>Incumbent</i>",
-      "era": "Mayors (1992–present)"
-    }
-  ],
-  []
+  {
+    "No.": "1",
+    "Name": "<a href=\"/wiki/Iliaz_Vrioni\" title=\"Iliaz Vrioni\">Iliaz Vrioni</a>",
+    "Term in office": "1919",
+    "": "1921",
+    "era": "Mayors (1912–1945)"
+  },
+  {
+    "No.": "2",
+    "Name": "Yzedin Vrioni",
+    "Term in office": "1922",
+    "": "1922",
+    "era": "Mayors (1912–1945)"
+  },
+  {
+    "No.": "3",
+    "Name": "Seit Vrioni",
+    "Term in office": "1922",
+    "": "1923",
+    "era": "Mayors (1912–1945)"
+  },
+  {
+    "No.": "4",
+    "Name": "Yzedin Vrioni",
+    "Term in office": "1924",
+    "": "1924",
+    "era": "Mayors (1912–1945)"
+  },
+  {
+    "No.": "5",
+    "Name": "Xhevdet Mehqemeja",
+    "Term in office": "1924",
+    "": "1924",
+    "era": "Mayors (1912–1945)"
+  },
+  {
+    "No.": "6",
+    "Name": "<a href=\"/wiki/Dhimit%C3%ABr_Tutulani\" title=\"Dhimit&#xEB;r Tutulani\">Dhimit&#xEB;r Tutulani</a>",
+    "Term in office": "1925",
+    "": "1925",
+    "era": "Mayors (1912–1945)"
+  },
+  {
+    "No.": "7",
+    "Name": "Yzedin Vrioni",
+    "Term in office": "1925",
+    "": "1925",
+    "era": "Mayors (1912–1945)"
+  },
+  {
+    "No.": "8",
+    "Name": "Neki Starova",
+    "Term in office": "1926",
+    "": "1926",
+    "era": "Mayors (1912–1945)"
+  },
+  {
+    "No.": "9",
+    "Name": "Yzedin Vrioni",
+    "Term in office": "1928",
+    "": "1928",
+    "era": "Mayors (1912–1945)"
+  },
+  {
+    "No.": "10",
+    "Name": "Neki Starova",
+    "Term in office": "1929",
+    "": "1932",
+    "era": "Mayors (1912–1945)"
+  },
+  {
+    "No.": "11",
+    "Name": "Abdyl Dilaveri",
+    "Term in office": "1933",
+    "": "1934",
+    "era": "Mayors (1912–1945)"
+  },
+  {
+    "No.": "12",
+    "Name": "Tef Nara&#xE7;i",
+    "Term in office": "1935",
+    "": "1935",
+    "era": "Mayors (1912–1945)"
+  },
+  {
+    "No.": "13",
+    "Name": "Yzedin Vrioni",
+    "Term in office": "1935",
+    "": "1935",
+    "era": "Mayors (1912–1945)"
+  },
+  {
+    "No.": "14",
+    "Name": "Zenel Prodani",
+    "Term in office": "1937",
+    "": "1937",
+    "era": "Mayors (1912–1945)"
+  },
+  {
+    "No.": "15",
+    "Name": "Yzedin Vrioni",
+    "Term in office": "1937",
+    "": "1937",
+    "era": "Mayors (1912–1945)"
+  },
+  {
+    "No.": "16",
+    "Name": "Zenel Prodani",
+    "Term in office": "1939",
+    "": "1944",
+    "era": "Mayors (1912–1945)"
+  },
+  {
+    "No.": "17",
+    "Name": "Ylli Ruli",
+    "Term in office": "1992",
+    "": "1996",
+    "era": "Mayors (1992–present)"
+  },
+  {
+    "No.": "18",
+    "Name": "Milika Jaho",
+    "Term in office": "1996",
+    "": "2000",
+    "era": "Mayors (1992–present)"
+  },
+  {
+    "No.": "19",
+    "Name": "Nikollaq Mata",
+    "Term in office": "2000",
+    "": "2003",
+    "era": "Mayors (1992–present)"
+  },
+  {
+    "No.": "20",
+    "Name": "Fadil Nasufi",
+    "Term in office": "2003",
+    "": "2015",
+    "era": "Mayors (1992–present)"
+  },
+  {
+    "No.": "21",
+    "Name": "Petrit Sinaj",
+    "Term in office": "2015",
+    "": "<i>Incumbent</i>",
+    "era": "Mayors (1992–present)"
+  }
 ]

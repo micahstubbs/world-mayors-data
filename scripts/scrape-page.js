@@ -3,6 +3,7 @@ const rp = require('request-promise')
 const cheerio = require('cheerio')
 const cheerioTableparser = require('cheerio-tableparser')
 const writeJSON = require('./utils/write-json.js')
+const logger = require('./utils/logger.js')
 
 function scrapeWikiPage(props) {
   const { link, category } = props
@@ -11,6 +12,8 @@ function scrapeWikiPage(props) {
   const transform = body => cheerio.load(body)
 
   let page = link.split('of_')[link.split('of_').length - 1]
+  logger.info(page)
+  console.log(page)
 
   const options = {
     uri,
@@ -86,8 +89,8 @@ function scrapeWikiPage(props) {
       if (tableData.length === 0) return tableData
       const keys = tableData.map(col => col[0])
       const values = tableData.map(col => col.splice(1, col.length))
-      console.log('keys', keys)
-      console.log('values', values)
+      // console.log('keys', keys)
+      // console.log('values', values)
       const rows = []
 
       // TODO check that all values are equal length
@@ -110,9 +113,16 @@ function scrapeWikiPage(props) {
       return colObject
     }
 
-    console.log('sectionHeadersText', sectionHeadersText)
+    logger.info('sectionHeadersText', sectionHeadersText)
+    logger.info('')
+    console.log('eras', sectionHeadersText)
+    console.log('')
 
-    return tablesDataByRow
+    const allRows = tablesDataByRow.reduce((accumulator, currentValue) =>
+      accumulator.concat(currentValue)
+    )
+
+    return allRows
   }
 }
 
