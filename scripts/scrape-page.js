@@ -12,8 +12,6 @@ function scrapeWikiPage(props) {
   const transform = body => cheerio.load(body)
 
   let page = link.split('of_')[link.split('of_').length - 1]
-  logger.info(page)
-  console.log(page)
 
   const options = {
     uri,
@@ -27,7 +25,6 @@ function scrapeWikiPage(props) {
       // /wiki/Mayor_of_
       // /wiki/List_of_mayors_of_
 
-      // console.log('result', result)
       writeJSON(
         result,
         './data',
@@ -93,16 +90,30 @@ function scrapeWikiPage(props) {
       if (tableData.length === 0) return tableData
       const keys = tableData.map(col => col[0])
       const values = tableData.map(col => col.splice(1, col.length))
-      // console.log('keys', keys)
-      // console.log('values', values)
       const rows = []
+
+      const rowKeys = keys.map(k => {
+        switch (k) {
+          case 'No.':
+            return 'number'
+          case 'Term in office':
+            return 'beginTerm'
+          case '':
+            return 'endTerm'
+          default:
+            if (typeof k === 'string') {
+              return k.toLowerCase()
+            }
+            return k
+        }
+      })
 
       // TODO check that all values are equal length
       // in other words handle missing values case
       for (let i = 0; i < values[0].length; i += 1) {
         const rowObject = {}
-        for (let j = 0; j < keys.length; j += 1) {
-          rowObject[keys[j]] = values[j][i]
+        for (let j = 0; j < rowKeys.length; j += 1) {
+          rowObject[rowKeys[j]] = values[j][i]
         }
         rowObject.era = era
         rows.push(rowObject)
@@ -117,8 +128,13 @@ function scrapeWikiPage(props) {
       return colObject
     }
 
+    logger.info(category)
+    logger.info(page)
     logger.info('sectionHeadersText', sectionHeadersText)
     logger.info('')
+
+    console.log(category)
+    console.log(page)
     console.log('eras', sectionHeadersText)
     console.log('')
 
