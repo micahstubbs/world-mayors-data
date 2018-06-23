@@ -4,5 +4,10 @@
   "main": "index.js",
   "repository": "git@github.com:micahstubbs/world-mayors-data.git",
   "author": "micahstubbs <micah.stubbs@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "request": "^2.87.0",
+    "request-promise": "^4.2.2"
+  }
 }
