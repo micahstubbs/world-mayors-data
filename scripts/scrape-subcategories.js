@@ -1,5 +1,6 @@
 const rp = require('request-promise')
 const cheerio = require('cheerio')
+const writeJSON = require('utils/write-json.js')
 
 // target
 // https://en.wikipedia.org/wiki/Category:Lists_of_mayors
@@ -25,7 +26,8 @@ rp(options)
       .get()
 
     console.log('result', result)
+    writeJSON(result, '../metadata', 'subcategories.json')
   })
   .catch(error => {
-    logger.error(error)
+    console.error(error)
   })
