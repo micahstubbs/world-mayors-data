@@ -6,9 +6,10 @@ const inputPath = `./metadata/page-links/${inputFile}`
 
 const pageLinks = JSON.parse(fs.readFileSync(inputPath))
 const category = inputFile.split('-')[0]
-console.log('pageLinks', pageLinks)
+// console.log('pageLinks', pageLinks)
 
 pageLinks.some((link, i) => {
+  console.log('link', link)
   scrapePage({ link, category })
   if (i === 0) return true
 })

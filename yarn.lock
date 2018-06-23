@@ -59,6 +59,10 @@ caseless@~0.12.0:
   version "0.12.0"
   resolved "https://registry.yarnpkg.com/caseless/-/caseless-0.12.0.tgz#1b681c21ff84033c826543090689420d187151dc"
 
+cheerio-tableparser@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/cheerio-tableparser/-/cheerio-tableparser-1.0.1.tgz#e55ad2dcb5361b8c323a6cbb8c0cd46e3cbdf1cd"
+
 cheerio@^1.0.0-rc.2:
   version "1.0.0-rc.2"
   resolved "https://registry.yarnpkg.com/cheerio/-/cheerio-1.0.0-rc.2.tgz#4b9f53a81b27e4d5dac31c0ffd0cfa03cc6830db"

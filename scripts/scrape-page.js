@@ -1,6 +1,7 @@
 const fs = require('fs')
 const rp = require('request-promise')
 const cheerio = require('cheerio')
+const cheerioTableparser = require('cheerio-tableparser')
 const writeJSON = require('./utils/write-json.js')
 
 function scrapeWikiPage(props) {
@@ -37,7 +38,9 @@ function scrapeWikiPage(props) {
   }
 
   function parseAlbaniaPage($) {
-    const headers = $('h2')
+    // get an array of all sectionHeaders
+    // that are followed by a table
+    const sectionHeadersText = $('h2')
       .filter((i, el) => {
         return $(el)
           .next()
@@ -50,8 +53,47 @@ function scrapeWikiPage(props) {
       })
       .get()
 
-    console.log('headers', headers)
-    return headers
+    // get table data
+    // for all tables that are immediately preceded by
+    // an h2 element
+    const tablesData = $('table')
+      .filter((i, el) => {
+        return $(el)
+          .prev()
+          .is('h2')
+      })
+      .map((i, el) => {
+        cheerioTableparser($)
+        return $(el).parsetable()
+      })
+      .get()
+
+    // get table data by row
+    const tableCount = sectionHeadersText.length
+    const columnsCount = tablesData.length / tableCount
+    const tablesDataByTable = []
+    tablesData.forEach((col, i) => {
+      if (columnsCount % (i + 1) === 0) tablesDataByTable.push([])
+      const tableIndex = Math.floor(i / columnsCount)
+      tablesDataByTable[tableIndex].push(col)
+    })
+    // const tablesDataByRow = tablesDataByTable.map(table => {
+    //   return transposeTableData(table)
+    // })
+
+    // function transposeTableData(tableData) {
+    //   //
+    // }
+
+    // function parseColumn(col) {
+    //   const colObject = {}
+    //   colObject[`col[0]`] = col.slice[(1, col.length)]
+    //   return colObject
+    // }
+
+    console.log('sectionHeadersText', sectionHeadersText)
+
+    return tablesDataByTable
   }
 }
 
