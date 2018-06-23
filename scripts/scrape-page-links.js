@@ -37,7 +37,11 @@ subcategoryLinks.some((link, i) => {
       // /wiki/List_of_mayors_of_
 
       console.log('result', result)
-      writeJSON(result, './metadata/page-links', `${place}-page-links.json`)
+      writeJSON(
+        result,
+        './metadata/country-level-page-links',
+        `${place}-page-links.json`
+      )
     })
     .catch(error => {
       console.error(error)
