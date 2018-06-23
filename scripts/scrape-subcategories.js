@@ -1,6 +1,5 @@
 const rp = require('request-promise')
 const cheerio = require('cheerio')
-const logger = require('./logger.js')
 
 // target
 // https://en.wikipedia.org/wiki/Category:Lists_of_mayors
@@ -15,9 +14,17 @@ const options = {
 
 rp(options)
   .then($ => {
-    logger.info($)
-    const subcategoriesMarkup = $('#mw-subcategories')
-    logger.info(subcategoriesMarkup)
+    // console.log($('body'))
+    // #mw-subcategories >
+    const result = $('#mw-subcategories li')
+      .map((i, el) => {
+        return $(el)
+          .find('a')
+          .attr('href')
+      })
+      .get()
+
+    console.log('result', result)
   })
   .catch(error => {
     logger.error(error)
