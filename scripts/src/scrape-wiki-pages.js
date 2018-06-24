@@ -15,3 +15,5 @@ function scrapeWikiPages(pageLinksFilePath) {
     // if (i === 0) return true
   })
 }
+
+module.exports = scrapeWikiPages
