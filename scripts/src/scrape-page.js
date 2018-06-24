@@ -27,8 +27,7 @@ function scrapeWikiPage(props) {
 
       writeJSON(
         result,
-        './data',
-        `${category.toLowerCase()}-${page.toLowerCase()}-data.json`
+        `./data/${category.toLowerCase()}-${page.toLowerCase()}-data.json`
       )
     })
     .catch(error => {

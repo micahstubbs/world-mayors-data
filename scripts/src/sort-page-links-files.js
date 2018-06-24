@@ -7,12 +7,7 @@ const writeJSON = require('./utils/write-json.js')
 
 function sortPageLinksFiles(props) {
   // first delete to-examine directory from old runs
-  const {
-    outputDir,
-    toExamineDir,
-    outputCategoryLinksDir,
-    outputCategoryLinksFile
-  } = props
+  const { outputDir, toExamineDir, outputCategoryLinksFile } = props
   if (fs.existsSync(toExamineDir)) {
     rimraf.sync(toExamineDir)
   }
@@ -37,7 +32,7 @@ function sortPageLinksFiles(props) {
 
     if (listPageLinks && listPageLinks.length > 0) {
       const outputPath = './metadata/page-links/bottom'
-      writeJSON(listPageLinks, outputPath, file)
+      writeJSON(listPageLinks, `${outputPath}/${file}`)
     }
 
     if (categoryPageLinks && categoryPageLinks.length > 0) {
@@ -46,17 +41,13 @@ function sortPageLinksFiles(props) {
 
     if (otherLinks && otherLinks.length > 0) {
       const outputPath = toExamineDir
-      writeJSON(otherLinks, outputPath, file)
+      writeJSON(otherLinks, `${outputPath}/${file}`)
     }
   })
 
   const outputPath = './metadata'
   const filename = 'region-category-links.json'
-  writeJSON(
-    allCategoryPageLinks,
-    outputCategoryLinksDir,
-    outputCategoryLinksFile
-  )
+  writeJSON(allCategoryPageLinks, outputCategoryLinksFile)
 }
 
 module.exports = sortPageLinksFiles

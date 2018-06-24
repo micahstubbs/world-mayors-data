@@ -47,7 +47,7 @@ function scrapePageLinks(inputFile, outputDir) {
         // /wiki/List_of_mayors_of_
 
         console.log('result', result)
-        writeJSON(result, outputDir, `${place}-page-links.json`)
+        writeJSON(result, `${outputDir}/${place}-page-links.json`)
       })
       .catch(error => {
         console.error(error)
