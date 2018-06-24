@@ -6,6 +6,7 @@ function isListPage(link) {
     '/wiki/Mayors_in_',
     '/wiki/Politics_of_',
     '/wiki/List_of_presidents_of_Bydgoszcz',
+    '/wiki/List_of_rulers_and_officers_of_Galway_',
     '/wiki/List_of_Kazan_mayors',
     '/wiki/Governor_of_Saint_Petersburg',
     '/wiki/Governor_of_Sevastopol',
