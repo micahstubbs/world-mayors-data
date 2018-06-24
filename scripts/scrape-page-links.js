@@ -39,7 +39,7 @@ subcategoryLinks.some((link, i) => {
       console.log('result', result)
       writeJSON(
         result,
-        './metadata/country-level-page-links',
+        './metadata/page-links/country',
         `${place}-page-links.json`
       )
     })
