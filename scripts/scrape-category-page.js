@@ -26,7 +26,7 @@ rp(options)
       .get()
 
     console.log('result', result)
-    writeJSON(result, './metadata', 'subcategory-links.json')
+    writeJSON(result, './metadata', 'country-category-links.json')
   })
   .catch(error => {
     console.error(error)

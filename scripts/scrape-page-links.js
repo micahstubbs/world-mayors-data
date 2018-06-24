@@ -6,7 +6,7 @@ const writeJSON = require('./utils/write-json.js')
 // target
 // https://en.wikipedia.org/wiki/Category:Lists_of_mayors
 
-const inputFile = './metadata/subcategory-links.json'
+const inputFile = './metadata/country-category-links.json'
 const subcategoryLinks = JSON.parse(fs.readFileSync(inputFile, 'utf8'))
 
 subcategoryLinks.some((link, i) => {
