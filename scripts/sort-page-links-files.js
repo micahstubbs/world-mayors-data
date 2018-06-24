@@ -17,15 +17,23 @@ function sortPageLinksFiles(dir) {
   let files = fs.readdirSync(dir).filter(file => isJSONFile(file))
   // console.log('files', files)
 
+  let allCategoryPageLinks = []
+
   // if filename contains links
   // that all point to list pages
   files.forEach(file => {
     const filePath = `${dir}/${file}`
-    const { listPageLinks, otherLinks } = classifyLinks(filePath)
+    const { listPageLinks, categoryPageLinks, otherLinks } = classifyLinks(
+      filePath
+    )
 
     if (listPageLinks && listPageLinks.length > 0) {
       const outputPath = './metadata/page-links/bottom'
       writeJSON(listPageLinks, outputPath, file)
+    }
+
+    if (categoryPageLinks && categoryPageLinks.length > 0) {
+      allCategoryPageLinks = allCategoryPageLinks.concat(categoryPageLinks)
     }
 
     if (otherLinks && otherLinks.length > 0) {
@@ -33,6 +41,10 @@ function sortPageLinksFiles(dir) {
       writeJSON(otherLinks, outputPath, file)
     }
   })
+
+  const outputPath = './metadata'
+  const filename = 'region-category-links.json'
+  writeJSON(allCategoryPageLinks, outputPath, filename)
 }
 
 module.exports = sortPageLinksFiles
