@@ -18,7 +18,9 @@ function sortPageLinksFiles(dir) {
     if (listPageLinks && listPageLinks.length > 0) {
       const outputPath = './metadata/page-links/bottom'
       writeJSON(listPageLinks, outputPath, file)
-    } else {
+    }
+
+    if (otherLinks && otherLinks.length > 0) {
       const outputPath = './metadata/page-links/to-examine'
       writeJSON(otherLinks, outputPath, file)
     }
