@@ -27,7 +27,7 @@ function scrapeWikiPage(props) {
 
   rp(options)
     .then($ => {
-      const result = getParser(category)({ $, category, page })
+      const result = getParser(category)({ $, category, page, link })
 
       writeJSON(result, `./data/${category}-${page}-data.json`)
     })
