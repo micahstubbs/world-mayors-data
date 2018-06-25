@@ -108,4 +108,4 @@ function parsePage(props) {
   return allRows
 }
 
-module.exports = parsePage 
+module.exports = parsePage

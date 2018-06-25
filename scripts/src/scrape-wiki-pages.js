@@ -1,12 +1,13 @@
 const fs = require('fs')
-const scrapeWikiPage = require('./scrape-page.js')
-
-// const inputFile = 'Albania-page-links.json'
-// const inputPath = `./metadata/page-links/country/${inputFile}`
+const scrapeWikiPage = require('./scrape-wiki-page.js')
 
 function scrapeWikiPages(pageLinksFilePath) {
   const pageLinks = JSON.parse(fs.readFileSync(pageLinksFilePath))
-  const category = inputFile.split('-')[0].toLowerCase()
+  const category = pageLinksFilePath
+    .split('/')
+    [pageLinksFilePath.split('/').length - 1].split('-')[0]
+    .toLowerCase()
+  console.log('category', category)
   // console.log('pageLinks', pageLinks)
 
   pageLinks.some((link, i) => {

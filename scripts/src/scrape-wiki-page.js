@@ -1,13 +1,13 @@
 const fs = require('fs')
 const rp = require('request-promise')
 const cheerio = require('cheerio')
-const cheerioTableparser = require('cheerio-tableparser')
+
 const writeJSON = require('./utils/write-json.js')
-const logger = require('./utils/logger.js')
+
+const getParser = require('./get-parser.js')
 
 function scrapeWikiPage(props) {
   const { link, category } = props
-  const 
   const uriStem = 'https://en.wikipedia.org'
   const uri = `${uriStem}${link}`
   const transform = body => cheerio.load(body)
@@ -21,12 +21,9 @@ function scrapeWikiPage(props) {
 
   rp(options)
     .then($ => {
-      const result = getParser(category)($)
+      const result = getParser(category)({ $, category, page })
 
-      writeJSON(
-        result,
-        `./data/${category}-${page}-data.json`
-      )
+      writeJSON(result, `./data/${category}-${page}-data.json`)
     })
     .catch(error => {
       console.error(error)
