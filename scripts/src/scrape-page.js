@@ -21,9 +21,6 @@ function scrapeWikiPage(props) {
   rp(options)
     .then($ => {
       const result = getParser(category)($)
-      // filter for known good patterns
-      // /wiki/Mayor_of_
-      // /wiki/List_of_mayors_of_
 
       writeJSON(
         result,
