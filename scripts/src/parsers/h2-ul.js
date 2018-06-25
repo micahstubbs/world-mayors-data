@@ -49,6 +49,10 @@ function parsePage(props) {
     })
     .find('li')
     .each((i, el) => {
+      // TODO abstract row-parsing out
+      // to it's own file
+      // can imagine wanting to mix and match
+      // page parsers and row parsers later on
       const rowString = $(el).text()
       const row = rowString.split(':')
       const name = row[1].trim()
