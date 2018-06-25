@@ -7,8 +7,6 @@ function scrapeWikiPages(pageLinksFilePath) {
     .split('/')
     [pageLinksFilePath.split('/').length - 1].split('-')[0]
     .toLowerCase()
-  console.log('category', category)
-  // console.log('pageLinks', pageLinks)
 
   pageLinks.some((link, i) => {
     scrapeWikiPage({ link, category })
