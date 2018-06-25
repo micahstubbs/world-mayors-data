@@ -14,7 +14,6 @@ function parsePage(props) {
         .is('ul')
     })
     .filter((i, el) => {
-      console.log('$(el).text() from filter', $(el).text())
       return (
         $(el)
           .text()
@@ -32,14 +31,15 @@ function parsePage(props) {
   // for all unordered list elements that are
   // immediately preceded by
   // an h2 element
-  const tablesData = $('ul')
+  const tablesData = []
+
+  $('ul')
     .filter((i, el) => {
       return $(el)
         .prev()
         .is('h2')
     })
     .filter((i, el) => {
-      console.log('$(el).text() from filter', $(el).text())
       return (
         $(el)
           .prev()
@@ -47,12 +47,57 @@ function parsePage(props) {
           .replace(/\[edit\]/, '') !== 'See also'
       )
     })
-    .map((i, el) => {
-      return $(el)
-        .find('li')
-        .text()
+    .find('li')
+    .each((i, el) => {
+      const rowString = $(el).text()
+      const row = rowString.split(':')
+      const name = row[1].trim()
+
+      const rowLeft = row[0].split(' ')
+      console.log('rowLeft', rowLeft)
+      let number
+      let term
+      if (rowLeft.length === 2) {
+        number = rowLeft[0]
+        term = rowLeft[1].split('–')
+        console.log('term', term)
+        if (term.length === 1) term = term[0].split('-')
+      } else {
+        number = undefined
+        term = rowLeft[0].split('–')
+        console.log('term', term)
+        if (term.length === 1) term = term[0].split('-')
+      }
+
+      const beginTerm = term[0]
+      const endTerm = term[1].replace(/:/, '')
+
+      const era = sectionHeadersText
+
+      tablesData[i] = {
+        number,
+        name,
+        beginTerm,
+        endTerm,
+        era
+      }
     })
-    .get()
+
+  // .each((i, el) => {
+  //   const header = $(el)
+  //     .prev()
+  //     .text()
+  //     .replace(/\[edit\]/, '')
+
+  //   const row = $(el)
+  //     .find('li')
+  //     .text()
+
+  //   console.log('header', header)
+  //   console.log('row', row)
+  // })
+
+  console.log('tablesData', tablesData)
 
   // get table data by row
   // const tableCount = sectionHeadersText.length

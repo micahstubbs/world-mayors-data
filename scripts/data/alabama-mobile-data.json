@@ -1,5 +1,527 @@
 [
-  "(01) 1814–1815: James Innerarity(02) 1815–1816: Lewis Judson(03) 1816-1817: James Innerarity(04) 1817-1818: Daniel Duvol(05) 1818-1819: Samuel H. Garrow",
-  "(01) 1819–1820: Daniel Duvol(02) 1820–1822: Addin Lewis(03) 1822–1823: John Elliott(04) 1823–1824: Addin Lewis(05) 1824–1827: Samuel Garrow(06) 1827–1829: John Everett(07) 1829–1831: Samuel Garrow(08) 1831–1835: John Stocking(09) 1835–1836: John Everett(10) 1836–1837: George Washington Owen(11) 1837–1839: George Walton(12) 1839–1840: Henry Chamberlain(13) 1840–1842: Edward Hall(14) 1842–1845: Charles Hoppin(15) 1845–1847: Blanton McAlpine(16) 1847–1848: J.W. Childers(17) 1848–1851: Charles Langdon(18) 1851–1852: Joseph Seawell (c.1809-1883)[1](19) 1852–1855: Charles Langdon(20) 1855–1860: Mitchell Withers(21) 1860–1861: John Forsyth(22) 1861–1865: R.H. Slough(23) 1866–1867: Mitchell Withers(24) 1867–1868: Gustavus Horton(25) 1868–1870: Caleb Price(26) 1870–1871: George Harrington(27) 1871–1872: Martin Horst(28) 1872–1873: Gideon Parker(29) 1873–1874: Cleveland F. Moulton(30) 1874–1875: John Reid(31) 1875–1878: Alphonse Hurtel(32) 1878–1879: George Duffee(33) 1879–1888: Richard Owen(34) 1888–1894: Joe Rich(35) 1894–1897: Constantine Lawrence Lavretta(36) 1897–1900: John Bush(37) 1900–1902: Tom Fry(38) 1902–1903: Walter Walsh(39) 1903–1904: Charles McClean(40) 1904–1911: Pat Lyons",
-  "1989-1994: Robert O. Bostwick Jr.1994-2013: Alfred Stokes2013–2016: Colby J. Cooper"
+  {
+    "number": "(01)",
+    "name": "James Innerarity",
+    "beginTerm": "1814",
+    "endTerm": "1815",
+    "era": [
+      "Presidents of Mobile",
+      "Mayors of Mobile",
+      "Chiefs of Staff to the Mayor"
+    ]
+  },
+  {
+    "number": "(02)",
+    "name": "Lewis Judson",
+    "beginTerm": "1815",
+    "endTerm": "1816",
+    "era": [
+      "Presidents of Mobile",
+      "Mayors of Mobile",
+      "Chiefs of Staff to the Mayor"
+    ]
+  },
+  {
+    "number": "(03)",
+    "name": "James Innerarity",
+    "beginTerm": "1816",
+    "endTerm": "1817",
+    "era": [
+      "Presidents of Mobile",
+      "Mayors of Mobile",
+      "Chiefs of Staff to the Mayor"
+    ]
+  },
+  {
+    "number": "(04)",
+    "name": "Daniel Duvol",
+    "beginTerm": "1817",
+    "endTerm": "1818",
+    "era": [
+      "Presidents of Mobile",
+      "Mayors of Mobile",
+      "Chiefs of Staff to the Mayor"
+    ]
+  },
+  {
+    "number": "(05)",
+    "name": "Samuel H. Garrow",
+    "beginTerm": "1818",
+    "endTerm": "1819",
+    "era": [
+      "Presidents of Mobile",
+      "Mayors of Mobile",
+      "Chiefs of Staff to the Mayor"
+    ]
+  },
+  {
+    "number": "(01)",
+    "name": "Daniel Duvol",
+    "beginTerm": "1819",
+    "endTerm": "1820",
+    "era": [
+      "Presidents of Mobile",
+      "Mayors of Mobile",
+      "Chiefs of Staff to the Mayor"
+    ]
+  },
+  {
+    "number": "(02)",
+    "name": "Addin Lewis",
+    "beginTerm": "1820",
+    "endTerm": "1822",
+    "era": [
+      "Presidents of Mobile",
+      "Mayors of Mobile",
+      "Chiefs of Staff to the Mayor"
+    ]
+  },
+  {
+    "number": "(03)",
+    "name": "John Elliott",
+    "beginTerm": "1822",
+    "endTerm": "1823",
+    "era": [
+      "Presidents of Mobile",
+      "Mayors of Mobile",
+      "Chiefs of Staff to the Mayor"
+    ]
+  },
+  {
+    "number": "(04)",
+    "name": "Addin Lewis",
+    "beginTerm": "1823",
+    "endTerm": "1824",
+    "era": [
+      "Presidents of Mobile",
+      "Mayors of Mobile",
+      "Chiefs of Staff to the Mayor"
+    ]
+  },
+  {
+    "number": "(05)",
+    "name": "Samuel Garrow",
+    "beginTerm": "1824",
+    "endTerm": "1827",
+    "era": [
+      "Presidents of Mobile",
+      "Mayors of Mobile",
+      "Chiefs of Staff to the Mayor"
+    ]
+  },
+  {
+    "number": "(06)",
+    "name": "John Everett",
+    "beginTerm": "1827",
+    "endTerm": "1829",
+    "era": [
+      "Presidents of Mobile",
+      "Mayors of Mobile",
+      "Chiefs of Staff to the Mayor"
+    ]
+  },
+  {
+    "number": "(07)",
+    "name": "Samuel Garrow",
+    "beginTerm": "1829",
+    "endTerm": "1831",
+    "era": [
+      "Presidents of Mobile",
+      "Mayors of Mobile",
+      "Chiefs of Staff to the Mayor"
+    ]
+  },
+  {
+    "number": "(08)",
+    "name": "John Stocking",
+    "beginTerm": "1831",
+    "endTerm": "1835",
+    "era": [
+      "Presidents of Mobile",
+      "Mayors of Mobile",
+      "Chiefs of Staff to the Mayor"
+    ]
+  },
+  {
+    "number": "(09)",
+    "name": "John Everett",
+    "beginTerm": "1835",
+    "endTerm": "1836",
+    "era": [
+      "Presidents of Mobile",
+      "Mayors of Mobile",
+      "Chiefs of Staff to the Mayor"
+    ]
+  },
+  {
+    "number": "(10)",
+    "name": "George Washington Owen",
+    "beginTerm": "1836",
+    "endTerm": "1837",
+    "era": [
+      "Presidents of Mobile",
+      "Mayors of Mobile",
+      "Chiefs of Staff to the Mayor"
+    ]
+  },
+  {
+    "number": "(11)",
+    "name": "George Walton",
+    "beginTerm": "1837",
+    "endTerm": "1839",
+    "era": [
+      "Presidents of Mobile",
+      "Mayors of Mobile",
+      "Chiefs of Staff to the Mayor"
+    ]
+  },
+  {
+    "number": "(12)",
+    "name": "Henry Chamberlain",
+    "beginTerm": "1839",
+    "endTerm": "1840",
+    "era": [
+      "Presidents of Mobile",
+      "Mayors of Mobile",
+      "Chiefs of Staff to the Mayor"
+    ]
+  },
+  {
+    "number": "(13)",
+    "name": "Edward Hall",
+    "beginTerm": "1840",
+    "endTerm": "1842",
+    "era": [
+      "Presidents of Mobile",
+      "Mayors of Mobile",
+      "Chiefs of Staff to the Mayor"
+    ]
+  },
+  {
+    "number": "(14)",
+    "name": "Charles Hoppin",
+    "beginTerm": "1842",
+    "endTerm": "1845",
+    "era": [
+      "Presidents of Mobile",
+      "Mayors of Mobile",
+      "Chiefs of Staff to the Mayor"
+    ]
+  },
+  {
+    "number": "(15)",
+    "name": "Blanton McAlpine",
+    "beginTerm": "1845",
+    "endTerm": "1847",
+    "era": [
+      "Presidents of Mobile",
+      "Mayors of Mobile",
+      "Chiefs of Staff to the Mayor"
+    ]
+  },
+  {
+    "number": "(16)",
+    "name": "J.W. Childers",
+    "beginTerm": "1847",
+    "endTerm": "1848",
+    "era": [
+      "Presidents of Mobile",
+      "Mayors of Mobile",
+      "Chiefs of Staff to the Mayor"
+    ]
+  },
+  {
+    "number": "(17)",
+    "name": "Charles Langdon",
+    "beginTerm": "1848",
+    "endTerm": "1851",
+    "era": [
+      "Presidents of Mobile",
+      "Mayors of Mobile",
+      "Chiefs of Staff to the Mayor"
+    ]
+  },
+  {
+    "number": "(18)",
+    "name": "Joseph Seawell (c.1809-1883)[1]",
+    "beginTerm": "1851",
+    "endTerm": "1852",
+    "era": [
+      "Presidents of Mobile",
+      "Mayors of Mobile",
+      "Chiefs of Staff to the Mayor"
+    ]
+  },
+  {
+    "number": "(19)",
+    "name": "Charles Langdon",
+    "beginTerm": "1852",
+    "endTerm": "1855",
+    "era": [
+      "Presidents of Mobile",
+      "Mayors of Mobile",
+      "Chiefs of Staff to the Mayor"
+    ]
+  },
+  {
+    "number": "(20)",
+    "name": "Mitchell Withers",
+    "beginTerm": "1855",
+    "endTerm": "1860",
+    "era": [
+      "Presidents of Mobile",
+      "Mayors of Mobile",
+      "Chiefs of Staff to the Mayor"
+    ]
+  },
+  {
+    "number": "(21)",
+    "name": "John Forsyth",
+    "beginTerm": "1860",
+    "endTerm": "1861",
+    "era": [
+      "Presidents of Mobile",
+      "Mayors of Mobile",
+      "Chiefs of Staff to the Mayor"
+    ]
+  },
+  {
+    "number": "(22)",
+    "name": "R.H. Slough",
+    "beginTerm": "1861",
+    "endTerm": "1865",
+    "era": [
+      "Presidents of Mobile",
+      "Mayors of Mobile",
+      "Chiefs of Staff to the Mayor"
+    ]
+  },
+  {
+    "number": "(23)",
+    "name": "Mitchell Withers",
+    "beginTerm": "1866",
+    "endTerm": "1867",
+    "era": [
+      "Presidents of Mobile",
+      "Mayors of Mobile",
+      "Chiefs of Staff to the Mayor"
+    ]
+  },
+  {
+    "number": "(24)",
+    "name": "Gustavus Horton",
+    "beginTerm": "1867",
+    "endTerm": "1868",
+    "era": [
+      "Presidents of Mobile",
+      "Mayors of Mobile",
+      "Chiefs of Staff to the Mayor"
+    ]
+  },
+  {
+    "number": "(25)",
+    "name": "Caleb Price",
+    "beginTerm": "1868",
+    "endTerm": "1870",
+    "era": [
+      "Presidents of Mobile",
+      "Mayors of Mobile",
+      "Chiefs of Staff to the Mayor"
+    ]
+  },
+  {
+    "number": "(26)",
+    "name": "George Harrington",
+    "beginTerm": "1870",
+    "endTerm": "1871",
+    "era": [
+      "Presidents of Mobile",
+      "Mayors of Mobile",
+      "Chiefs of Staff to the Mayor"
+    ]
+  },
+  {
+    "number": "(27)",
+    "name": "Martin Horst",
+    "beginTerm": "1871",
+    "endTerm": "1872",
+    "era": [
+      "Presidents of Mobile",
+      "Mayors of Mobile",
+      "Chiefs of Staff to the Mayor"
+    ]
+  },
+  {
+    "number": "(28)",
+    "name": "Gideon Parker",
+    "beginTerm": "1872",
+    "endTerm": "1873",
+    "era": [
+      "Presidents of Mobile",
+      "Mayors of Mobile",
+      "Chiefs of Staff to the Mayor"
+    ]
+  },
+  {
+    "number": "(29)",
+    "name": "Cleveland F. Moulton",
+    "beginTerm": "1873",
+    "endTerm": "1874",
+    "era": [
+      "Presidents of Mobile",
+      "Mayors of Mobile",
+      "Chiefs of Staff to the Mayor"
+    ]
+  },
+  {
+    "number": "(30)",
+    "name": "John Reid",
+    "beginTerm": "1874",
+    "endTerm": "1875",
+    "era": [
+      "Presidents of Mobile",
+      "Mayors of Mobile",
+      "Chiefs of Staff to the Mayor"
+    ]
+  },
+  {
+    "number": "(31)",
+    "name": "Alphonse Hurtel",
+    "beginTerm": "1875",
+    "endTerm": "1878",
+    "era": [
+      "Presidents of Mobile",
+      "Mayors of Mobile",
+      "Chiefs of Staff to the Mayor"
+    ]
+  },
+  {
+    "number": "(32)",
+    "name": "George Duffee",
+    "beginTerm": "1878",
+    "endTerm": "1879",
+    "era": [
+      "Presidents of Mobile",
+      "Mayors of Mobile",
+      "Chiefs of Staff to the Mayor"
+    ]
+  },
+  {
+    "number": "(33)",
+    "name": "Richard Owen",
+    "beginTerm": "1879",
+    "endTerm": "1888",
+    "era": [
+      "Presidents of Mobile",
+      "Mayors of Mobile",
+      "Chiefs of Staff to the Mayor"
+    ]
+  },
+  {
+    "number": "(34)",
+    "name": "Joe Rich",
+    "beginTerm": "1888",
+    "endTerm": "1894",
+    "era": [
+      "Presidents of Mobile",
+      "Mayors of Mobile",
+      "Chiefs of Staff to the Mayor"
+    ]
+  },
+  {
+    "number": "(35)",
+    "name": "Constantine Lawrence Lavretta",
+    "beginTerm": "1894",
+    "endTerm": "1897",
+    "era": [
+      "Presidents of Mobile",
+      "Mayors of Mobile",
+      "Chiefs of Staff to the Mayor"
+    ]
+  },
+  {
+    "number": "(36)",
+    "name": "John Bush",
+    "beginTerm": "1897",
+    "endTerm": "1900",
+    "era": [
+      "Presidents of Mobile",
+      "Mayors of Mobile",
+      "Chiefs of Staff to the Mayor"
+    ]
+  },
+  {
+    "number": "(37)",
+    "name": "Tom Fry",
+    "beginTerm": "1900",
+    "endTerm": "1902",
+    "era": [
+      "Presidents of Mobile",
+      "Mayors of Mobile",
+      "Chiefs of Staff to the Mayor"
+    ]
+  },
+  {
+    "number": "(38)",
+    "name": "Walter Walsh",
+    "beginTerm": "1902",
+    "endTerm": "1903",
+    "era": [
+      "Presidents of Mobile",
+      "Mayors of Mobile",
+      "Chiefs of Staff to the Mayor"
+    ]
+  },
+  {
+    "number": "(39)",
+    "name": "Charles McClean",
+    "beginTerm": "1903",
+    "endTerm": "1904",
+    "era": [
+      "Presidents of Mobile",
+      "Mayors of Mobile",
+      "Chiefs of Staff to the Mayor"
+    ]
+  },
+  {
+    "number": "(40)",
+    "name": "Pat Lyons",
+    "beginTerm": "1904",
+    "endTerm": "1911",
+    "era": [
+      "Presidents of Mobile",
+      "Mayors of Mobile",
+      "Chiefs of Staff to the Mayor"
+    ]
+  },
+  {
+    "name": "Robert O. Bostwick Jr.",
+    "beginTerm": "1989",
+    "endTerm": "1994",
+    "era": [
+      "Presidents of Mobile",
+      "Mayors of Mobile",
+      "Chiefs of Staff to the Mayor"
+    ]
+  },
+  {
+    "name": "Alfred Stokes",
+    "beginTerm": "1994",
+    "endTerm": "2013",
+    "era": [
+      "Presidents of Mobile",
+      "Mayors of Mobile",
+      "Chiefs of Staff to the Mayor"
+    ]
+  },
+  {
+    "name": "Colby J. Cooper",
+    "beginTerm": "2013",
+    "endTerm": "2016",
+    "era": [
+      "Presidents of Mobile",
+      "Mayors of Mobile",
+      "Chiefs of Staff to the Mayor"
+    ]
+  }
 ]
