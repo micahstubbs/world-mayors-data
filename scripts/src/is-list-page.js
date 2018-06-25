@@ -9,8 +9,12 @@ function isListPage(link) {
     '/wiki/List_of_pre-statehood_mayors_of_',
     '/wiki/Civic_mayor_of_',
     '/wiki/Lord_Mayor_of_',
+    '/wiki/Lord_Mayors_of_',
     'List_of_lord_mayors_of_',
-    '/wiki/List_of_mayors,_lord_mayors_and_administrators_of_'
+    '/wiki/List_of_mayors,_lord_mayors_and_administrators_of_',
+    '/wiki/List_of_reeves_of_the_former_townships_and_villages_in_',
+    '/wiki/List_of_provosts_of_',
+    '/wiki/List_of_shire_presidents_of_'
   ]
   const placeSpecificPatterns = [
     '/wiki/List_of_presidents_of_Bydgoszcz',
@@ -47,7 +51,8 @@ function isListPage(link) {
     '/wiki/Municipality_of_Redfern',
     '/wiki/City_of_South_Sydney',
     '/wiki/Municipality_of_St_Peters',
-    '/wiki/Municipality_of_Waterloo'
+    '/wiki/Municipality_of_Waterloo',
+    '/wiki/List_of_wardens_of_Halifax_County'
   ]
   const patterns = mayorPatterns.concat(placeSpecificPatterns)
   for (let i = 0; i < patterns.length; i += 1) {
