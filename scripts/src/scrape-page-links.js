@@ -24,6 +24,10 @@ function scrapePageLinks(inputFile, outputDir) {
       place = 'Switzerland'
     } else if (link === '/wiki/Category:Lists_of_mayors_of_Lima_by_district') {
       place = 'Lima'
+    } else if (link === '/wiki/Category:Lists_of_mayors_of_London_boroughs') {
+      place = 'London'
+    } else if (link === '/wiki/Category:Mayors_of_Paddington') {
+      place = 'Paddington'
     } else place = link.split('in_')[1]
     const transform = body => cheerio.load(body)
 

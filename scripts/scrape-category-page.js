@@ -1,6 +1,6 @@
 const rp = require('request-promise')
 const cheerio = require('cheerio')
-const writeJSON = require('./utils/write-json.js')
+const writeJSON = require('./src/utils/write-json.js')
 
 // target
 // https://en.wikipedia.org/wiki/Category:Lists_of_mayors

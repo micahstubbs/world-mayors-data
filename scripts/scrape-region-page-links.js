@@ -1,4 +1,4 @@
-const scrapePageLinks = require('./scrape-page-links.js')
+const scrapePageLinks = require('./src/scrape-page-links.js')
 
 const inputFile = './metadata/region-category-links.json'
 const outputDir = './metadata/page-links/region'
