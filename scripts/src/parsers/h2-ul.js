@@ -53,12 +53,17 @@ function parsePage(props) {
       // to it's own file
       // can imagine wanting to mix and match
       // page parsers and row parsers later on
+      const parentHeaderText = $(el)
+        .parent()
+        .prev()
+        .text()
+        .replace(/\[edit\]/, '')
+
       const rowString = $(el).text()
       const row = rowString.split(':')
       const name = row[1].trim()
 
       const rowLeft = row[0].split(' ')
-      console.log('rowLeft', rowLeft)
       let number
       let term
       // handle two different row formats
@@ -76,15 +81,15 @@ function parsePage(props) {
       const beginTerm = term[0]
       const endTerm = term[1].replace(/:/, '')
 
-      const era = sectionHeadersText
+      const era = parentHeaderText
 
-      allRows[i] = {
+      allRows.push({
         number,
         name,
         beginTerm,
         endTerm,
         era
-      }
+      })
     })
 
   logger.info(category)
