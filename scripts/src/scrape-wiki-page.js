@@ -12,7 +12,13 @@ function scrapeWikiPage(props) {
   const uri = `${uriStem}${link}`
   const transform = body => cheerio.load(body)
 
-  let page = link.split('of_')[link.split('of_').length - 1].toLowerCase()
+  // parse out city name
+  // drop any text that appears after a comma
+  // lowercase to make nice filenames
+  let page = link
+    .split('of_')
+    [link.split('of_').length - 1].replace(/\,.*/, '')
+    .toLowerCase()
 
   const options = {
     uri,
