@@ -1,111 +1,24 @@
-const cheerio = require('cheerio')
-const cheerioTableparser = require('cheerio-tableparser')
-
-const logger = require('../utils/logger.js')
+const parseH2TableData = require('./h2-table.js')
+const parseH2UlData = require('./h2-ul.js')
+const parseDivUlData = require('./div-ul.js')
+const parseTableTableData = require('./table-table.js')
+const parseCollapsibleDivUl = require('./collapsible-div-ul.js')
 
 function parsePage(props) {
-  const { $, category, page } = props
-  // get an array of all sectionHeaders
-  // that are followed by a table
-  const sectionHeadersText = $('h2')
-    .filter((i, el) => {
-      return $(el)
-        .next()
-        .is('table')
-    })
-    .map((i, el) => {
-      return $(el)
-        .text()
-        .replace(/\[edit\]/, '')
-    })
-    .get()
-
-  // get table data
-  // for all tables that are immediately preceded by
-  // an h2 element
-  const tablesData = $('table')
-    .filter((i, el) => {
-      return $(el)
-        .prev()
-        .is('h2')
-    })
-    .map((i, el) => {
-      cheerioTableparser($)
-      return $(el).parsetable()
-    })
-    .get()
-
-  // get table data by row
-  const tableCount = sectionHeadersText.length
-  const columnsCount = tablesData.length / tableCount
-  const tablesDataByTable = []
-  tablesData.forEach((col, i) => {
-    if (columnsCount % (i + 1) === 0) tablesDataByTable.push([])
-    const tableIndex = Math.floor(i / columnsCount)
-    tablesDataByTable[tableIndex].push(col)
-  })
-
-  const tablesDataByRow = tablesDataByTable.map((table, i) => {
-    return stitchTableData(table, sectionHeadersText[i])
-  })
-
-  function stitchTableData(tableData, era) {
-    if (tableData.length === 0) return tableData
-    const keys = tableData.map(col => col[0])
-    const values = tableData.map(col => col.splice(1, col.length))
-    const rows = []
-
-    const rowKeys = keys.map(k => {
-      switch (k) {
-        case 'No.':
-          return 'number'
-        case 'Term in office':
-          return 'beginTerm'
-        case '':
-          return 'endTerm'
-        default:
-          if (typeof k === 'string') {
-            return k.toLowerCase()
-          }
-          return k
-      }
-    })
-
-    // TODO check that all values are equal length
-    // in other words handle missing values case
-    for (let i = 0; i < values[0].length; i += 1) {
-      const rowObject = {}
-      for (let j = 0; j < rowKeys.length; j += 1) {
-        rowObject[rowKeys[j]] = values[j][i]
-      }
-      rowObject.era = era
-      rows.push(rowObject)
-    }
-
-    return rows
+  const { page } = props
+  const pages = [,]
+  switch (page) {
+    case '/wiki/List_of_mayors_of_Huntsville,_Alabama':
+      return parseDivUlData(props)
+    case '/wiki/List_of_mayors_of_Mobile,_Alabama':
+      return parseH2UlData(props)
+    case '/wiki/List_of_mayors_of_Montgomery,_Alabama':
+      return parseTableTableData(props)
+    case '/wiki/List_of_mayors_of_Tuscaloosa,_Alabama':
+      return parseCollapsibleDivUl(props)
+    default:
+      return parseH2TableData(props)
   }
-
-  function parseColumn(col) {
-    const colObject = {}
-    colObject[`col[0]`] = col.slice[(1, col.length)]
-    return colObject
-  }
-
-  logger.info(category)
-  logger.info(page)
-  logger.info('sectionHeadersText', sectionHeadersText)
-  logger.info('')
-
-  console.log(category)
-  console.log(page)
-  console.log('eras', sectionHeadersText)
-  console.log('')
-
-  const allRows = tablesDataByRow.reduce((accumulator, currentValue) =>
-    accumulator.concat(currentValue)
-  )
-
-  return allRows
 }
 
 module.exports = parsePage
