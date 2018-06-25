@@ -6,7 +6,7 @@ const scrapeWikiPage = require('./scrape-page.js')
 
 function scrapeWikiPages(pageLinksFilePath) {
   const pageLinks = JSON.parse(fs.readFileSync(pageLinksFilePath))
-  const category = inputFile.split('-')[0]
+  const category = inputFile.split('-')[0].toLowerCase()
   // console.log('pageLinks', pageLinks)
 
   pageLinks.some((link, i) => {
