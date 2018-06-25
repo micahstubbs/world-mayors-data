@@ -9,7 +9,7 @@ function parsePage(props) {
   const { link } = props
   switch (link) {
     case '/wiki/List_of_mayors_of_Huntsville,_Alabama':
-      // return parseDivUlData(props)
+      // return parsePUlData(props)
       return []
     case '/wiki/List_of_mayors_of_Mobile,_Alabama':
       return parseH2UlData(props)

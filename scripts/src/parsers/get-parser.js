@@ -1,5 +1,5 @@
 function getParser(category) {
-  return require(`./parsers/${category}.js`)
+  return require(`./parsers/page/${category}.js`)
 }
 
 module.exports = getParser

@@ -4,7 +4,7 @@ const cheerio = require('cheerio')
 
 const writeJSON = require('./utils/write-json.js')
 
-const getParser = require('./get-parser.js')
+const getParser = require('./parsers/get-parser.js')
 
 function scrapeWikiPage(props) {
   const { link, category } = props

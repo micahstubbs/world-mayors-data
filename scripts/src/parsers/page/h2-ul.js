@@ -1,6 +1,7 @@
 const cheerio = require('cheerio')
 const cheerioTableparser = require('cheerio-tableparser')
 
+const getRowParser = require('../get-row-parser.js')
 const logger = require('../utils/logger.js')
 
 function parsePage(props) {
@@ -49,47 +50,8 @@ function parsePage(props) {
     })
     .find('li')
     .each((i, el) => {
-      // TODO abstract row-parsing out
-      // to it's own file
-      // can imagine wanting to mix and match
-      // page parsers and row parsers later on
-      const parentHeaderText = $(el)
-        .parent()
-        .prev()
-        .text()
-        .replace(/\[edit\]/, '')
-
-      const rowString = $(el).text()
-      const row = rowString.split(':')
-      const name = row[1].trim()
-
-      const rowLeft = row[0].split(' ')
-      let number
-      let term
-      // handle two different row formats
-      // and two different dash characters
-      if (rowLeft.length === 2) {
-        number = rowLeft[0]
-        term = rowLeft[1].split('–')
-        if (term.length === 1) term = term[0].split('-')
-      } else {
-        number = undefined
-        term = rowLeft[0].split('–')
-        if (term.length === 1) term = term[0].split('-')
-      }
-
-      const beginTerm = term[0]
-      const endTerm = term[1].replace(/:/, '')
-
-      const era = parentHeaderText
-
-      allRows.push({
-        number,
-        name,
-        beginTerm,
-        endTerm,
-        era
-      })
+      const rowObject = getRowParser()({ $, el })
+      allRows.push(rowObject)
     })
 
   logger.info(category)
