@@ -1,6 +1,6 @@
-const parseH2TableData = require('./h2-table.js')
+const parseH2TableData = require('../page/h2-table.js')
 // const parseTableTableData = require('./table-table.js')
-const parseH2UlData = require('./h2-ul.js')
+const parseH2UlData = require('../page/h2-ul.js')
 // const parsePUlData = require('./p-ul.js')
 // const parseDivUlData = require('./div-ul.js')
 // const parseCollapsibleDivUl = require('./collapsible-div-ul.js')
@@ -9,7 +9,7 @@ function parsePage(props) {
   const { link } = props
   switch (link) {
     case '/wiki/List_of_mayors_of_Huntsville,_Alabama':
-      // return parsePUlData(props)
+      return parsePUlData(props)
       return []
     case '/wiki/List_of_mayors_of_Mobile,_Alabama':
       return parseH2UlData(props)
