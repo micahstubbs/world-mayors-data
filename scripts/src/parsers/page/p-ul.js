@@ -1,5 +1,4 @@
 const cheerio = require('cheerio')
-const cheerioTableparser = require('cheerio-tableparser')
 
 const getRowParser = require('../get-row-parser.js')
 const logger = require('../../utils/logger.js')
