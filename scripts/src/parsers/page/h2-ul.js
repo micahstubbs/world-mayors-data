@@ -50,7 +50,8 @@ function parsePage(props) {
     })
     .find('li')
     .each((i, el) => {
-      const rowObject = getRowParser('number-term-name')({ $, el })
+      const rowFormat = 'number-term-name'
+      const rowObject = getRowParser(rowFormat)({ $, el })
       allRows.push(rowObject)
     })
 

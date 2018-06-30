@@ -1,1 +1,398 @@
-[]
+[
+  {
+    "name": "Nicholas Pope",
+    "beginTerm": "1816",
+    "endTerm": "1819",
+    "note": ""
+  },
+  {
+    "name": "John Brahan",
+    "beginTerm": "1819",
+    "endTerm": "1821",
+    "note": ""
+  },
+  {
+    "name": "Benjamin Pope",
+    "beginTerm": "1821",
+    "endTerm": "1821",
+    "note": ""
+  },
+  {
+    "name": "John Read",
+    "beginTerm": "1821",
+    "endTerm": "1822",
+    "note": ""
+  },
+  {
+    "name": "John W. Tilfordy",
+    "beginTerm": "1822",
+    "endTerm": "1823",
+    "note": ""
+  },
+  {
+    "name": "John Boardman",
+    "beginTerm": "1823",
+    "endTerm": "1824",
+    "note": ""
+  },
+  {
+    "name": "William B. Long",
+    "beginTerm": "1824",
+    "endTerm": "1824",
+    "note": "Resigned"
+  },
+  {
+    "name": "John Boardman",
+    "beginTerm": "1824",
+    "endTerm": "1825",
+    "note": ""
+  },
+  {
+    "name": "Thomas Humes",
+    "beginTerm": "1825",
+    "endTerm": "1826",
+    "note": ""
+  },
+  {
+    "name": "John H. Lewis",
+    "beginTerm": "1826",
+    "endTerm": "1828",
+    "note": ""
+  },
+  {
+    "name": "William H. Campbell",
+    "beginTerm": "1828",
+    "endTerm": "1829",
+    "note": ""
+  },
+  {
+    "name": "John H. Lewis",
+    "beginTerm": "1829",
+    "endTerm": "1829",
+    "note": "Resigned"
+  },
+  {
+    "name": "James G. Birney",
+    "beginTerm": "1829",
+    "endTerm": "1830",
+    "note": ""
+  },
+  {
+    "name": "John Martin",
+    "beginTerm": "1830",
+    "endTerm": "1831",
+    "note": ""
+  },
+  {
+    "name": "Samuel Cruse",
+    "beginTerm": "1831",
+    "endTerm": "1832",
+    "note": ""
+  },
+  {
+    "name": "George Fearn",
+    "beginTerm": "1832",
+    "endTerm": "1833",
+    "note": ""
+  },
+  {
+    "name": "Samuel Peete",
+    "beginTerm": "1833",
+    "endTerm": "1834",
+    "note": ""
+  },
+  {
+    "name": "Samuel Peete",
+    "beginTerm": "1834",
+    "endTerm": "1835",
+    "note": "Resigned in 1834 and was re-appointed"
+  },
+  {
+    "name": "Unknown",
+    "beginTerm": "1835",
+    "endTerm": "1836",
+    "note": ""
+  },
+  {
+    "name": "Elisha H. Rice",
+    "beginTerm": "1836",
+    "endTerm": "1842",
+    "note": ""
+  },
+  {
+    "name": "George P. Beirne",
+    "beginTerm": "1842",
+    "endTerm": "1844",
+    "note": ""
+  },
+  {
+    "name": "Joseph Clark",
+    "beginTerm": "1844",
+    "endTerm": "1849",
+    "note": ""
+  },
+  {
+    "name": "George P. Beirne",
+    "beginTerm": "1849",
+    "endTerm": "1850",
+    "note": ""
+  },
+  {
+    "name": "Edwin R. Wallace",
+    "beginTerm": "1850",
+    "endTerm": "1851",
+    "note": ""
+  },
+  {
+    "name": "William Echols Jr.",
+    "beginTerm": "1851",
+    "endTerm": "1853",
+    "note": ""
+  },
+  {
+    "name": "Samuel Peete",
+    "beginTerm": "1853",
+    "endTerm": "1854",
+    "note": "Resigned"
+  },
+  {
+    "name": "Joshua Beadle",
+    "beginTerm": "1854",
+    "endTerm": "1854",
+    "note": ""
+  },
+  {
+    "name": "William Figures",
+    "beginTerm": "1854",
+    "endTerm": "1855",
+    "note": ""
+  },
+  {
+    "name": "Zebulon P. Davis",
+    "beginTerm": "1855",
+    "endTerm": "1859",
+    "note": ""
+  },
+  {
+    "name": "John J. Ward",
+    "beginTerm": "1859",
+    "endTerm": "1860",
+    "note": "Resigned"
+  },
+  {
+    "name": "John James Coleman",
+    "beginTerm": "1860",
+    "endTerm": "1860",
+    "note": ""
+  },
+  {
+    "name": "Zebulon P. Davis",
+    "beginTerm": "1860",
+    "endTerm": "1861",
+    "note": "Resigned"
+  },
+  {
+    "name": "Robert W. Coltart",
+    "beginTerm": "1861",
+    "endTerm": "1865",
+    "note": ""
+  },
+  {
+    "name": "Zebulon P. Davis",
+    "beginTerm": "1865",
+    "endTerm": "1866",
+    "note": ""
+  },
+  {
+    "name": "Robert W. Colart",
+    "beginTerm": "1866",
+    "endTerm": "1867",
+    "note": "Removed by Union Army"
+  },
+  {
+    "name": "E. B. Clapp",
+    "beginTerm": "1867",
+    "endTerm": "1868",
+    "note": "Put in office by Union Army, later resigned"
+  },
+  {
+    "name": "William B. Figures",
+    "beginTerm": "1868",
+    "endTerm": "1870",
+    "note": "Approved by Union Army to replace Clapp"
+  },
+  {
+    "name": "William F. Mastin",
+    "beginTerm": "1870",
+    "endTerm": "1872",
+    "note": "Died"
+  },
+  {
+    "name": "James L. Cooper",
+    "beginTerm": "1872",
+    "endTerm": "1872",
+    "note": ""
+  },
+  {
+    "name": "John A. Erwin",
+    "beginTerm": "1872",
+    "endTerm": "1874",
+    "note": ""
+  },
+  {
+    "name": "Jere Murphy",
+    "beginTerm": "1874",
+    "endTerm": "1878",
+    "note": ""
+  },
+  {
+    "name": "Zebulon P. Davis",
+    "beginTerm": "1878",
+    "endTerm": "1882",
+    "note": ""
+  },
+  {
+    "name": "Thomas W. White",
+    "beginTerm": "1882",
+    "endTerm": "1883",
+    "note": ""
+  },
+  {
+    "name": "Edmond I. Mastin",
+    "beginTerm": "1883",
+    "endTerm": "1889",
+    "note": ""
+  },
+  {
+    "name": "Jere Murphy",
+    "beginTerm": "1889",
+    "endTerm": "1893",
+    "note": ""
+  },
+  {
+    "name": "W. T. Hutchens",
+    "beginTerm": "1893",
+    "endTerm": "1897",
+    "note": ""
+  },
+  {
+    "name": "Jere Murphy",
+    "beginTerm": "1897",
+    "endTerm": "1899",
+    "note": ""
+  },
+  {
+    "name": "Alfred Moore",
+    "beginTerm": "1899",
+    "endTerm": "1903",
+    "note": ""
+  },
+  {
+    "name": "Thomas W. Smith",
+    "beginTerm": "1903",
+    "endTerm": "1907",
+    "note": ""
+  },
+  {
+    "name": "R. Erle Smith",
+    "beginTerm": "1907",
+    "endTerm": "1908",
+    "note": ""
+  },
+  {
+    "name": "Thomas W. Smith",
+    "beginTerm": "1908",
+    "endTerm": "1910",
+    "note": ""
+  },
+  {
+    "name": "R. Erle Smith",
+    "beginTerm": "1910",
+    "endTerm": "1913",
+    "note": ""
+  },
+  {
+    "name": "R. L. O'Neal",
+    "beginTerm": "1913",
+    "endTerm": "1914",
+    "note": ""
+  },
+  {
+    "name": "Dr. J. D. Humphrey",
+    "beginTerm": "1914",
+    "endTerm": "1915",
+    "note": ""
+  },
+  {
+    "name": "Milton H. Lanier",
+    "beginTerm": "1915",
+    "endTerm": "1916",
+    "note": ""
+  },
+  {
+    "name": "T. T. Terry",
+    "beginTerm": "1916",
+    "endTerm": "1918",
+    "note": ""
+  },
+  {
+    "name": "Henry B. Chase",
+    "beginTerm": "1918",
+    "endTerm": "1920",
+    "note": ""
+  },
+  {
+    "name": "W. T. Hutchens",
+    "beginTerm": "1920",
+    "endTerm": "1922",
+    "note": ""
+  },
+  {
+    "name": "Dr. Fraser L. Adams",
+    "beginTerm": "1922",
+    "endTerm": "1926",
+    "note": ""
+  },
+  {
+    "name": "Aleck W. McAllister",
+    "beginTerm": "1926",
+    "endTerm": "1952",
+    "note": ""
+  },
+  {
+    "name": "R. B. \"Speck\" Searcy, Jr.",
+    "beginTerm": "1952",
+    "endTerm": "1964",
+    "note": ""
+  },
+  {
+    "name": "Glenn Hearn",
+    "beginTerm": "1964",
+    "endTerm": "1968",
+    "note": ""
+  },
+  {
+    "name": "Joe W. Davis",
+    "beginTerm": "1968",
+    "endTerm": "1988",
+    "note": ""
+  },
+  {
+    "name": "Steve Hettinger",
+    "beginTerm": "1988",
+    "endTerm": "1996",
+    "note": ""
+  },
+  {
+    "name": "Loretta Spencer, Huntsville's first female mayor",
+    "beginTerm": "1996",
+    "endTerm": "2008",
+    "note": ""
+  },
+  {
+    "name": "Tommy Battle",
+    "beginTerm": "2008",
+    "endTerm": "present",
+    "note": ""
+  }
+]
