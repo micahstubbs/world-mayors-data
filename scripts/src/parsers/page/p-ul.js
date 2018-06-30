@@ -30,8 +30,8 @@ function parsePage(props) {
   // get ul data
   // for all unordered list elements that are
   // immediately preceded by
-  // an p element
-  const allRows = []
+  // an h2 element
+  let allRows = []
 
   $('ul')
     .filter((i, el) => {
