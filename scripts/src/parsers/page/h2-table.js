@@ -1,7 +1,7 @@
 const cheerio = require('cheerio')
 const cheerioTableparser = require('cheerio-tableparser')
 
-const logger = require('../utils/logger.js')
+const logger = require('../../utils/logger.js')
 
 function parsePage(props) {
   const { $, category, page } = props

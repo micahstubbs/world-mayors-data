@@ -1,14 +1,13 @@
 const cheerio = require('cheerio')
 const cheerioTableparser = require('cheerio-tableparser')
 
-const getRowParser = require('../get-row-parser.js')
-const logger = require('../../utils/logger.js')
+const logger = require('../utils/logger.js')
 
 function parsePage(props) {
   const { $, category, page } = props
   // get an array of all sectionHeaders
   // that are followed by a table
-  const sectionHeadersText = $('h2')
+  const sectionHeadersText = $('p')
     .filter((i, el) => {
       return $(el)
         .next()
@@ -38,7 +37,7 @@ function parsePage(props) {
     .filter((i, el) => {
       return $(el)
         .prev()
-        .is('h2')
+        .is('p')
     })
     .filter((i, el) => {
       return (
@@ -50,8 +49,7 @@ function parsePage(props) {
     })
     .find('li')
     .each((i, el) => {
-      const rowObject = getRowParser('number-term-name')({ $, el })
-      allRows.push(rowObject)
+      allRows.push(parseRow({ $, el }))
     })
 
   logger.info(category)

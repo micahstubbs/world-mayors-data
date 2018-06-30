@@ -33,6 +33,14 @@ function parseRow(props) {
   const endTerm = term[1].replace(/:/, '')
 
   const era = parentHeaderText
+
+  return {
+    number,
+    name,
+    beginTerm,
+    endTerm,
+    era
+  }
 }
 
 module.exports = parseRow

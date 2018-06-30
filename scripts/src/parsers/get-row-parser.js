@@ -1,5 +1,5 @@
 function getRowParser(format) {
-  return require(`./parsers/row/${format}.js`)
+  return require(`./row/${format}.js`)
 }
 
 module.exports = getRowParser
