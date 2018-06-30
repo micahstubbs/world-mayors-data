@@ -7,11 +7,11 @@ function parsePage(props) {
   const { $, category, page } = props
   // get an array of all sectionHeaders
   // that are followed by a table
-  const sectionHeadersText = $('p')
+  const sectionHeadersText = $('div')
     .filter((i, el) => {
       return $(el)
         .next()
-        .is('ul')
+        .is('div.mw-collapsible-content')
     })
     .filter((i, el) => {
       return (
@@ -30,14 +30,14 @@ function parsePage(props) {
   // get ul data
   // for all unordered list elements that are
   // immediately preceded by
-  // an p element
-  const allRows = []
+  // an h2 element
+  let allRows = []
 
   $('ul')
     .filter((i, el) => {
       return $(el)
         .prev()
-        .is('p')
+        .is('div.mw-collapsible-content')
     })
     .filter((i, el) => {
       return (
@@ -49,7 +49,7 @@ function parsePage(props) {
     })
     .find('li')
     .each((i, el) => {
-      const rowFormat = 'term-name-note'
+      const rowFormat = 'name-term'
       const parsedRows = getRowParser(rowFormat)({ $, el })
       allRows = allRows.concat(parsedRows)
     })

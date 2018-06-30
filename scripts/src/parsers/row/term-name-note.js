@@ -28,12 +28,14 @@ function parseRow(props) {
   let note = ''
   if (rowRight.length > 1) note = rowRight[1].replace(/\)/, '').trim()
 
-  return {
-    name,
-    beginTerm,
-    endTerm,
-    note
-  }
+  return [
+    {
+      name,
+      beginTerm,
+      endTerm,
+      note
+    }
+  ]
 }
 
 module.exports = parseRow

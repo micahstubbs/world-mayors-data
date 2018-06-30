@@ -34,13 +34,15 @@ function parseRow(props) {
 
   const era = parentHeaderText
 
-  return {
-    number,
-    name,
-    beginTerm,
-    endTerm,
-    era
-  }
+  return [
+    {
+      number,
+      name,
+      beginTerm,
+      endTerm,
+      era
+    }
+  ]
 }
 
 module.exports = parseRow

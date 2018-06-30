@@ -3,7 +3,7 @@ const parseH2TableData = require('../page/h2-table.js')
 const parseH2UlData = require('../page/h2-ul.js')
 const parsePUlData = require('../page/p-ul.js')
 // const parseDivUlData = require('../page/div-ul.js')
-// const parseCollapsibleDivUl = require('../page/collapsible-div-ul.js')
+const parseCollapsibleDivUl = require('../page/collapsible-div-ul.js')
 
 function parsePage(props) {
   const { link } = props
@@ -17,7 +17,7 @@ function parsePage(props) {
       // return parseTableTableData(props)
       return []
     case '/wiki/List_of_mayors_of_Tuscaloosa,_Alabama':
-      // return parseCollapsibleDivUl(props)
+      return parseCollapsibleDivUl(props)
       return []
     default:
       return parseH2TableData(props)

@@ -31,7 +31,7 @@ function parsePage(props) {
   // for all unordered list elements that are
   // immediately preceded by
   // an h2 element
-  const allRows = []
+  let allRows = []
 
   $('ul')
     .filter((i, el) => {
@@ -50,8 +50,8 @@ function parsePage(props) {
     .find('li')
     .each((i, el) => {
       const rowFormat = 'number-term-name'
-      const rowObject = getRowParser(rowFormat)({ $, el })
-      allRows.push(rowObject)
+      const parsedRows = getRowParser(rowFormat)({ $, el })
+      allRows = allRows.concat(parsedRows)
     })
 
   logger.info(category)
