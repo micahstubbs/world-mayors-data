@@ -1,8 +1,11 @@
 const fs = require('fs')
 const path = require('path')
+const rp = require('request-promise')
+const cheerio = require('cheerio')
 
+const writeJSON = require('./src/utils/write-json.js')
+const cachePage = require('./src/cache-page.js')
 const cachedPageIsFresh = require('./src/cached-page-is-fresh.js')
-const scrapeLinks = require('./src/scrape-links.js')
 
 // the page to scrape
 const link = '/wiki/Category:Lists_of_mayors'
@@ -13,17 +16,36 @@ const cacheIndexPath = `${__dirname}/../cache/index.json`
 const cacheIndex = JSON.parse(fs.readFileSync(cacheIndexPath))
 const cacheEntry = cacheIndex[uri]
 
-const selector = '#mw-subcategories li'
-const outputPath = './metadata/country-category-links.json'
-
 if (!cacheEntry) {
   console.log(`no cache entry, now scraping ${link}`)
-  scrapeLinks({ uri, selector, outputPath })
 } else {
   if (!cachedPageIsFresh(cacheEntry.timestamp)) {
     console.log(`cache entry stale, now scraping ${link}`)
-    scrapeLinks({ uri, selector, outputPath })
   } else {
     console.log(`fresh cache entry found for ${link}`)
   }
+}
+
+function scrape() {
+  rp({ uri })
+    .then(body => {
+      cachePage({ uri, body })
+      return cheerio.load(body)
+    })
+    .then($ => {
+      // #mw-subcategories >
+      const result = $('#mw-subcategories li')
+        .map((i, el) => {
+          return $(el)
+            .find('a')
+            .attr('href')
+        })
+        .get()
+
+      console.log('result', result)
+      writeJSON(result, './metadata/country-category-links.json')
+    })
+    .catch(error => {
+      console.error(error)
+    })
 }

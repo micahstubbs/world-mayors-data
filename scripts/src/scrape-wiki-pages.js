@@ -18,9 +18,8 @@ function scrapeWikiPages({ pageLinksFilePath, cacheIndex }) {
       // if this page is not in the cache, scrape it
       console.log(`no cache entry, now scraping ${link}`)
       scrapeWikiPage({ link, category })
-    } else if (cacheEntry) {
-      const isFresh = cachedPageIsFresh(cacheEntry.timestamp)
-      if (!isFresh) {
+    } else {
+      if (!cachedPageIsFresh(cacheEntry.timestamp)) {
         // if our cached version of this page is not fresh, scrape
         console.log(`cache entry stale, now scraping ${link}`)
         scrapeWikiPage({ link, category })
