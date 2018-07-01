@@ -1,5 +1,5 @@
 const fs = require('fs')
-function insertJSON(data, filePath) {
+function insertJSON({ data, filePath }) {
   let existingData
   if (fs.existsSync(filePath)) {
     existingData = JSON.parse(fs.readFileSync(filePath))
