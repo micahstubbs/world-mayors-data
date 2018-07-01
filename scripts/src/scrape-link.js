@@ -4,7 +4,7 @@ const cheerio = require('cheerio')
 const writeJSON = require('./utils/write-json.js')
 const cachePage = require('./cache-page.js')
 
-function scrapeLinks({ uri, selector, outputPath }) {
+function scrapeLink({ uri, selector, outputPath }) {
   rp({ uri })
     .then(body => {
       cachePage({ uri, body })
@@ -27,4 +27,4 @@ function scrapeLinks({ uri, selector, outputPath }) {
     })
 }
 
-module.exports = scrapeLinks 
+module.exports = scrapeLink
