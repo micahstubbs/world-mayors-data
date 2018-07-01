@@ -1,6 +1,5 @@
 const fs = require('fs')
 const rp = require('request-promise')
-// const cheerio = require('cheerio')
 
 const writeJSON = require('./utils/write-json.js')
 const cachePage = require('./cache-page.js')
@@ -25,16 +24,7 @@ function scrapeWikiPage(props) {
       .then(body => {
         cachePage({ uri, body })
         resolve(body)
-        // return cheerio.load(body)
       })
-      // .then($ => {
-      //   resolve($)
-      // })
-      // .then($ => {
-      //   const result = getParser(category)({ $, category, page, link })
-
-      //   writeJSON(result, `./data/${category}-${page}-data.json`)
-      // })
       .catch(error => {
         console.error(error)
         reject()
