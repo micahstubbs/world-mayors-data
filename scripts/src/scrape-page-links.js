@@ -1,7 +1,9 @@
 const fs = require('fs')
 const rp = require('request-promise')
 const cheerio = require('cheerio')
+
 const writeJSON = require('./utils/write-json.js')
+const cachePage = require('./cache-page.js')
 
 function scrapePageLinks(inputFile, outputDir) {
   // target
@@ -29,14 +31,12 @@ function scrapePageLinks(inputFile, outputDir) {
     } else if (link === '/wiki/Category:Mayors_of_Paddington') {
       place = 'Paddington'
     } else place = link.split('in_')[1]
-    const transform = body => cheerio.load(body)
 
-    const options = {
-      uri,
-      transform
-    }
-
-    rp(options)
+    rp({ uri })
+      .then(body => {
+        cachePage({ uri, body })
+        return cheerio.load(body)
+      })
       .then($ => {
         const result = $('.mw-category-generated li')
           .map((i, el) => {
