@@ -4,6 +4,8 @@ const cheerio = require('cheerio')
 
 const writeJSON = require('./utils/write-json.js')
 const cachePage = require('./cache-page.js')
+const cachedPageIsFresh = require('./cached-page-is-fresh.js')
+const scrapeLink = require('./scrape-link.js')
 
 function scrapePageLinks(inputFile, outputDir) {
   // target
@@ -15,9 +17,10 @@ function scrapePageLinks(inputFile, outputDir) {
 
   const categoryLinks = JSON.parse(fs.readFileSync(inputFile, 'utf8'))
 
-  categoryLinks.some((link, i) => {
+  categoryLinks.forEach((link, i) => {
     const uriStem = 'https://en.wikipedia.org'
     const uri = `${uriStem}${link}`
+    const selector = '.mw-category-generated li'
 
     // parse out place name
     // handle a few special cases
@@ -32,33 +35,23 @@ function scrapePageLinks(inputFile, outputDir) {
       place = 'Paddington'
     } else place = link.split('in_')[1]
 
-    rp({ uri })
-      .then(body => {
-        cachePage({ uri, body })
-        return cheerio.load(body)
-      })
-      .then($ => {
-        const result = $('.mw-category-generated li')
-          .map((i, el) => {
-            return $(el)
-              .find('a')
-              .attr('href')
-          })
-          .get()
+    const outputPath = `${outputDir}/${place}-page-links.json`
 
-        // filter for known good patterns
-        // /wiki/Mayor_of_
-        // /wiki/List_of_mayors_of_
+    const cacheIndexPath = `${__dirname}/../../cache/index.json`
+    const cacheIndex = JSON.parse(fs.readFileSync(cacheIndexPath))
+    const cacheEntry = cacheIndex[uri]
 
-        console.log('result', result)
-        writeJSON(result, `${outputDir}/${place}-page-links.json`)
-      })
-      .catch(error => {
-        console.error(error)
-      })
-
-    // early stopping for dev mode
-    // if (i > 2) return true
+    if (!cacheEntry) {
+      console.log(`no cache entry, now scraping ${link}`)
+      scrapeLink({ uri, selector, outputPath })
+    } else {
+      if (!cachedPageIsFresh(cacheEntry.timestamp)) {
+        console.log(`cache entry stale, now scraping ${link}`)
+        scrapeLink({ uri, selector, outputPath })
+      } else {
+        console.log(`fresh cache entry found for ${link}`)
+      }
+    }
   })
 }
 
