@@ -36,7 +36,7 @@ function parsePage(props) {
   $('ul')
     .filter((i, el) => {
       return $(el)
-        .prev()
+        .parent()
         .is('div.mw-collapsible-content')
     })
     .filter((i, el) => {

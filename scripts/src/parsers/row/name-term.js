@@ -10,7 +10,7 @@ function parseRow(props) {
   const rowString = $(el).text()
 
   // early return for missing entries
-  if (rowString === '?') return null
+  if (rowString.trim() === '?') return []
 
   const derivedRows = []
   const row = rowString.split(',')
@@ -24,14 +24,14 @@ function parseRow(props) {
   const terms = row[0].split(',')
   terms.forEach(termString => {
     const term = termString.split('–')
-    const beginTerm = term[0]
+    const beginTerm = term[0].replace(/\[.*\]/, '').trim()
 
     // handle case where term begins and ends in same year
     // and is described only with that year, listed once
     // 1855 vs 1855-1857
     let endTerm
-    if (term.length === 2) endTerm = term[1].trim()
-    else endTerm = term[0].trim()
+    if (term.length === 2) endTerm = term[1].replace(/\[.*\]/, '').trim()
+    else endTerm = term[0].replace(/\[.*\]/, '').trim()
     derivedRows.push({
       name,
       beginTerm,
