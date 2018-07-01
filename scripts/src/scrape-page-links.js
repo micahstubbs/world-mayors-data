@@ -1,9 +1,5 @@
 const fs = require('fs')
-const rp = require('request-promise')
-const cheerio = require('cheerio')
 
-const writeJSON = require('./utils/write-json.js')
-const cachePage = require('./cache-page.js')
 const cachedPageIsFresh = require('./cached-page-is-fresh.js')
 const scrapeLink = require('./scrape-link.js')
 
