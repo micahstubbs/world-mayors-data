@@ -22,7 +22,7 @@ function scrapeWikiPages(pageLinksFilePath) {
       // if this page is not in the cache, scrape it
       scrapeWikiPage({ link, category })
     } else if (cacheEntry && !cachedPageIsFresh(cacheEntry.timestamp)) {
-      // if our cached version of this page is not fresh, scrape it
+      // if our cached version of this page is not fresh, scrape
       scrapeWikiPage({ link, category })
     }
     // optional early stopping

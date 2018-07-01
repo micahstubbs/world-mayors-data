@@ -1,9 +1,10 @@
 const fs = require('fs')
 const rp = require('request-promise')
-const cheerio = require('cheerio')
+// const cheerio = require('cheerio')
 
 const writeJSON = require('./utils/write-json.js')
 const cachePage = require('./cache-page.js')
+const cachedPageIsFresh = require('./cached-page-is-fresh.js')
 const getParser = require('./parsers/get-parser.js')
 
 function scrapeWikiPage(props) {
@@ -11,7 +12,6 @@ function scrapeWikiPage(props) {
     const { link, category } = props
     const uriStem = 'https://en.wikipedia.org'
     const uri = `${uriStem}${link}`
-    const transform = body => cheerio.load(body)
 
     // parse out city name
     // drop any text that appears after a comma
@@ -24,11 +24,12 @@ function scrapeWikiPage(props) {
     rp({ uri })
       .then(body => {
         cachePage({ uri, body })
-        return cheerio.load(body)
+        resolve(body)
+        // return cheerio.load(body)
       })
-      .then($ => {
-        resolve($)
-      })
+      // .then($ => {
+      //   resolve($)
+      // })
       // .then($ => {
       //   const result = getParser(category)({ $, category, page, link })
 
