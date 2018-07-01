@@ -7,8 +7,8 @@ let files = fs.readdirSync(inputDir).filter(file => isJSONFile(file))
 
 // process one file at a time for now
 // until we have more confidence in the scrapers
-const whiteListedFile = 'Alabama-page-links.json'
-files = files.filter(file => file === whiteListedFile)
+// const whiteListedFile = 'Alabama-page-links.json'
+// files = files.filter(file => file === whiteListedFile)
 
 files.forEach(file => {
   console.log(`now scraping links in ${file}`)

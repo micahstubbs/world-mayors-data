@@ -3,7 +3,7 @@ const rp = require('request-promise')
 const cheerio = require('cheerio')
 
 const writeJSON = require('./utils/write-json.js')
-
+const cachePage = require('./cache-page.js')
 const getParser = require('./parsers/get-parser.js')
 
 function scrapeWikiPage(props) {
@@ -20,17 +20,16 @@ function scrapeWikiPage(props) {
     [link.split('of_').length - 1].replace(/\,.*/, '')
     .toLowerCase()
 
-  const options = {
-    uri,
-    transform
-  }
-
-  rp(options)
-    .then($ => {
-      const result = getParser(category)({ $, category, page, link })
-
-      writeJSON(result, `./data/${category}-${page}-data.json`)
+  rp({ uri })
+    .then(body => {
+      cachePage({ uri, body })
+      return cheerio.load(body)
     })
+    // .then($ => {
+    //   const result = getParser(category)({ $, category, page, link })
+
+    //   writeJSON(result, `./data/${category}-${page}-data.json`)
+    // })
     .catch(error => {
       console.error(error)
     })
