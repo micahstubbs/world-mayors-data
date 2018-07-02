@@ -56,27 +56,7 @@ function parsePage(props) {
     const values = tableData.map(col => col.splice(1, col.length))
     const rows = []
 
-    const rowKeys = keys.map(k => {
-      switch (k) {
-        case 'No.':
-          return 'number'
-        case 'Term in office':
-          return 'beginTerm'
-        case '':
-          return 'endTerm'
-        default:
-          if (typeof k === 'string') {
-            // parse out column name
-            // remove footnotes, html tags, and whitespace
-            return k
-              .toLowerCase()
-              .replace(/\[.*\]/g, '')
-              .replace(/<.*>/g, '')
-              .trim()
-          }
-          return k
-      }
-    })
+    const rowKeys = keys.map(k => parseKey(k))
 
     // TODO check that all values are equal length
     // in other words handle missing values case

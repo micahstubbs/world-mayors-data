@@ -1,7 +1,9 @@
 const cheerio = require('cheerio')
 const cheerioTableparser = require('cheerio-tableparser')
 
-const logger = require('../utils/logger.js')
+const logger = require('../../utils/logger.js')
+const parseTerm = require('../field/term.js')
+const parseKey = require('../field/key.js')
 
 function parsePage(props) {
   const { $, category, page } = props
@@ -11,7 +13,7 @@ function parsePage(props) {
     .filter((i, el) => {
       return $(el)
         .next()
-        .is('table')
+        .is('p')
     })
     .map((i, el) => {
       return $(el)
@@ -27,7 +29,7 @@ function parsePage(props) {
     .filter((i, el) => {
       return $(el)
         .prev()
-        .is('h2')
+        .is('p')
     })
     .map((i, el) => {
       cheerioTableparser($)
@@ -62,7 +64,20 @@ function parsePage(props) {
     for (let i = 0; i < values[0].length; i += 1) {
       const rowObject = {}
       for (let j = 0; j < rowKeys.length; j += 1) {
-        rowObject[rowKeys[j]] = values[j][i]
+        const currentKey = rowKeys[j]
+        // remove html tags from values
+        const currentValue = values[j][i].replace(
+          /<[\w\s=\\"\/\.\?&;\(\)-:%]*>/g,
+          ''
+        )
+        rowObject[currentKey] = currentValue
+
+        if (currentKey === 'representative') rowObject.mayor = currentValue
+        if (currentKey === 'years') {
+          const { beginTerm, endTerm } = parseTerm(currentValue)
+          rowObject.beginTerm = beginTerm
+          rowObject.endTerm = endTerm
+        }
       }
       rowObject.era = era
       rows.push(rowObject)
@@ -87,9 +102,11 @@ function parsePage(props) {
   console.log('eras', sectionHeadersText)
   console.log('')
 
-  const allRows = tablesDataByRow.reduce((accumulator, currentValue) =>
-    accumulator.concat(currentValue)
-  )
+  let allRows = []
+  if (Array.isArray(tablesDataByRow) && tablesDataByRow.length > 0)
+    allRows = tablesDataByRow.reduce((accumulator, currentValue) =>
+      accumulator.concat(currentValue)
+    )
 
   return allRows
 }
