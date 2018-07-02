@@ -115,9 +115,11 @@ function parsePage(props) {
   console.log('eras', sectionHeadersText)
   console.log('')
 
-  const allRows = tablesDataByRow.reduce((accumulator, currentValue) =>
-    accumulator.concat(currentValue)
-  )
+  let allRows = []
+  if (Array.isArray(tablesDataByRow) && tablesDataByRow.length > 0)
+    allRows = tablesDataByRow.reduce((accumulator, currentValue) =>
+      accumulator.concat(currentValue)
+    )
 
   return allRows
 }
