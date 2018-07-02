@@ -4,7 +4,9 @@ function parseKey(keyString) {
     case '&#x2116;':
       return 'number'
     case 'Term in office':
+    case 'Took office':
       return 'beginTerm'
+    case 'Left office':
     case '':
       return 'endTerm'
     default:

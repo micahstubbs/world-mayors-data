@@ -66,11 +66,10 @@ function parsePage(props) {
       for (let j = 0; j < rowKeys.length; j += 1) {
         const currentKey = rowKeys[j]
         // remove html tags from values
-        const currentValue = values[j][i].replace(
+        let currentValue = values[j][i].replace(
           /<[\w\s=\\"\/\.\?&;\(\)-:%]*>/g,
           ''
         )
-        rowObject[currentKey] = currentValue
 
         if (currentKey === 'representative') rowObject.mayor = currentValue
         if (currentKey === 'years') {
@@ -78,6 +77,16 @@ function parsePage(props) {
           rowObject.beginTerm = beginTerm
           rowObject.endTerm = endTerm
         }
+        if (currentKey === 'name') {
+          const name = currentValue.split('\n')
+          currentValue = name[0]
+          if (name.length > 1) {
+            const lifespan = parseTerm(name[1])
+            rowObject.birth = lifespan.beginTerm
+            rowObject.death = lifespan.endTerm
+          }
+        }
+        rowObject[currentKey] = currentValue
       }
       rowObject.era = era
       rows.push(rowObject)
