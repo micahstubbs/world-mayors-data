@@ -1,5 +1,19 @@
 function parseTerm(termString) {
-  const term = termString.split('–')
+  // handle many different kinds of term separator characters
+  //
+  // the dashes are in fact different unicode characters
+  // even though you may not be able to see the difference here
+  let term
+  if (/—/.test(termString)) {
+    term = termString.split('—')
+  } else if (/–/.test(termString)) {
+    term = termString.split('–')
+  } else if (/&#x2014;/.test(termString)) {
+    term = termString.split('&#x2014;')
+  } else {
+    term = termString.split('-')
+  }
+
   const beginTerm = term[0].replace(/\[.*\]/, '').trim()
 
   // handle case where term begins and ends in same year
