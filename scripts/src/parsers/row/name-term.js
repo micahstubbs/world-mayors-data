@@ -15,7 +15,7 @@ function parseRow(props) {
   const derivedRows = []
   const row = rowString.split(',')
 
-  // parse out name, removing footnotes and whitespace
+  // parse out name, remove footnotes and whitespace
   const name = row
     .shift()
     .replace(/\[.*\]/, '')
