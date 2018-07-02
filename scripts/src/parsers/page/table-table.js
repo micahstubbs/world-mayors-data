@@ -1,6 +1,7 @@
 const cheerio = require('cheerio')
 const cheerioTableparser = require('cheerio-tableparser')
 
+const parseTerm = require('../field/term.js')
 const logger = require('../../utils/logger.js')
 
 function parsePage(props) {
@@ -82,7 +83,20 @@ function parsePage(props) {
     for (let i = 0; i < values[0].length; i += 1) {
       const rowObject = {}
       for (let j = 0; j < rowKeys.length; j += 1) {
-        rowObject[rowKeys[j]] = values[j][i]
+        const currentValue = values[j][i]
+          .replace(/\[.*\]/g, '')
+          .replace(/<.*>/g, '')
+
+        const currentKey = rowKeys[j]
+
+        // handle special cases
+        if (currentKey === 'term') {
+          const { beginTerm, endTerm } = parseTerm(currentValue)
+          rowObject.beginTerm = beginTerm
+          rowObject.endTerm = endTerm
+        } else {
+          rowObject[currentKey] = currentValue
+        }
       }
       // rowObject.era = era
       rows.push(rowObject)
