@@ -54,27 +54,32 @@ function parsePage(props) {
       for (let j = 0; j < rowKeys.length; j += 1) {
         const currentKey = rowKeys[j]
         // remove html tags from values
-        let currentValue = values[j][i].replace(
-          /<[\w\s=\\"\/\.\?&;\(\)-:%]*>/g,
-          ''
-        )
+        let currentValue = values[j][i]
+          .replace(/<[\w\s=\\"\/\.\?&;\(\)-:%#"]*>/g, '')
+          .replace(/\[.*\]/, '')
+          .replace(/[\(\)]/, '')
 
         if (currentKey === 'representative') rowObject.mayor = currentValue
-        if (currentKey === 'years') {
+        // TODO handle multiple discontinuous terms described in one cell
+        // example: `1928, 1932,[6][not in citation given] 1934 [7]`
+        if (currentKey === 'years' || currentKey === 'term') {
           const { beginTerm, endTerm } = parseTerm(currentValue)
           rowObject.beginTerm = beginTerm
           rowObject.endTerm = endTerm
         }
+
+        // if else block starts here
         if (currentKey === 'name') {
           const name = currentValue.split('\n')
-          currentValue = name[0]
+          rowObject.name = name[0]
           if (name.length > 1) {
             const lifespan = parseTerm(name[1])
             rowObject.birth = lifespan.beginTerm
             rowObject.death = lifespan.endTerm
           }
+        } else {
+          rowObject[currentKey] = currentValue
         }
-        rowObject[currentKey] = currentValue
       }
       rows.push(rowObject)
     }

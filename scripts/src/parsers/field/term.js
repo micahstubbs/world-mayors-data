@@ -4,16 +4,20 @@ function parseTerm(termString) {
   // the dashes are in fact different unicode characters
   // even though you may not be able to see the difference here
   let term
-  if (/—/.test(termString)) {
-    term = termString.split('—')
-  } else if (/–/.test(termString)) {
-    term = termString.split('–')
-  } else if (/&#x2013;/.test(termString)) {
-    term = termString.split('&#x2013;')
-  } else if (/&#x2014;/.test(termString)) {
-    term = termString.split('&#x2014;')
+  const cleanedTermString = termString.replace(
+    /<[\w\s=\\"\/\.\?&;\(\)-:%#"]*>/g,
+    ''
+  )
+  if (/—/.test(cleanedTermString)) {
+    term = cleanedTermString.split('—')
+  } else if (/–/.test(cleanedTermString)) {
+    term = cleanedTermString.split('–')
+  } else if (/&#x2013;/.test(cleanedTermString)) {
+    term = cleanedTermString.split('&#x2013;')
+  } else if (/&#x2014;/.test(cleanedTermString)) {
+    term = cleanedTermString.split('&#x2014;')
   } else {
-    term = termString.split('-')
+    term = cleanedTermString.split('-')
   }
 
   const beginTerm = term[0]

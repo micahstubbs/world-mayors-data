@@ -67,7 +67,7 @@ function parsePage(props) {
         const currentKey = rowKeys[j]
         // remove html tags from values
         const currentValue = values[j][i].replace(
-          /<[\w\s=\\"\/\.\?&;\(\)-:%]*>/g,
+          /<[\w\s=\\"\/\.\?&;\(\)-:%#"]*>/g,
           ''
         )
         rowObject[currentKey] = currentValue
