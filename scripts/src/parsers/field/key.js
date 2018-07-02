@@ -8,16 +8,16 @@ function parseKey(keyString) {
     case '':
       return 'endTerm'
     default:
-      if (typeof k === 'string') {
+      if (typeof keyString === 'string') {
         // parse out column name
         // remove footnotes, html tags, and whitespace
-        return k
+        return keyString
           .toLowerCase()
           .replace(/\[.*\]/g, '')
           .replace(/<.*>/g, '')
           .trim()
       }
-      return k
+      return keyString
   }
 }
 
