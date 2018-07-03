@@ -22,8 +22,8 @@ function parseTerm(termString) {
   }
 
   const beginTerm = term[0]
-    .replace(/\[.*\]/, '')
-    .replace(/[\(\)]/, '')
+    .replace(/\[.*\]/g, '')
+    .replace(/[\(\)]/g, '')
     .trim()
 
   // handle case where term begins and ends in same year
@@ -32,13 +32,13 @@ function parseTerm(termString) {
   let endTerm
   if (term.length === 2)
     endTerm = term[1]
-      .replace(/\[.*\]/, '')
-      .replace(/[\(\)]/, '')
+      .replace(/\[.*\]/g, '')
+      .replace(/[\(\)]/g, '')
       .trim()
   else
     endTerm = term[0]
-      .replace(/\[.*\]/, '')
-      .replace(/[\(\)]/, '')
+      .replace(/\[.*\]/g, '')
+      .replace(/[\(\)]/g, '')
       .trim()
   // TODO refactor variable names to make using
   // this to parse lifespans feel comfortable too

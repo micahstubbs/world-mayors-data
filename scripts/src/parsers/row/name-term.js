@@ -15,15 +15,32 @@ function parseRow(props) {
   if (rowString.trim() === '?') return []
 
   const derivedRows = []
-  const row = rowString.split(',')
+
+  let row
+  if (/,/.test(rowString)) {
+    row = rowString.split(',')
+  } else if (/\(/.test(rowString)) {
+    row = rowString.split(/\(/)
+  } else {
+    row = [rowString]
+  }
+
+  console.log('row from name-term', row)
 
   // parse out name, remove footnotes and whitespace
-  const name = row
-    .shift()
-    .replace(/\[.*\]/, '')
-    .trim()
+  let name
+  let terms
+  if (row.length > 1) {
+    name = row
+      .shift()
+      .replace(/\[.*\]/, '')
+      .trim()
+    terms = row[0].split(',')
+  } else {
+    name = row[0]
+    terms = ['']
+  }
 
-  const terms = row[0].split(',')
   terms.forEach(termString => {
     const { beginTerm, endTerm } = parseTerm(termString)
     derivedRows.push({

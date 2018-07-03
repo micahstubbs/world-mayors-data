@@ -4,7 +4,7 @@ const getRowParser = require('../get-row-parser.js')
 const logger = require('../../utils/logger.js')
 
 function parsePage(props) {
-  const { $, category, page } = props
+  const { $, category, page, rowFormat = 'term-name-note' } = props
   // get an array of all sectionHeaders
   // that are followed by a table
   const sectionHeadersText = $('p')
@@ -49,7 +49,6 @@ function parsePage(props) {
     })
     .find('li')
     .each((i, el) => {
-      const rowFormat = 'term-name-note'
       const parsedRows = getRowParser(rowFormat)({ $, el })
       allRows = allRows.concat(parsedRows)
     })
