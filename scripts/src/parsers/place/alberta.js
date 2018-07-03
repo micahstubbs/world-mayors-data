@@ -15,6 +15,9 @@ function parsePage(props) {
     case '/wiki/List_of_mayors_of_Edmonton':
     case '/wiki/List_of_mayors_of_Fort_Saskatchewan':
     case '/wiki/List_of_mayors_of_Lethbridge':
+    case '/wiki/List_of_mayors_of_Red_Deer,_Alberta':
+    case '/wiki/List_of_mayors_of_St._Albert,_Alberta':
+    case '/wiki/List_of_mayors_of_Strathcona,_Alberta':
       return parsePTableNoH2Data(props)
     default:
       return parseH2TableData(props)
