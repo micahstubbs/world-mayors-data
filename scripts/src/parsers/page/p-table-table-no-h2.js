@@ -79,25 +79,7 @@ function parsePage(props) {
     const values = tableData.map(col => col.splice(1, col.length))
     const rows = []
 
-    const rowKeys = keys.map(k => {
-      let currentKey = k
-
-      // if key is a link tag, use the title of the link tag as the string
-      // that is, if the table column header is a hyperlink
-      if (/<a\shref/.test(currentKey)) {
-        const match = currentKey.match(/title=\"[\w\s=\\"\/\.\?&;\(\)-:%#]*\"/)
-        if (match !== null)
-          currentKey = match[0].replace(/title=\"/, '').replace(/\"/, '')
-      }
-
-      if (currentKey === '' && page === 'edmonton') {
-        return 'name'
-      } else if (currentKey === '' && page === 'tucson') {
-        return 'noHeader'
-      } else {
-        return parseKey(currentKey)
-      }
-    })
+    const rowKeys = keys.map(k => parseKey(k))
 
     // TODO check that all values are equal length
     // in other words handle missing values case

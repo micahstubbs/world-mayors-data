@@ -57,7 +57,7 @@ function parsePage(props) {
     const values = tableData.map(col => col.splice(1, col.length))
     const rows = []
 
-    const rowKeys = keys.map(k => parseKey(k))
+    const rowKeys = keys.map(k => parseKey(k, page))
 
     // TODO check that all values are equal length
     // in other words handle missing values case
