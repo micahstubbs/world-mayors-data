@@ -105,8 +105,10 @@ function parsePage(props) {
         if (currentKey === 'name') {
           const name = currentValue.split('\n')
           rowObject.name = name[0]
+            .replace(/&quot;/g, '')
             .replace('(page does not exist)', '')
             .replace('(mayor)', '')
+            .replace(/\)/g, '')
             .trim()
           if (name.length > 1) {
             const lifespan = parseTerm(name[1])
