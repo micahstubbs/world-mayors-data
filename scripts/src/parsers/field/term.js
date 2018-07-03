@@ -5,9 +5,10 @@ function parseTerm(termString) {
   // even though you may not be able to see the difference here
   let term
   const cleanedTermString = termString.replace(
-    /<[\w\s=\\"\/\.\?&;\(\)-:%#"]*>/g,
+    /<[\w\s=\\"\/\.\?&;\(\):%#"]*>/g,
     ''
   )
+  console.log('cleanedTermString', cleanedTermString)
   if (/—/.test(cleanedTermString)) {
     term = cleanedTermString.split('—')
   } else if (/–/.test(cleanedTermString)) {

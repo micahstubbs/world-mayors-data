@@ -6,7 +6,14 @@ function parseRow(props) {
   const { $, el } = props
 
   const rowString = $(el).text()
-  const row = rowString.split(':')
+  let row
+  if (/:/.test(rowString)) {
+    row = rowString.split(/:/)
+  } else if (/-\s/.test(rowString)) {
+    row = rowString.split(/-\s/)
+  } else {
+    row = [rowString]
+  }
 
   const term = row[0].split('–')
   const beginTerm = term[0]
