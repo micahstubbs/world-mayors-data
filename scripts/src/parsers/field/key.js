@@ -3,6 +3,10 @@ function parseKey(keyString) {
     case 'No.':
     case '&#x2116;':
       return 'number'
+    case 'mayoral term':
+    case 'Mayoral Term':
+    case 'Mayoral term':
+      return 'term'
     case 'Term in office':
     case 'Took office':
     case 'Term Began':
