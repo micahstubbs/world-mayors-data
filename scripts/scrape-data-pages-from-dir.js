@@ -11,7 +11,7 @@ const cacheIndex = JSON.parse(fs.readFileSync(cacheIndexPath))
 
 // process one file at a time for now
 // until we have more confidence in the scrapers
-const whiteListedFile = 'Alaska-page-links.json'
+const whiteListedFile = 'Alberta-page-links.json'
 files = files.filter(file => file === whiteListedFile)
 
 files.forEach(file => {
