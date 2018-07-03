@@ -9,18 +9,7 @@ function parsePage(props) {
   const { $, category, page } = props
   // get an array of all sectionHeaders
   // that are followed by a table
-  const sectionHeadersText = $('h2')
-    .filter((i, el) => {
-      return $(el)
-        .next()
-        .is('div.thumb')
-    })
-    .map((i, el) => {
-      return $(el)
-        .text()
-        .replace(/\[edit\]/, '')
-    })
-    .get()
+  const sectionHeadersText = ['']
 
   // get table data
   // for all tables that are immediately preceded by
@@ -29,7 +18,7 @@ function parsePage(props) {
     .filter((i, el) => {
       return $(el)
         .prev()
-        .is('p')
+        .is('div.thumb')
     })
     .map((i, el) => {
       cheerioTableparser($)
@@ -47,6 +36,7 @@ function parsePage(props) {
     tablesDataByTable[tableIndex].push(col)
   })
 
+  console.log('tablesDataByTable', tablesDataByTable)
   const tablesDataByRow = tablesDataByTable.map((table, i) => {
     return stitchTableData(table, sectionHeadersText[i])
   })

@@ -5,8 +5,10 @@ function parseKey(keyString) {
       return 'number'
     case 'Term in office':
     case 'Took office':
+    case 'Term Began':
       return 'beginTerm'
     case 'Left office':
+    case 'Term Ended':
     case '':
       return 'endTerm'
     default:
