@@ -19,6 +19,14 @@ function parsePage(props) {
         .prev()
         .is('p')
     })
+    .filter((i, el) => {
+      const prevH2Text = $(el)
+        .prev()
+        .prev()
+        .text()
+      console.log('prevH2Text', prevH2Text)
+      return prevH2Text !== 'Living former mayors[edit]'
+    })
     .map((i, el) => {
       cheerioTableparser($)
       return $(el).parsetable()
@@ -45,7 +53,13 @@ function parsePage(props) {
     const values = tableData.map(col => col.splice(1, col.length))
     const rows = []
 
-    const rowKeys = keys.map(k => parseKey(k))
+    const rowKeys = keys.map(k => {
+      if (k === '' && page === 'edmonton') {
+        return 'mayor'
+      } else {
+        return parseKey(k)
+      }
+    })
 
     // TODO check that all values are equal length
     // in other words handle missing values case
@@ -53,11 +67,29 @@ function parsePage(props) {
       const rowObject = {}
       for (let j = 0; j < rowKeys.length; j += 1) {
         const currentKey = rowKeys[j]
-        // remove html tags from values
+
+        // console.log('values[j][i]', values[j][i])
+
         let currentValue = values[j][i]
-          .replace(/<[\w\s=\\"\/\.\?&;\(\)-:%#"]*>/g, '')
-          .replace(/\[.*\]/, '')
-          .replace(/[\(\)]/, '')
+        if (/<a\shref/.test(currentValue)) {
+          const match = currentValue.match(
+            /title=\"[\w\s=\\"\/\.\?&;\(\)-:%#]*\"/
+          )
+          if (match !== null)
+            currentValue = match[0].replace(/title=\"/, '').replace(/\"/, '')
+          else currentValue = ''
+        } else if (currentValue) {
+          // remove html tags from values
+          currentValue = values[j][i]
+            .replace(/<[\w\s=\\"\/\.\?&;\(\)-:%#"]*>/g, '')
+            .replace(/\[.*\]/, '')
+            .replace(/[\(\)]/, '')
+        } else {
+          currentValue = ''
+        }
+
+        console.log('currentKey', currentKey)
+        console.log('currentValue', currentValue)
 
         if (currentKey === 'representative') rowObject.mayor = currentValue
         // TODO handle multiple discontinuous terms described in one cell

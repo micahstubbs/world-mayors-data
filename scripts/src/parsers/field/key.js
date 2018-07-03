@@ -6,6 +6,7 @@ function parseKey(keyString) {
     case 'Term in office':
     case 'Took office':
     case 'Term Began':
+    case 'Term began':
       return 'beginTerm'
     case 'Left office':
     case 'Term Ended':

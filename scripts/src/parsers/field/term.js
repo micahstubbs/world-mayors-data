@@ -8,7 +8,7 @@ function parseTerm(termString) {
     /<[\w\s=\\"\/\.\?&;\(\):%#"]*>/g,
     ''
   )
-  console.log('cleanedTermString', cleanedTermString)
+
   if (/—/.test(cleanedTermString)) {
     term = cleanedTermString.split('—')
   } else if (/–/.test(cleanedTermString)) {
