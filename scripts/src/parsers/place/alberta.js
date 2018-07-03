@@ -4,8 +4,6 @@ const parsePTableNoH2ThumbnailsData = require('../page/p-table-no-h2-thumbnails.
 const parsePTableNoH2Data = require('../page/p-table-no-h2.js')
 const parseH2UlData = require('../page/h2-ul.js')
 const parsePUlData = require('../page/p-ul.js')
-// const parsePTableData = require('../page/p-table.js')
-// const parsePUlThumbnails = require('../page/p-ul-thumbnails')
 
 function parsePage(props) {
   const { link } = props
