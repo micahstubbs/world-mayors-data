@@ -49,7 +49,9 @@ function parsePage(props) {
     })
     .find('li')
     .each((i, el) => {
-      const rowFormat = 'number-term-name'
+      let rowFormat = 'number-term-name'
+      if (page === 'linz') rowFormat = 'term-name'
+      if (page === 'vienna') rowFormat = 'name-term'
       const parsedRows = getRowParser(rowFormat)({ $, el })
       allRows = allRows.concat(parsedRows)
     })
