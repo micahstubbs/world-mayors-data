@@ -72,7 +72,6 @@ function parsePage(props) {
         )
         rowObject[currentKey] = currentValue
 
-        if (currentKey === 'representative') rowObject.mayor = currentValue
         if (currentKey === 'years') {
           const { beginTerm, endTerm } = parseTerm(currentValue)
           rowObject.beginTerm = beginTerm

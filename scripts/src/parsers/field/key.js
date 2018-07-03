@@ -12,6 +12,10 @@ function parseKey(keyString) {
     case 'Term Ended':
     case '':
       return 'endTerm'
+    case 'Mayor':
+    case 'mayor':
+    case 'representative':
+      return 'name'
     default:
       if (typeof keyString === 'string') {
         // parse out column name
