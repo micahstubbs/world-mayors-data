@@ -19,6 +19,7 @@ function parseKey(keyString) {
     case 'Mayor':
     case 'mayor':
     case 'representative':
+    case 'Alcalde':
       return 'name'
     default:
       if (typeof keyString === 'string') {

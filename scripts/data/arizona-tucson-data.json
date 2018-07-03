@@ -1,8 +1,288 @@
 [
   {
-    "": "Mark Aldrich",
+    "name": "Mark Aldrich",
     "beginTerm": "1861",
     "endTerm": "",
     "term": "1861"
+  },
+  {
+    "name": "Sidney Randolph DeLong",
+    "beginTerm": "May 17, 1871",
+    "endTerm": "January 6, 1873",
+    "term": "May 17, 1871 &#x2013; January 6, 1873",
+    "political party": "Republican Party (United States)"
+  },
+  {
+    "name": "James Henry Toole",
+    "beginTerm": "January 6, 1873",
+    "endTerm": "January 5, 1875",
+    "term": "January 6, 1873 &#x2013; January 5, 1875",
+    "political party": "two one-year terms)"
+  },
+  {
+    "name": "Estevan Ochoa",
+    "beginTerm": "January 5, 1875",
+    "endTerm": "January 11, 1876",
+    "term": "January 5, 1875 &#x2013; January 11, 1876",
+    "political party": "replaced by J. B Allen 5/1/76)"
+  },
+  {
+    "name": "Pie Allen",
+    "beginTerm": "May 1, 1876",
+    "endTerm": "January 1, 1878",
+    "term": "May 1, 1876 &#x2013; January 1, 1878",
+    "political party": ""
+  },
+  {
+    "name": "James Henry Toole",
+    "beginTerm": "January 1, 1878",
+    "endTerm": "January 6, 1880",
+    "term": "January 1, 1878 &#x2013; January 6, 1880",
+    "political party": "third &amp; fourth terms)"
+  },
+  {
+    "name": "Robert N. Leatherwood",
+    "beginTerm": "January 6, 1880",
+    "endTerm": "January 11, 1881",
+    "term": "January 6, 1880 &#x2013; January 11, 1881",
+    "political party": "United States Democratic Party"
+  },
+  {
+    "name": "John Sterling Carr",
+    "beginTerm": "January 11, 1881",
+    "endTerm": "January 10, 1882",
+    "term": "January 11, 1881 &#x2013; January 10, 1882",
+    "political party": ""
+  },
+  {
+    "name": "Pinckney R. Tully",
+    "beginTerm": "January 10, 1882",
+    "endTerm": "January 9, 1883",
+    "term": "January 10, 1882 &#x2013; January 9, 1883",
+    "political party": ""
+  },
+  {
+    "name": "Charles M. Strauss",
+    "beginTerm": "January 9, 1883",
+    "endTerm": "August 5, 1884",
+    "term": "January 9, 1883 &#x2013; August 5, 1884",
+    "political party": "resigned 8/5/84)"
+  },
+  {
+    "name": "Charles T. Etchell",
+    "beginTerm": "August 5, 1884",
+    "endTerm": "August 7, 1884",
+    "term": "August 5, 1884 &#x2013; August 7, 1884",
+    "political party": "Mayor Pro Tem"
+  },
+  {
+    "name": "Andrew Cronley",
+    "beginTerm": "August 7, 1884",
+    "endTerm": "May 5, 1885",
+    "term": "August 7, 1884 &#x2013; May 5, 1885",
+    "political party": "Mayor Pro Tem)"
+  },
+  {
+    "name": "George Rayfield",
+    "beginTerm": "May 5, 1885",
+    "endTerm": "November 10, 1887",
+    "term": "May 5, 1885 &#x2013; November 10, 1887",
+    "political party": ""
+  },
+  {
+    "name": "William E. Stevens",
+    "beginTerm": "November 10, 1887",
+    "endTerm": "January 7, 1889",
+    "term": "November 10, 1887 &#x2013; January 7, 1889",
+    "political party": ""
+  },
+  {
+    "name": "Frederick Maish",
+    "beginTerm": "January 7, 1889",
+    "endTerm": "January 18, 1893",
+    "term": "January 7, 1889 &#x2013; January 18, 1893",
+    "political party": ""
+  },
+  {
+    "name": "William J. Perry",
+    "beginTerm": "January 18, 1893",
+    "endTerm": "January 7, 1895",
+    "term": "January 18, 1893 &#x2013; January 7, 1895",
+    "political party": ""
+  },
+  {
+    "name": "Henry Buehman",
+    "beginTerm": "January 7, 1895",
+    "endTerm": "January 3, 1899",
+    "term": "January 7, 1895 &#x2013; January 3, 1899",
+    "political party": "Republican"
+  },
+  {
+    "name": "Gustav A. Hoff",
+    "beginTerm": "January 3, 1899",
+    "endTerm": "January 7, 1901",
+    "term": "January 3, 1899 &#x2013; January 7, 1901",
+    "political party": "Democratic"
+  },
+  {
+    "name": "Charles J. Schumacher",
+    "beginTerm": "January 7, 1901",
+    "endTerm": "January 2, 1905",
+    "term": "January 7, 1901 &#x2013; January 2, 1905",
+    "political party": ""
+  },
+  {
+    "name": "Levi Manning",
+    "beginTerm": "January 2, 1905",
+    "endTerm": "January 7, 1907",
+    "term": "January 2, 1905 &#x2013; January 7, 1907",
+    "political party": ""
+  },
+  {
+    "name": "Charles F. Slack",
+    "beginTerm": "January 7, 1907",
+    "endTerm": "January 4, 1909",
+    "term": "January 7, 1907 &#x2013; January 4, 1909",
+    "political party": "Republican"
+  },
+  {
+    "name": "Ben Heney",
+    "beginTerm": "January 4, 1909",
+    "endTerm": "January 3, 1910",
+    "term": "January 4, 1909 &#x2013; January 3, 1910",
+    "political party": "Republican"
+  },
+  {
+    "name": "Preston Jacobus",
+    "beginTerm": "January 3, 1910",
+    "endTerm": "January 2, 1912",
+    "term": "January 3, 1910 &#x2013; January 2, 1912",
+    "political party": "Republican"
+  },
+  {
+    "name": "Ira Erven Huffman",
+    "beginTerm": "January 2, 1912",
+    "endTerm": "January 4, 1915",
+    "term": "January 2, 1912 &#x2013; January 4, 1915",
+    "political party": "Democratic"
+  },
+  {
+    "name": "Johnston Knox Corbett",
+    "beginTerm": "January 4, 1915",
+    "endTerm": "January 2, 1917",
+    "term": "January 4, 1915 &#x2013; January 2, 1917",
+    "political party": "Republican"
+  },
+  {
+    "name": "Olva Clayton Parker",
+    "beginTerm": "January 2, 1917",
+    "endTerm": "January 7, 1926",
+    "term": "January 2, 1917 &#x2013; January 7, 1926",
+    "political party": ""
+  },
+  {
+    "name": "John E. White",
+    "beginTerm": "January 7, 1926",
+    "endTerm": "January 7, 1929",
+    "term": "January 7, 1926 &#x2013; January 7, 1929",
+    "political party": ""
+  },
+  {
+    "name": "W. A. Julian",
+    "beginTerm": "January 7, 1929",
+    "endTerm": "January 5, 1931",
+    "term": "January 7, 1929 &#x2013; January 5, 1931",
+    "political party": ""
+  },
+  {
+    "name": "George K. Smith",
+    "beginTerm": "January 5, 1931",
+    "endTerm": "May 1, 1933",
+    "term": "January 5, 1931 &#x2013; May 1, 1933",
+    "political party": ""
+  },
+  {
+    "name": "Henry Jaastad",
+    "beginTerm": "May 1, 1933",
+    "endTerm": "May 5, 1947",
+    "term": "May 1, 1933 &#x2013; May 5, 1947",
+    "political party": "Democratic"
+  },
+  {
+    "name": "Elbert Thompson Houston",
+    "beginTerm": "May 5, 1947",
+    "endTerm": "June 13, 1950",
+    "term": "May 5, 1947 &#x2013; June 13, 1950",
+    "political party": ""
+  },
+  {
+    "name": "J. O. Niemann",
+    "beginTerm": "June 13, 1950",
+    "endTerm": "May 7, 1951",
+    "term": "June 13, 1950 &#x2013; May 7, 1951",
+    "political party": "acting)"
+  },
+  {
+    "name": "Fred Artemas Emery Jr.",
+    "beginTerm": "May 7, 1951",
+    "endTerm": "May 2, 1955",
+    "term": "May 7, 1951 &#x2013; May 2, 1955",
+    "political party": ""
+  },
+  {
+    "name": "Don Hummel",
+    "beginTerm": "May 2, 1955",
+    "endTerm": "Dec. 4, 1961",
+    "term": "May 2, 1955 &#x2013; Dec. 4, 1961",
+    "political party": "Democratic"
+  },
+  {
+    "name": "Lewis Walter Davis",
+    "beginTerm": "Dec. 4, 1961",
+    "endTerm": "Dec 4, 1967",
+    "term": "Dec. 4, 1961 &#x2013; Dec 4, 1967",
+    "political party": "Republican"
+  },
+  {
+    "name": "Jim Corbett (politician",
+    "beginTerm": "Dec 4, 1967",
+    "endTerm": "Dec. 6, 1971",
+    "term": "Dec 4, 1967 &#x2013; Dec. 6, 1971",
+    "political party": "Democratic"
+  },
+  {
+    "name": "Lew Murphy",
+    "beginTerm": "Dec. 6, 1971",
+    "endTerm": "Dec. 7, 1987",
+    "term": "Dec. 6, 1971 &#x2013; Dec. 7, 1987",
+    "political party": "Republican"
+  },
+  {
+    "name": "Tom Volgy",
+    "beginTerm": "Dec. 7, 1987",
+    "endTerm": "Dec. 2, 1991",
+    "term": "Dec. 7, 1987 &#x2013; Dec. 2, 1991",
+    "political party": "Democratic"
+  },
+  {
+    "name": "George Miller (Arizona politician",
+    "beginTerm": "Dec. 2, 1991",
+    "endTerm": "Dec. 6, 1999",
+    "term": "Dec. 2, 1991 &#x2013; Dec. 6, 1999",
+    "political party": "Democratic"
+  },
+  {
+    "name": "Bob Walkup",
+    "beginTerm": "Dec. 6, 1999",
+    "endTerm": "December 11, 2011",
+    "term": "Dec. 6, 1999 &#x2013; December 11, 2011",
+    "political party": "Republican"
+  },
+  {
+    "name": "Jonathan Rothschild",
+    "beginTerm": "December 11, 2011",
+    "endTerm": "present",
+    "term": "December 11, 2011 &#x2013; present",
+    "political party": "Democratic incumbent)"
   }
 ]
