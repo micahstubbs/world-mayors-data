@@ -7,7 +7,7 @@ const parseTerm = require('../field/term.js')
 // ?
 
 function parseRow(props) {
-  const { $, el } = props
+  const { $, el, era } = props
 
   const rowString = $(el).text()
 
@@ -17,10 +17,16 @@ function parseRow(props) {
   const derivedRows = []
 
   let row
+  const wordDigitBorderIndex = rowString.search(/\w\s\d/)
   if (/,/.test(rowString)) {
     row = rowString.split(',')
   } else if (/\(/.test(rowString)) {
     row = rowString.split(/\(/)
+  } else if (wordDigitBorderIndex > -1) {
+    const separatorIndex = wordDigitBorderIndex + 1
+    const name = rowString.slice(0, separatorIndex)
+    const term = rowString.slice(separatorIndex + 1, rowString.length)
+    row = [name, term]
   } else {
     row = [rowString]
   }
@@ -46,7 +52,8 @@ function parseRow(props) {
     derivedRows.push({
       name,
       beginTerm,
-      endTerm
+      endTerm,
+      era
     })
   })
 

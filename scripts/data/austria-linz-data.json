@@ -2,131 +2,157 @@
   {
     "name": "Joseph Bischoff",
     "beginTerm": "1821",
-    "endTerm": "1848"
+    "endTerm": "1848",
+    "era": "Austrian Empire"
   },
   {
     "name": "Reinhold Körner",
     "beginTerm": "1848",
-    "endTerm": "1854"
+    "endTerm": "1854",
+    "era": "Austrian Empire"
   },
   {
     "name": "Johann Heinrich Jungwirth",
     "beginTerm": "1854",
-    "endTerm": "1854"
+    "endTerm": "1854",
+    "era": "Austrian Empire"
   },
   {
     "name": "Josef Dierzer von Traunthal",
     "beginTerm": "1854",
-    "endTerm": "1856"
+    "endTerm": "1856",
+    "era": "Austrian Empire"
   },
   {
     "name": "Vinzenz Fink",
     "beginTerm": "1856",
-    "endTerm": "1861"
+    "endTerm": "1861",
+    "era": "Austrian Empire"
   },
   {
     "name": "Reinhold Körner",
     "beginTerm": "1861",
-    "endTerm": "1867"
+    "endTerm": "1867",
+    "era": "Austrian Empire"
   },
   {
     "name": "Viktor Drouot",
     "beginTerm": "1867",
-    "endTerm": "1873"
+    "endTerm": "1873",
+    "era": "Austro-Hungarian Empire"
   },
   {
     "name": "Karl Wiser",
     "beginTerm": "1873",
-    "endTerm": "1885"
+    "endTerm": "1885",
+    "era": "Austro-Hungarian Empire"
   },
   {
     "name": "Johann Evangelist Wimhölzel",
     "beginTerm": "1885",
-    "endTerm": "1894"
+    "endTerm": "1894",
+    "era": "Austro-Hungarian Empire"
   },
   {
     "name": "Franz Poche",
     "beginTerm": "1894",
-    "endTerm": "1900"
+    "endTerm": "1900",
+    "era": "Austro-Hungarian Empire"
   },
   {
     "name": "Gustav Eder",
     "beginTerm": "1900",
-    "endTerm": "1907"
+    "endTerm": "1907",
+    "era": "Austro-Hungarian Empire"
   },
   {
     "name": "Franz Dinghofer",
     "beginTerm": "1907",
-    "endTerm": "1918"
+    "endTerm": "1918",
+    "era": "Austro-Hungarian Empire"
   },
   {
     "name": "Josef Dametz",
     "beginTerm": "1919",
-    "endTerm": "1927"
+    "endTerm": "1927",
+    "era": "First Republic"
   },
   {
     "name": "Robert Mehr",
     "beginTerm": "1927",
-    "endTerm": "1929"
+    "endTerm": "1929",
+    "era": "First Republic"
   },
   {
     "name": "Eduard Euller",
     "beginTerm": "1929",
-    "endTerm": "1930"
+    "endTerm": "1930",
+    "era": "First Republic"
   },
   {
     "name": "Josef Gruber",
     "beginTerm": "1930",
-    "endTerm": "1934"
+    "endTerm": "1934",
+    "era": "First Republic"
   },
   {
     "name": "Sepp Wolkerstorfer",
     "beginTerm": "1938",
-    "endTerm": "1940"
+    "endTerm": "1940",
+    "era": "Anschluss"
   },
   {
     "name": "Leopold Sturma",
     "beginTerm": "1940",
-    "endTerm": "1944"
+    "endTerm": "1944",
+    "era": "Anschluss"
   },
   {
     "name": "Franz Langoth",
     "beginTerm": "1944",
-    "endTerm": "1945"
+    "endTerm": "1945",
+    "era": "Anschluss"
   },
   {
     "name": "Ernst Koref",
     "beginTerm": "1945",
-    "endTerm": "1962"
+    "endTerm": "1962",
+    "era": "Second Republic"
   },
   {
     "name": "Edmund Aigner",
     "beginTerm": "1962",
-    "endTerm": "1968"
+    "endTerm": "1968",
+    "era": "Second Republic"
   },
   {
     "name": "Theodor Grill",
     "beginTerm": "1968",
-    "endTerm": "1969"
+    "endTerm": "1969",
+    "era": "Second Republic"
   },
   {
     "name": "Franz Hillinger",
     "beginTerm": "1969",
-    "endTerm": "1984"
+    "endTerm": "1984",
+    "era": "Second Republic"
   },
   {
     "name": "Hugo Schanovsky",
     "beginTerm": "1984",
-    "endTerm": "1988"
+    "endTerm": "1988",
+    "era": "Second Republic"
   },
   {
     "name": "Franz Dobusch",
     "beginTerm": "1988",
-    "endTerm": "2013"
+    "endTerm": "2013",
+    "era": "Second Republic"
   },
   {
     "name": "Klaus Luger",
     "beginTerm": "since 2013",
-    "endTerm": "since 2013"
+    "endTerm": "since 2013",
+    "era": "Second Republic"
   }
 ]

@@ -5,7 +5,7 @@ const parseTerm = require('../field/term.js')
 // 1866–1867: Robert W. Colart (Removed by Union Army)
 
 function parseRow(props) {
-  const { $, el } = props
+  const { $, el, era } = props
 
   const rowString = $(el).text()
   let row
@@ -38,7 +38,8 @@ function parseRow(props) {
     {
       name,
       beginTerm,
-      endTerm
+      endTerm,
+      era
     }
   ]
 }

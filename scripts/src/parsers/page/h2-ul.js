@@ -33,8 +33,10 @@ function parsePage(props) {
   // an h2 element
   let allRows = []
 
+  let ulIndex
   $('ul')
     .filter((i, el) => {
+      ulIndex = i
       return $(el)
         .prev()
         .is('h2')
@@ -52,7 +54,17 @@ function parsePage(props) {
       let rowFormat = 'number-term-name'
       if (page === 'linz') rowFormat = 'term-name'
       if (page === 'vienna') rowFormat = 'name-term'
-      const parsedRows = getRowParser(rowFormat)({ $, el })
+
+      const era = $(el)
+        .parent()
+        .prev()
+        .text()
+        .replace(/\[edit\]/, '')
+      const parsedRows = getRowParser(rowFormat)({
+        $,
+        el,
+        era
+      })
       allRows = allRows.concat(parsedRows)
     })
 
