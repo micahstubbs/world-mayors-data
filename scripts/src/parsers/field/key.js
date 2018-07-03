@@ -6,6 +6,7 @@ function parseKey(keyString) {
     case 'mayoral term':
     case 'Mayoral Term':
     case 'Mayoral term':
+    case 'In office':
       return 'term'
     case 'Term in office':
     case 'Took office':

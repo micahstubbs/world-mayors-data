@@ -65,20 +65,23 @@ function parsePage(props) {
       const rowObject = {}
       for (let j = 0; j < rowKeys.length; j += 1) {
         const currentKey = rowKeys[j]
-        // remove html tags from values
-        const currentValue = values[j][i].replace(
-          /<[\w\s=\\"\/\.\?&;\(\)-:%#"]*>/g,
-          ''
-        )
+        // remove html tags & quotes from values
+        const currentValue = values[j][i]
+          .replace(/<[\w\s=\\"\/\.\?&;\(\)-:%#"]*>/g, '')
+          .replace(/&quot;/g, '')
         rowObject[currentKey] = currentValue
 
-        if (currentKey === 'years') {
+        if (currentKey === 'years' || currentKey === 'term') {
           const { beginTerm, endTerm } = parseTerm(currentValue)
           rowObject.beginTerm = beginTerm
           rowObject.endTerm = endTerm
         }
       }
       rowObject.era = era
+
+      // if we have parsed out the beginTerm and endTerm
+      // delete the original long string term property
+      if (rowObject.beginTerm && rowObject.endTerm) delete rowObject.term
       rows.push(rowObject)
     }
 
