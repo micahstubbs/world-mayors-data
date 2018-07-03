@@ -92,6 +92,8 @@ function parsePage(props) {
 
       if (currentKey === '' && page === 'edmonton') {
         return 'name'
+      } else if (currentKey === '' && page === 'tucson') {
+        return 'noHeader'
       } else {
         return parseKey(currentKey)
       }
@@ -144,6 +146,8 @@ function parsePage(props) {
             .replace(/&quot;/g, '')
             .replace('(page does not exist)', '')
             .replace('(mayor)', '')
+            .replace('(politician', '')
+            .replace('(Arizona politician', '')
             .replace(/\)/g, '')
             .trim()
           if (name.length > 1) {
