@@ -1308,33 +1308,33 @@
     "era": "Austrian Empire and Austria-Hungary"
   },
   {
-    "name": "Karl Lueger 1897–1910",
-    "beginTerm": "CS",
-    "endTerm": "CS",
+    "name": "Karl Lueger",
+    "beginTerm": "1897",
+    "endTerm": "1910",
     "era": "Austrian Empire and Austria-Hungary"
   },
   {
-    "name": "Josef Neumayer 1910 – 12",
-    "beginTerm": "CS",
-    "endTerm": "CS",
+    "name": "Josef Neumayer",
+    "beginTerm": "1910",
+    "endTerm": "12",
     "era": "Austrian Empire and Austria-Hungary"
   },
   {
-    "name": "Richard Weiskirchner 1912 – 18",
-    "beginTerm": "CS",
-    "endTerm": "CS",
+    "name": "Richard Weiskirchner",
+    "beginTerm": "1912",
+    "endTerm": "18",
     "era": "Austrian Empire and Austria-Hungary"
   },
   {
-    "name": "Richard Weiskirchner 1918 – 19",
-    "beginTerm": "CS",
-    "endTerm": "CS",
+    "name": "Richard Weiskirchner",
+    "beginTerm": "1918",
+    "endTerm": "19",
     "era": "First Austrian Republic"
   },
   {
     "name": "Jakob Reumann 1919 – 22",
-    "beginTerm": "SDAPÖ",
-    "endTerm": "SDAPÖ",
+    "beginTerm": "",
+    "endTerm": "",
     "era": "First Austrian Republic"
   }
 ]
