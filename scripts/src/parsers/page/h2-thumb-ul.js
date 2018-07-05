@@ -4,12 +4,12 @@ const getRowParser = require('../get-row-parser.js')
 const logger = require('../../utils/logger.js')
 
 function parsePage(props) {
-  const { $, category, page, rowFormat = 'term-name-note' } = props
+  const { $, category, page } = props
   // get an array of all sectionHeaders
   // that are followed by a table
-  const sectionHeadersText = $('p')
+  const sectionHeadersText = $('h2')
     .filter((i, el) => {
-      return $(el).next().is('ul')
+      return $(el).next().is('div.thumb')
     })
     .filter((i, el) => {
       return $(el).text().replace(/\[edit\]/, '') !== 'See also'
@@ -27,15 +27,15 @@ function parsePage(props) {
 
   $('ul')
     .filter((i, el) => {
-      return $(el).prev().is('p')
+      return $(el).prev().is('div.thumb')
     })
     .filter((i, el) => {
       return $(el).prev().text().replace(/\[edit\]/, '') !== 'See also'
     })
     .find('li')
     .each((i, el) => {
+      const rowFormat = 'term-name-note'
       const parsedRows = getRowParser(rowFormat)({ $, el })
-      console.log('parsedRows from p-ul', parsedRows)
       allRows = allRows.concat(parsedRows)
     })
 

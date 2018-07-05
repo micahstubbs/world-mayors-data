@@ -7,9 +7,9 @@ function parsePage(props) {
   const { $, category, page, rowFormat = 'term-name-note' } = props
   // get an array of all sectionHeaders
   // that are followed by a table
-  const sectionHeadersText = $('p')
+  const sectionHeadersText = $('h2')
     .filter((i, el) => {
-      return $(el).next().is('ul')
+      return $(el).next().is('p')
     })
     .filter((i, el) => {
       return $(el).text().replace(/\[edit\]/, '') !== 'See also'
@@ -35,7 +35,7 @@ function parsePage(props) {
     .find('li')
     .each((i, el) => {
       const parsedRows = getRowParser(rowFormat)({ $, el })
-      console.log('parsedRows from p-ul', parsedRows)
+      // console.log('parsedRows from h2-p-ul', parsedRows)
       allRows = allRows.concat(parsedRows)
     })
 
@@ -49,6 +49,7 @@ function parsePage(props) {
   console.log('eras', sectionHeadersText)
   console.log('')
 
+  // console.log('allRows from h2-p-ul', allRows)
   return allRows
 }
 

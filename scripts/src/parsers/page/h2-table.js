@@ -11,14 +11,10 @@ function parsePage(props) {
   // that are followed by a table
   const sectionHeadersText = $('h2')
     .filter((i, el) => {
-      return $(el)
-        .next()
-        .is('table')
+      return $(el).next().is('table')
     })
     .map((i, el) => {
-      return $(el)
-        .text()
-        .replace(/\[edit\]/, '')
+      return $(el).text().replace(/\[edit\]/, '')
     })
     .get()
 
@@ -27,9 +23,7 @@ function parsePage(props) {
   // an h2 element
   const tablesData = $('table')
     .filter((i, el) => {
-      return $(el)
-        .prev()
-        .is('h2')
+      return $(el).prev().is('h2')
     })
     .map((i, el) => {
       cheerioTableparser($)
@@ -39,12 +33,19 @@ function parsePage(props) {
 
   // get table data by row
   const tableCount = sectionHeadersText.length
-  const columnsCount = tablesData.length / tableCount
+  const columnsCount = Math.ceil(tablesData.length / tableCount)
   const tablesDataByTable = []
+
   tablesData.forEach((col, i) => {
+    // console.log('columnsCount', columnsCount)
+    // console.log('columnsCount % (i + 1)', columnsCount % (i + 1))
     if (columnsCount % (i + 1) === 0) tablesDataByTable.push([])
     const tableIndex = Math.floor(i / columnsCount)
-    tablesDataByTable[tableIndex].push(col)
+    // console.log({ tableIndex })
+    // console.log({ tablesDataByTable })
+    if (tableIndex < tablesDataByTable.length) {
+      tablesDataByTable[tableIndex].push(col)
+    }
   })
 
   const tablesDataByRow = tablesDataByTable.map((table, i) => {
@@ -58,6 +59,7 @@ function parsePage(props) {
     const rows = []
 
     const rowKeys = keys.map(k => parseKey(k, page))
+    console.log('rowKeys', rowKeys)
 
     // TODO check that all values are equal length
     // in other words handle missing values case
@@ -65,10 +67,18 @@ function parsePage(props) {
       const rowObject = {}
       for (let j = 0; j < rowKeys.length; j += 1) {
         const currentKey = rowKeys[j]
-        // remove html tags & quotes from values
-        const currentValue = values[j][i]
-          .replace(/<[\w\s=\\"\/\.\?&;\(\)-:%#"]*>/g, '')
-          .replace(/&quot;/g, '')
+
+        // console.log('values[j]', values[j])
+        // console.log('values[j].length', values[j].length)
+        // console.log('i', i)
+        // protect against index values that are too high
+        let currentValue = ''
+        if (i < values[j].length) {
+          // remove html tags & quotes from values
+          currentValue = values[j][i]
+            .replace(/<[\w\s=\\"\/\.\?&;\(\)-:%#"]*>/g, '')
+            .replace(/&quot;/g, '')
+        }
         rowObject[currentKey] = currentValue
 
         if (currentKey === 'years' || currentKey === 'term') {

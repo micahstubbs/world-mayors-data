@@ -25,6 +25,7 @@ function parseKey(keyString, page) {
     case 'Mayoral Term':
     case 'Mayoral term':
     case 'In office':
+    case 'Year of mayorship':
       return 'term'
     case 'Term in office':
     case 'Took office':

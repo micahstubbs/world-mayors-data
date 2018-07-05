@@ -25,7 +25,7 @@ function parseRow(props) {
 
   const { beginTerm, endTerm } = parseTerm(row[0])
 
-  console.log('row', row)
+  // console.log('row', row)
   let rowRight = ['', '']
   if (row.length > 1) {
     rowRight = row[1].split('(')
