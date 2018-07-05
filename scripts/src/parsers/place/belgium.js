@@ -1,6 +1,7 @@
-const parseH2TableData = require('../page/h2-table.js')
 const parseH2PUlData = require('../page/h2-p-ul.js')
 const parseH2ThumbUl = require('../page/h2-thumb-ul.js')
+const parseH2TableData = require('../page/h2-table.js')
+const parseMwHeadlineTableData = require('../page/mw-headline-table.js')
 
 function parsePage(props) {
   const { link } = props
@@ -8,8 +9,14 @@ function parsePage(props) {
     case '/wiki/List_of_mayors_of_Antwerp':
       const h2PUlData = parseH2PUlData(props)
       const h2ThumbUlData = parseH2ThumbUl(props)
-      const h2TableData = parseH2TableData(props)
-      const combinedData = h2PUlData.concat(h2ThumbUlData).concat(h2TableData)
+      props.headerInnerHTML = '1700s'
+      const mwHeadlineTableData1700s = parseMwHeadlineTableData(props)
+      props.headerInnerHTML = '1800s'
+      const mwHeadlineTableData1800s = parseMwHeadlineTableData(props)
+      const combinedData = h2PUlData
+        .concat(h2ThumbUlData)
+        .concat(mwHeadlineTableData1700s)
+        .concat(mwHeadlineTableData1800s)
       return combinedData
     default:
       // return parseH2TableData(props)

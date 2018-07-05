@@ -6,31 +6,25 @@ const parseTerm = require('../field/term.js')
 const parseKey = require('../field/key.js')
 
 function parsePage(props) {
-  const {
-    $,
-    category,
-    page,
-    headerSelector,
-    headerInnerHTML,
-    dataPrevSelector
-  } = props
-  const headerSelectorString = headerSelector || 'h2'
+  const { $, category, page, headerInnerHTML, dataPrevSelector } = props
   const dataPrevSelectorString = dataPrevSelector || 'h2'
   console.log({ headerInnerHTML })
-  console.log({ headerSelectorString })
   // get an array of all sectionHeaders
   // that are followed by a table
-  const sectionHeadersText = $(headerSelectorString)
+  const sectionHeadersText = $('.mw-headline')
     .filter((i, el) => {
-      return $(el).next().is('table')
+      return $(el).parent().next().is('table')
     })
     .filter((i, el) => {
       if (headerInnerHTML) {
-        console.log('$(el).text()', $(el).text())
-        console.log({ headerInnerHTML })
-        return $(el).text() === headerInnerHTML
+        // console.log('$(el).text()', $(el).text())
+        // console.log({ headerInnerHTML })
+        return $(el).text().replace(/\[edit\]/, '') === headerInnerHTML
       }
       return true
+    })
+    .filter((i, el) => {
+      return !$(el).parent().is('h3')
     })
     .map((i, el) => {
       return $(el).text().replace(/\[edit\]/, '')
@@ -46,10 +40,17 @@ function parsePage(props) {
     })
     .filter((i, el) => {
       if (headerInnerHTML) {
-        return $(el).text() === headerInnerHTML
+        console.log(
+          '$(el).prev().text()',
+          $(el).prev().text().replace(/\[edit\]/, '')
+        )
+        console.log({ headerInnerHTML })
+
+        return $(el).prev().text().replace(/\[edit\]/, '') === headerInnerHTML
       }
       return true
     })
+    .filter((i, el) => $(el).prev().prev().not('h3'))
     .map((i, el) => {
       cheerioTableparser($)
       return $(el).parsetable()
