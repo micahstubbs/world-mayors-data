@@ -6,9 +6,9 @@ const parseTerm = require('../field/term.js')
 const parseKey = require('../field/key.js')
 
 function parsePage(props) {
-  const { $, category, page, headerInnerHTML, dataPrevSelector } = props
+  const { $, category, page, headerText, dataPrevSelector } = props
   const dataPrevSelectorString = dataPrevSelector || 'h2'
-  console.log({ headerInnerHTML })
+  console.log({ headerText })
   // get an array of all sectionHeaders
   // that are followed by a table
   const sectionHeadersText = $('.mw-headline')
@@ -16,10 +16,10 @@ function parsePage(props) {
       return $(el).parent().next().is('table')
     })
     .filter((i, el) => {
-      if (headerInnerHTML) {
+      if (headerText) {
         // console.log('$(el).text()', $(el).text())
-        // console.log({ headerInnerHTML })
-        return $(el).text().replace(/\[edit\]/, '') === headerInnerHTML
+        // console.log({ headerText })
+        return $(el).text().replace(/\[edit\]/, '') === headerText
       }
       return true
     })
@@ -39,14 +39,14 @@ function parsePage(props) {
       return $(el).prev().is(dataPrevSelectorString)
     })
     .filter((i, el) => {
-      if (headerInnerHTML) {
+      if (headerText) {
         console.log(
           '$(el).prev().text()',
           $(el).prev().text().replace(/\[edit\]/, '')
         )
-        console.log({ headerInnerHTML })
+        console.log({ headerText })
 
-        return $(el).prev().text().replace(/\[edit\]/, '') === headerInnerHTML
+        return $(el).prev().text().replace(/\[edit\]/, '') === headerText
       }
       return true
     })

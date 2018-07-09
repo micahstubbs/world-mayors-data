@@ -661,5 +661,35 @@
     "office left": "May 1, 1814",
     "notes": "Youngest mayor Antwerp ever had (24)",
     "era": "1800s"
+  },
+  {
+    "name": "Filip Vermoelen",
+    "date of birth": "February 27, 1759",
+    "office entered": "May 2, 1814",
+    "office left": "July 24, 1817",
+    "date of death": "February 15, 1825",
+    "party": "",
+    "endTerm": "None",
+    "era": "United Kingdom of the Netherlands"
+  },
+  {
+    "name": "Florent Van Ertborn",
+    "date of birth": "April 4, 1784",
+    "office entered": "July 25, 1817",
+    "office left": "November, 1828",
+    "date of death": "August 20, 1840",
+    "party": "",
+    "endTerm": "None (Orangist)",
+    "era": "United Kingdom of the Netherlands"
+  },
+  {
+    "name": "Willem Andreas de Caters",
+    "date of birth": "November 30, 1773",
+    "office entered": "November, 1828",
+    "office left": "October 26, 1830",
+    "date of death": "February 9, 1859",
+    "party": "",
+    "endTerm": "None",
+    "era": "United Kingdom of the Netherlands"
   }
 ]

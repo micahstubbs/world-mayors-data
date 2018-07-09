@@ -9,14 +9,17 @@ function parsePage(props) {
     case '/wiki/List_of_mayors_of_Antwerp':
       const h2PUlData = parseH2PUlData(props)
       const h2ThumbUlData = parseH2ThumbUl(props)
-      props.headerInnerHTML = '1700s'
+      props.headerText = '1700s'
       const mwHeadlineTableData1700s = parseMwHeadlineTableData(props)
-      props.headerInnerHTML = '1800s'
+      props.headerText = '1800s'
       const mwHeadlineTableData1800s = parseMwHeadlineTableData(props)
+      props.headerText = 'United Kingdom of the Netherlands'
+      const mwHeadlineTableDataUKN = parseMwHeadlineTableData(props)
       const combinedData = h2PUlData
         .concat(h2ThumbUlData)
         .concat(mwHeadlineTableData1700s)
         .concat(mwHeadlineTableData1800s)
+        .concat(mwHeadlineTableDataUKN)
       return combinedData
     default:
       // return parseH2TableData(props)
