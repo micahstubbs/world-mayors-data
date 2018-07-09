@@ -1,6 +1,6 @@
 function parseKey(keyString, page) {
   let currentPage = page || ''
-  let cleanedKeyString = keyString
+  let cleanedKeyString = keyString.toLowerCase()
   // if key is a link tag, use the title of the link tag as the string
   // that is, if the table column header is a hyperlink
   if (/<a\shref/.test(keyString)) {
@@ -22,26 +22,25 @@ function parseKey(keyString, page) {
     case '#':
       return 'number'
     case 'mayoral term':
-    case 'Mayoral Term':
-    case 'Mayoral term':
-    case 'In office':
-    case 'Year of mayorship':
+    case 'in office':
+    case 'year of mayorship':
       return 'term'
-    case 'Term in office':
-    case 'Took office':
-    case 'Term Began':
-    case 'Term began':
+    case 'term in office':
+    case 'took office':
+    case 'term began':
+    case 'office entered':
       return 'beginTerm'
-    case 'Left office':
-    case 'Term Ended':
-    case '':
+    case 'left office':
+    case 'term ended':
+    case 'office left':
       return 'endTerm'
-    case 'Mayor':
     case 'mayor':
-    case 'Lord Mayor':
+    case 'lord mayor':
     case 'representative':
-    case 'Alcalde':
+    case 'alcalde':
       return 'name'
+    case '':
+      return 'emptyString'
     default:
       if (typeof cleanedKeyString === 'string') {
         // parse out column name

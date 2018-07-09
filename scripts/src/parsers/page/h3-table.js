@@ -150,6 +150,28 @@ function parsePage(props) {
       accumulator.concat(currentValue)
     )
 
+  // do some city-specific postprocessing
+  allRows = allRows.map(row => {
+    if (page === 'antwerp') {
+      // handle party field
+      row.party = row.emptyString
+      delete row.emptyString
+
+      // parse out notes from name
+      nameParts = row.name.split(/\n\n/)
+      row.name = nameParts[0]
+      if (nameParts.length > 1) {
+        if (row.note) {
+          row.note = `${row.note} ${nameParts[1]}}`
+        } else {
+          row.note = nameParts[1]
+        }
+      }
+    }
+
+    return row
+  })
+
   return allRows
 }
 
