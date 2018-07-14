@@ -65,6 +65,8 @@ function parseKey({ keyString, page, prevKey, era }) {
     case 'representative':
     case 'alcalde':
       return 'name'
+    case 'town':
+      return 'city'
     case '':
       return 'emptyString'
     default:
