@@ -5,6 +5,7 @@ function parseKey(keyString, page) {
     .toLowerCase()
     .replace(/(<([^>]+)>)/gi, '')
     .replace(/\n/, ' ')
+    .replace('&#x2013;', '-')
 
   // if key is a link tag, use the title of the link tag as the string
   // that is, if the table column header is a hyperlink
