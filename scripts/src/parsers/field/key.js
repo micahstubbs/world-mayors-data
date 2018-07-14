@@ -44,6 +44,17 @@ function parseKey({ keyString, page, prevKey, era }) {
     }
   }
 
+  const termOfOfficeEmptyStringEras = [
+    'Governors of the State of Guanabara (1960–1975)',
+    'Mayors of the Municipality of Rio de Janeiro (1975–present)'
+  ]
+  if (termOfOfficeEmptyStringEras.indexOf(era) > -1) {
+    if (cleanedKeyString === 'term of office') return 'beginTerm'
+    if (prevKey === 'beginTerm' && cleanedKeyString === '') {
+      return 'endTerm'
+    }
+  }
+
   // convert many variants to standard form
   switch (cleanedKeyString) {
     case 'No.':
@@ -72,6 +83,7 @@ function parseKey({ keyString, page, prevKey, era }) {
     case 'end of mandate':
       return 'endTerm'
     case 'term (election)':
+    case 'term (elected)':
       return 'termNumber'
     case 'mayor':
     case 'lord mayor':
@@ -80,6 +92,8 @@ function parseKey({ keyString, page, prevKey, era }) {
       return 'name'
     case 'town':
       return 'city'
+    case 'political party':
+      return 'politicalParty'
     case '':
       return 'emptyString'
     default:
