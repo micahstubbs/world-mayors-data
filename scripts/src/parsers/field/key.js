@@ -1,4 +1,4 @@
-function parseKey(keyString, page) {
+function parseKey({ keyString, page, prevKey }) {
   let currentPage = page || ''
 
   let cleanedKeyString = keyString
@@ -7,7 +7,8 @@ function parseKey(keyString, page) {
     .replace(/\n/, ' ')
     .replace('&#x2013;', '-')
 
-  // if key is a link tag, use the title of the link tag as the string
+  // if key is an <a></a> link tag,
+  // use the title of the link tag as the string
   // that is, if the table column header is a hyperlink
   if (/<a\shref/.test(keyString)) {
     const match = keyString.match(/title=\"[\w\s=\\"\/\.\?&;\(\)-:%#]*\"/)

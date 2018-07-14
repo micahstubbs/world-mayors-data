@@ -22,7 +22,9 @@ function parsePage(props) {
   // that are followed by a table
   const sectionHeadersText = $(headerSelectorString)
     .filter((i, el) => {
-      return $(el).next().is('table')
+      return $(el)
+        .next()
+        .is('table')
     })
     .filter((i, el) => {
       if (headerInnerHTML) {
@@ -33,7 +35,9 @@ function parsePage(props) {
       return true
     })
     .map((i, el) => {
-      return $(el).text().replace(/\[edit\]/, '')
+      return $(el)
+        .text()
+        .replace(/\[edit\]/, '')
     })
     .get()
 
@@ -42,7 +46,9 @@ function parsePage(props) {
   // an h3 element
   const tablesData = $('table')
     .filter((i, el) => {
-      return $(el).prev().is(dataPrevSelectorString)
+      return $(el)
+        .prev()
+        .is(dataPrevSelectorString)
     })
     .filter((i, el) => {
       if (headerInnerHTML) {
@@ -88,7 +94,7 @@ function parsePage(props) {
     const rows = []
 
     console.log('era', era)
-    const rowKeys = keys.map(k => parseKey(k, page))
+    const rowKeys = keys.map(k => parseKey({ keyString: k, page }))
     console.log('rowKeys', rowKeys)
 
     // TODO check that all values are equal length

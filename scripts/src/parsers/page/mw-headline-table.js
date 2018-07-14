@@ -13,21 +13,32 @@ function parsePage(props) {
   // that are followed by a table
   const sectionHeadersText = $('.mw-headline')
     .filter((i, el) => {
-      return $(el).parent().next().is('table')
+      return $(el)
+        .parent()
+        .next()
+        .is('table')
     })
     .filter((i, el) => {
       if (headerText) {
         // console.log('$(el).text()', $(el).text())
         // console.log({ headerText })
-        return $(el).text().replace(/\[edit\]/, '') === headerText
+        return (
+          $(el)
+            .text()
+            .replace(/\[edit\]/, '') === headerText
+        )
       }
       return true
     })
     .filter((i, el) => {
-      return !$(el).parent().is('h3')
+      return !$(el)
+        .parent()
+        .is('h3')
     })
     .map((i, el) => {
-      return $(el).text().replace(/\[edit\]/, '')
+      return $(el)
+        .text()
+        .replace(/\[edit\]/, '')
     })
     .get()
 
@@ -36,21 +47,36 @@ function parsePage(props) {
   // an h2 element
   const tablesData = $('table')
     .filter((i, el) => {
-      return $(el).prev().is(dataPrevSelectorString)
+      return $(el)
+        .prev()
+        .is(dataPrevSelectorString)
     })
     .filter((i, el) => {
       if (headerText) {
         console.log(
           '$(el).prev().text()',
-          $(el).prev().text().replace(/\[edit\]/, '')
+          $(el)
+            .prev()
+            .text()
+            .replace(/\[edit\]/, '')
         )
         console.log({ headerText })
 
-        return $(el).prev().text().replace(/\[edit\]/, '') === headerText
+        return (
+          $(el)
+            .prev()
+            .text()
+            .replace(/\[edit\]/, '') === headerText
+        )
       }
       return true
     })
-    .filter((i, el) => $(el).prev().prev().not('h3'))
+    .filter((i, el) =>
+      $(el)
+        .prev()
+        .prev()
+        .not('h3')
+    )
     .map((i, el) => {
       cheerioTableparser($)
       return $(el).parsetable()
@@ -89,7 +115,7 @@ function parsePage(props) {
     const rows = []
 
     console.log('era', era)
-    const rowKeys = keys.map(k => parseKey(k, page))
+    const rowKeys = keys.map(k => parseKey({ keyString: k, page }))
     console.log('rowKeys', rowKeys)
 
     // TODO check that all values are equal length

@@ -57,7 +57,7 @@ function parsePage(props) {
       if (k === '' && page === 'edmonton') {
         return 'name'
       } else {
-        return parseKey(k)
+        return parseKey({ keyString: k, page })
       }
     })
 

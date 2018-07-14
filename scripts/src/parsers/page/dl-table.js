@@ -11,10 +11,14 @@ function parsePage(props) {
   // that are followed by a table
   const sectionHeadersText = $('h2')
     .filter((i, el) => {
-      return $(el).next().is('dl')
+      return $(el)
+        .next()
+        .is('dl')
     })
     .map((i, el) => {
-      return $(el).text().replace(/\[edit\]/, '')
+      return $(el)
+        .text()
+        .replace(/\[edit\]/, '')
     })
     .get()
 
@@ -23,7 +27,9 @@ function parsePage(props) {
   // an h2 element
   const tablesData = $('table')
     .filter((i, el) => {
-      return $(el).prev().is('dl')
+      return $(el)
+        .prev()
+        .is('dl')
     })
     .map((i, el) => {
       cheerioTableparser($)
@@ -51,7 +57,7 @@ function parsePage(props) {
     const values = tableData.map(col => col.splice(1, col.length))
     const rows = []
 
-    const rowKeys = keys.map(k => parseKey(k, page))
+    const rowKeys = keys.map(k => parseKey({ keyString: k, page }))
 
     // TODO check that all values are equal length
     // in other words handle missing values case
