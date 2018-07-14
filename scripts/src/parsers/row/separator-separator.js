@@ -6,10 +6,10 @@ function spaceNewline({ row, keySeparator, valueSeparator }) {
     const keyHasSeparator = RegExp(keySeparator).test(key)
     const valueHasSeparator = RegExp(valueSeparator).test(value)
 
-    console.log({ key })
-    console.log({ value })
-    console.log({ keyHasSeparator })
-    console.log({ valueHasSeparator })
+    // console.log({ key })
+    // console.log({ value })
+    // console.log({ keyHasSeparator })
+    // console.log({ valueHasSeparator })
 
     if (keyHasSeparator && valueHasSeparator) {
       const newKeys = key.split(RegExp(keySeparator)).map(key => {

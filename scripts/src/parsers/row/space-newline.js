@@ -6,10 +6,10 @@ function spaceNewline({ row }) {
     const keyHasSpace = /\s/.test(key)
     const valueHasNewline = /\n/.test(value)
 
-    console.log({ key })
-    console.log({ value })
-    console.log({ keyHasSpace })
-    console.log({ valueHasNewline })
+    // console.log({ key })
+    // console.log({ value })
+    // console.log({ keyHasSpace })
+    // console.log({ valueHasNewline })
 
     if (keyHasSpace && valueHasNewline) {
       const newKeys = key.split(/\s/).map(key => {
