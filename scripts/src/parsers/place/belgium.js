@@ -37,6 +37,8 @@ function parsePage(props) {
       return combinedData
     case '/wiki/List_of_mayors_of_Ghent':
       return parseH2Table(props)
+    case '/wiki/List_of_mayors_of_Leuven':
+      return parsePTableNoH2(props)
     default:
       // return parseH2Table(props)
       return []
