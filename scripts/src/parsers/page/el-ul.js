@@ -9,7 +9,7 @@ function parsePage(props) {
   // get ul data
   // for all unordered list elements that are
   // immediately preceded by
-  // an h2 element
+  // an the element specified in props.el
   const sectionHeadersTextSet = new Set()
   let allRows = []
 
@@ -19,7 +19,7 @@ function parsePage(props) {
       ulIndex = i
       return $(el)
         .prev()
-        .is('h2')
+        .is(props.el)
     })
     .filter((i, el) => {
       return (

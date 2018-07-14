@@ -2,7 +2,7 @@ const parseH2TableData = require('../page/h2-table.js')
 const parseH2UlAlphabetList = require('../page/h2-ul-alphabet-list.js')
 const parsePTableNoH2ThumbnailsData = require('../page/p-table-no-h2-thumbnails.js')
 const parsePTableNoH2Data = require('../page/p-table-no-h2.js')
-const parseH2UlData = require('../page/h2-ul.js')
+const elUl = require('../page/el-ul.js')
 const parsePUlData = require('../page/p-ul.js')
 
 function parsePage(props) {
@@ -18,7 +18,8 @@ function parsePage(props) {
     case '/wiki/List_of_mayors_of_Strathcona,_Alberta':
       return parsePTableNoH2Data(props)
     case '/wiki/List_of_mayors_of_Red_Deer,_Alberta':
-      return parseH2UlData(props)
+      props.el = 'h2'
+      return elUl(props)
     case '/wiki/List_of_mayors_of_St._Albert,_Alberta':
       return parsePUlData({ ...props, rowFormat: 'name-term' })
     default:
