@@ -4,9 +4,12 @@ const parseH2TableData = require('../page/h2-table.js')
 const parseH3TableData = require('../page/h3-table.js')
 const parseMwHeadlineTableData = require('../page/mw-headline-table.js')
 const parsePTableNoH2 = require('../page/p-table-no-h2.js')
+const parseH2Ul = require('../page/h2-ul.js')
 
 function parsePage(props) {
   const { link } = props
+  let combinedData
+
   switch (link) {
     case '/wiki/List_of_mayors_of_Antwerp':
       const h2PUlData = parseH2PUlData(props)
@@ -18,7 +21,7 @@ function parsePage(props) {
       props.headerText = 'United Kingdom of the Netherlands'
       const mwHeadlineTableDataUKN = parseMwHeadlineTableData(props)
       const h3TableData = parseH3TableData(props)
-      const combinedData = h2PUlData
+      combinedData = h2PUlData
         .concat(h2ThumbUlData)
         .concat(mwHeadlineTableData1700s)
         .concat(mwHeadlineTableData1800s)
@@ -27,6 +30,10 @@ function parsePage(props) {
       return combinedData
     case '/wiki/List_of_mayors_of_Bruges':
       return parsePTableNoH2(props)
+    case '/wiki/List_of_mayors_of_the_City_of_Brussels':
+      const h2UlData = parseH2Ul(props)
+      combinedData = h2UlData.concat([])
+      return combinedData
     default:
       // return parseH2TableData(props)
       return []

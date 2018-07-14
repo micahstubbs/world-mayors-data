@@ -20,6 +20,13 @@ function parsePage(props) {
           .replace(/\[edit\]/, '') !== 'See also'
       )
     })
+    .filter((i, el) => {
+      return (
+        $(el)
+          .text()
+          .replace(/\[edit\]/, '') !== 'External links'
+      )
+    })
     .map((i, el) => {
       return $(el)
         .text()
@@ -47,6 +54,14 @@ function parsePage(props) {
           .prev()
           .text()
           .replace(/\[edit\]/, '') !== 'See also'
+      )
+    })
+    .filter((i, el) => {
+      return (
+        $(el)
+          .prev()
+          .text()
+          .replace(/\[edit\]/, '') !== 'External links'
       )
     })
     .find('li')
