@@ -108,6 +108,7 @@ function parsePage(props) {
             .replace(/&quot;/g, '')
             .replace('(page does not exist)', '')
             .replace('(mayor)', '')
+            .replace(/\(Curitiba/, '')
             .replace(/\)/g, '')
             .trim()
           if (name.length > 1) {
