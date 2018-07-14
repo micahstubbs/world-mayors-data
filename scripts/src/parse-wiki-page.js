@@ -1,4 +1,5 @@
 const cheerio = require('cheerio')
+const filenamify = require('filenamify')
 
 const getParser = require('./parsers/get-parser.js')
 const writeJSON = require('./utils/write-json.js')
@@ -9,10 +10,13 @@ function parseWikiPage({ body, link, category }) {
   // parse out city name
   // drop any text that appears after a comma
   // lowercase to make nice filenames
-  let page = link
-    .split('of_')
-    [link.split('of_').length - 1].replace(/\,.*/, '')
-    .toLowerCase()
+  let page = filenamify(
+    link
+      .split('of_')
+      [link.split('of_').length - 1].replace(/\,.*/, '')
+      .replace('wiki/', '')
+      .toLowerCase()
+  )
 
   const result = getParser(category)({ $, category, page, link })
 
