@@ -24,12 +24,10 @@ function postProcessor(allRows) {
 
   // a few more special cases
   // that require filtering the whole array
-  if (
-    outputData &&
-    outputData.length > 0 &&
-    outputData[0].era === 'Mayors of Brazilian state capitals'
-  ) {
-    outputData = outputData.filter(row => !RegExp('Capitals').test(row.city))
+  if (outputData && outputData.length > 0) {
+    if (outputData[0].era === 'Mayors of Brazilian state capitals') {
+      outputData = outputData.filter(row => !RegExp('Capitals').test(row.city))
+    }
   }
 
   return outputData

@@ -19,7 +19,8 @@ function parsePage(props) {
     case '/wiki/List_of_mayors_of_Rio_de_Janeiro':
       props.el = 'h3'
       const h3UlData = elUl(props)
-      combinedData = combinedData.concat(h3UlData)
+      const h2TableData = h2Table(props)
+      combinedData = combinedData.concat(h3UlData).concat(h2TableData)
       return combinedData
     default:
       return h2Table(props)
@@ -27,3 +28,4 @@ function parsePage(props) {
 }
 
 module.exports = parsePage
+

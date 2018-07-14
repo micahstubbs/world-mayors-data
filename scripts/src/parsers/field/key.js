@@ -18,7 +18,7 @@ function parseKey({ keyString, page, prevKey, era }) {
   }
 
   // page specific dev logging
-  if (page === 'brussels') {
+  if (page === 'brussels' || page === 'rio_de_janeiro') {
     console.log({ keyString })
     console.log({ cleanedKeyString })
     console.log({ prevKey })
@@ -33,7 +33,12 @@ function parseKey({ keyString, page, prevKey, era }) {
     return 'noHeader'
   }
 
-  if (era === 'Kingdom of Belgium (1830–present)') {
+  const numberEmptyStringEras = [
+    'Kingdom of Belgium (1830–present)',
+    'Governors of the State of Guanabara (1960–1975)',
+    'Mayors of the Municipality of Rio de Janeiro (1975–present)'
+  ]
+  if (numberEmptyStringEras.indexOf(era) > -1) {
     if (prevKey === 'number' && cleanedKeyString === '') {
       return 'number'
     }
