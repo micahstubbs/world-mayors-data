@@ -1,1 +1,106 @@
-[]
+[
+  {
+    "number": "1",
+    "name": "Jo&#xE3;o Silveira Guimar&#xE3;es",
+    "party": "National Democratic Union (Brazil)",
+    "beginTerm": "30 November 1959",
+    "endTerm": "29 November 1963",
+    "observation": "Elected Mayor"
+  },
+  {
+    "number": "2",
+    "name": "Milton L&#xFA;cio da Silva",
+    "party": "National Renewal Alliance",
+    "beginTerm": "30 November 1963",
+    "endTerm": "30 November 1969",
+    "observation": "Elected Mayor"
+  },
+  {
+    "number": "3",
+    "name": "Jo&#xE3;o Silveira Guimar&#xE3;es",
+    "party": "National Renewal Alliance",
+    "beginTerm": "31 November 1969",
+    "endTerm": "30 January 1973",
+    "observation": "Elected Mayor"
+  },
+  {
+    "number": "4",
+    "name": "Milton L&#xFA;cio da Silva",
+    "party": "National Renewal Alliance",
+    "beginTerm": "31 January 1973",
+    "endTerm": "30 January 1977",
+    "observation": "Elected Mayor"
+  },
+  {
+    "number": "5",
+    "name": "Pedro Eul&#xE2;mpio da Silva",
+    "party": "Brazilian Democratic Movement",
+    "beginTerm": "31 January 1977",
+    "endTerm": "30 January 1983",
+    "observation": "Elected Mayor"
+  },
+  {
+    "number": "6",
+    "name": "Milton L&#xFA;cio da Silva Filho",
+    "party": "Democratic Social Party",
+    "beginTerm": "31 January 1983",
+    "endTerm": "31 December 1988",
+    "observation": "Elected Mayor"
+  },
+  {
+    "number": "7",
+    "name": "Ademar Pereira Diniz",
+    "party": "Liberal Front Party (Brazil)",
+    "beginTerm": "1 January 1989",
+    "endTerm": "31 December 1992",
+    "observation": "Elected Mayor"
+  },
+  {
+    "number": "8",
+    "name": "Milton L&#xFA;cio da Silva Filho",
+    "party": "Liberal Front Party (Brazil)",
+    "beginTerm": "1 January 1993",
+    "endTerm": "31 December 1996",
+    "observation": "Elected Mayor"
+  },
+  {
+    "number": "9",
+    "name": "M&#xE1;rcio Roberto da Silva",
+    "party": "Brazilian Democratic Movement Party",
+    "beginTerm": "1 January 1997",
+    "endTerm": "31 December 2000",
+    "observation": "Elected Mayor"
+  },
+  {
+    "number": "",
+    "name": "",
+    "party": "",
+    "beginTerm": "1 January 2001",
+    "endTerm": "31 December 2004",
+    "observation": "Re-elected Mayor"
+  },
+  {
+    "number": "10",
+    "name": "Jaci Severino de Sousa, Galego Sousa",
+    "party": "Brazilian Democratic Movement Party",
+    "beginTerm": "1 January 2005",
+    "endTerm": "31 December 2008",
+    "observation": "Eleted Mayor"
+  },
+  {
+    "number": "",
+    "name": "",
+    "party": "",
+    "beginTerm": "1 January 2009",
+    "endTerm": "31 December 2012",
+    "observation": "Re-elected Mayor"
+  },
+  {
+    "number": "11",
+    "name": "",
+    "party": "Brazilian Socialist Party",
+    "beginTerm": "1 January 2013",
+    "endTerm": "Present",
+    "observation": "Elected Mayor"
+  }
+]

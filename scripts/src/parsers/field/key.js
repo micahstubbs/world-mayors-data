@@ -42,6 +42,7 @@ function parseKey({ keyString, page, prevKey, era }) {
   // convert many variants to standard form
   switch (cleanedKeyString) {
     case 'No.':
+    case 'n':
     case '&#x2116;':
     case '#':
       return 'number'
@@ -56,12 +57,14 @@ function parseKey({ keyString, page, prevKey, era }) {
     case 'term start':
     case 'office entered':
     case 'from':
+    case 'home of mandate':
       return 'beginTerm'
     case 'left office':
     case 'term ended':
     case 'term end':
     case 'office left':
     case 'to':
+    case 'end of mandate':
       return 'endTerm'
     case 'term (election)':
       return 'termNumber'

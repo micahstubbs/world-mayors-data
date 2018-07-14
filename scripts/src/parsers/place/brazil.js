@@ -14,6 +14,7 @@ function parsePage(props) {
   switch (link) {
     case '/wiki/List_of_mayors_of_%C3%81guas_de_S%C3%A3o_Pedro':
     case '/wiki/List_of_mayors_of_Curitiba':
+    case '/wiki/List_of_mayors_of_S%C3%A3o_Bento_(Para%C3%ADba)':
       return pTableNoH2(props)
     default:
       return h2Table(props)
