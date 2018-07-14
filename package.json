@@ -8,6 +8,7 @@
   "dependencies": {
     "cheerio": "^1.0.0-rc.2",
     "cheerio-tableparser": "^1.0.1",
+    "csv-write-stream": "^2.0.0",
     "filenamify": "^2.1.0",
     "jsonfile": "^4.0.0",
     "request": "^2.87.0",

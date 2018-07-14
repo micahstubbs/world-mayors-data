@@ -1,7 +1,7 @@
 [
   {
     "representative": "Robert Henley",
-    "mayor": "Robert Henley",
+    "name": "Robert Henley",
     "years": "December 19, 1871 - July 1872",
     "beginTerm": "December 19, 1871",
     "endTerm": "July 1872",
@@ -10,7 +10,7 @@
   },
   {
     "representative": "W. J. McDonald",
-    "mayor": "W. J. McDonald",
+    "name": "W. J. McDonald",
     "years": "July 1872",
     "beginTerm": "July 1872",
     "endTerm": "July 1872",
@@ -19,7 +19,7 @@
   },
   {
     "representative": "Thomas Tate",
-    "mayor": "Thomas Tate",
+    "name": "Thomas Tate",
     "years": "July 1872",
     "beginTerm": "July 1872",
     "endTerm": "July 1872",
@@ -28,7 +28,7 @@
   },
   {
     "representative": "Robert Henley",
-    "mayor": "Robert Henley",
+    "name": "Robert Henley",
     "years": "July 1872 - April 22, 1873",
     "beginTerm": "July 1872",
     "endTerm": "April 22, 1873",
@@ -37,16 +37,17 @@
   },
   {
     "representative": "James Robert Powell",
-    "mayor": "James Robert Powell",
+    "name": "James Robert Powell",
     "years": "1873 - 1875\n[Data unknown/missing.]",
     "beginTerm": "1873",
     "endTerm": "1875",
-    "electoral history": "Succeeded after Robert Henley&apos;s death. [Data unknown/missing.]",
+    "electoral history":
+      "Succeeded after Robert Henley&apos;s death. [Data unknown/missing.]",
     "era": "Mayors"
   },
   {
     "representative": "William Harrington Morris",
-    "mayor": "William Harrington Morris",
+    "name": "William Harrington Morris",
     "years": "1875 - 1878\n[Data unknown/missing.]",
     "beginTerm": "1875",
     "endTerm": "1878",
@@ -55,7 +56,7 @@
   },
   {
     "representative": "Henry M. Caldwell",
-    "mayor": "Henry M. Caldwell",
+    "name": "Henry M. Caldwell",
     "years": "1878\n[Data unknown/missing.]",
     "beginTerm": "1878",
     "endTerm": "1878",
@@ -64,7 +65,7 @@
   },
   {
     "representative": "Thomas Jeffers",
-    "mayor": "Thomas Jeffers",
+    "name": "Thomas Jeffers",
     "years": "1878 - 1882\n[Data unknown/missing.]",
     "beginTerm": "1878",
     "endTerm": "1882",
@@ -73,7 +74,7 @@
   },
   {
     "representative": "A. O. Lane",
-    "mayor": "A. O. Lane",
+    "name": "A. O. Lane",
     "years": "1882 - 1888\n[Data unknown/missing.]",
     "beginTerm": "1882",
     "endTerm": "1888",
@@ -82,7 +83,7 @@
   },
   {
     "representative": "B. A. Thompson",
-    "mayor": "B. A. Thompson",
+    "name": "B. A. Thompson",
     "years": "1888 - 1890\n[Data unknown/missing.]",
     "beginTerm": "1888",
     "endTerm": "1890",
@@ -91,7 +92,7 @@
   },
   {
     "representative": "A. O. Lane",
-    "mayor": "A. O. Lane",
+    "name": "A. O. Lane",
     "years": "1890 - 1892\n[Data unknown/missing.]",
     "beginTerm": "1890",
     "endTerm": "1892",
@@ -100,7 +101,7 @@
   },
   {
     "representative": "David J. Fox",
-    "mayor": "David J. Fox",
+    "name": "David J. Fox",
     "years": "1892 - 1894\n[Data unknown/missing.]",
     "beginTerm": "1892",
     "endTerm": "1894",
@@ -109,7 +110,7 @@
   },
   {
     "representative": "James A. Van Hoose",
-    "mayor": "James A. Van Hoose",
+    "name": "James A. Van Hoose",
     "years": "1894 - 1896\n[Data unknown/missing.]",
     "beginTerm": "1894",
     "endTerm": "1896",
@@ -118,7 +119,7 @@
   },
   {
     "representative": "Frank V. Evans",
-    "mayor": "Frank V. Evans",
+    "name": "Frank V. Evans",
     "years": "1896 - 1899\n[Data unknown/missing.]",
     "beginTerm": "1896",
     "endTerm": "1899",
@@ -127,7 +128,7 @@
   },
   {
     "representative": "Mel Drennen",
-    "mayor": "Mel Drennen",
+    "name": "Mel Drennen",
     "years": "1899 - 1905\n[Data unknown/missing.]",
     "beginTerm": "1899",
     "endTerm": "1905",
@@ -136,7 +137,7 @@
   },
   {
     "representative": "George B. Ward",
-    "mayor": "George B. Ward",
+    "name": "George B. Ward",
     "years": "1905 - 1908\n[Data unknown/missing.]",
     "beginTerm": "1905",
     "endTerm": "1908",
@@ -145,7 +146,7 @@
   },
   {
     "representative": "Frank P. O&apos;Brien",
-    "mayor": "Frank P. O&apos;Brien",
+    "name": "Frank P. O&apos;Brien",
     "years": "1908 - 1910\n[Data unknown/missing.]",
     "beginTerm": "1908",
     "endTerm": "1910",
@@ -154,7 +155,7 @@
   },
   {
     "representative": "Culpepper Exum",
-    "mayor": "Culpepper Exum",
+    "name": "Culpepper Exum",
     "years": "1910 - 1913\n[Data unknown/missing.]",
     "beginTerm": "1910",
     "endTerm": "1913",
@@ -163,7 +164,7 @@
   },
   {
     "representative": "President of the Commission",
-    "mayor": "President of the Commission",
+    "name": "President of the Commission",
     "years": "",
     "beginTerm": "",
     "endTerm": "",
@@ -172,7 +173,7 @@
   },
   {
     "representative": "Albert Boutwell",
-    "mayor": "Albert Boutwell",
+    "name": "Albert Boutwell",
     "years": "1963 - 1967\n[Data unknown/missing.]",
     "beginTerm": "1963",
     "endTerm": "1967",
@@ -181,7 +182,7 @@
   },
   {
     "representative": "George G. Siebels, Jr.",
-    "mayor": "George G. Siebels, Jr.",
+    "name": "George G. Siebels, Jr.",
     "years": "1967 - 1975\n[Data unknown/missing.]",
     "beginTerm": "1967",
     "endTerm": "1975",
@@ -190,7 +191,7 @@
   },
   {
     "representative": "David Vann",
-    "mayor": "David Vann",
+    "name": "David Vann",
     "years": "1975 - 1979\n[Data unknown/missing.]",
     "beginTerm": "1975",
     "endTerm": "1979",
@@ -199,7 +200,7 @@
   },
   {
     "representative": "Richard Arrington Jr.",
-    "mayor": "Richard Arrington Jr.",
+    "name": "Richard Arrington Jr.",
     "years": "1979 - 1999\n[Data unknown/missing.]",
     "beginTerm": "1979",
     "endTerm": "1999",
@@ -208,7 +209,7 @@
   },
   {
     "representative": "William A. Bell",
-    "mayor": "William A. Bell",
+    "name": "William A. Bell",
     "years": "1999\n[Data unknown/missing.]",
     "beginTerm": "1999",
     "endTerm": "1999",
@@ -217,7 +218,7 @@
   },
   {
     "representative": "Bernard Kincaid",
-    "mayor": "Bernard Kincaid",
+    "name": "Bernard Kincaid",
     "years": "1999 - 2007\n[Data unknown/missing.]",
     "beginTerm": "1999",
     "endTerm": "2007",
@@ -226,7 +227,7 @@
   },
   {
     "representative": "Larry Langford",
-    "mayor": "Larry Langford",
+    "name": "Larry Langford",
     "years": "2007 - 2009\n[Data unknown/missing.]",
     "beginTerm": "2007",
     "endTerm": "2009",
@@ -235,7 +236,7 @@
   },
   {
     "representative": "Carole Smitherman",
-    "mayor": "Carole Smitherman",
+    "name": "Carole Smitherman",
     "years": "October 2009 - November 2009\n[Data unknown/missing.]",
     "beginTerm": "October 2009",
     "endTerm": "November 2009",
@@ -244,7 +245,7 @@
   },
   {
     "representative": "Roderick Royal",
-    "mayor": "Roderick Royal",
+    "name": "Roderick Royal",
     "years": "2009 - 2010\n[Data unknown/missing.]",
     "beginTerm": "2009",
     "endTerm": "2010",
@@ -253,7 +254,7 @@
   },
   {
     "representative": "William A. Bell",
-    "mayor": "William A. Bell",
+    "name": "William A. Bell",
     "years": "2010 - 2017\n[Data unknown/missing.]",
     "beginTerm": "2010",
     "endTerm": "2017",
@@ -262,7 +263,7 @@
   },
   {
     "representative": "Randall Woodfin",
-    "mayor": "Randall Woodfin",
+    "name": "Randall Woodfin",
     "years": "2017 - Present\n[Data unknown/missing.]",
     "beginTerm": "2017",
     "endTerm": "Present",
@@ -271,7 +272,7 @@
   },
   {
     "representative": "Culpepper Exum",
-    "mayor": "Culpepper Exum",
+    "name": "Culpepper Exum",
     "years": "1913\n[Data unknown/missing.]",
     "beginTerm": "1913",
     "endTerm": "1913",
@@ -280,16 +281,17 @@
   },
   {
     "representative": "George B. Ward",
-    "mayor": "George B. Ward",
+    "name": "George B. Ward",
     "years": "1913 - 1917\n[Data unknown/missing.]",
     "beginTerm": "1913",
     "endTerm": "1917",
-    "electoral history": "Mayor of Birmingham, Alabama from 1905-1908\nChose not to re-run",
+    "electoral history":
+      "Mayor of Birmingham, Alabama from 1905-1908\nChose not to re-run",
     "era": "President of the Commission"
   },
   {
     "representative": "Nathaniel A. Barrett",
-    "mayor": "Nathaniel A. Barrett",
+    "name": "Nathaniel A. Barrett",
     "years": "1917 - 1921\n[Data unknown/missing.]",
     "beginTerm": "1917",
     "endTerm": "1921",
@@ -298,7 +300,7 @@
   },
   {
     "representative": "David E. McClendon",
-    "mayor": "David E. McClendon",
+    "name": "David E. McClendon",
     "years": "1921 - 1925\n[Data unknown/missing.]",
     "beginTerm": "1921",
     "endTerm": "1925",
@@ -307,7 +309,7 @@
   },
   {
     "representative": "James M. Jones, Jr.",
-    "mayor": "James M. Jones, Jr.",
+    "name": "James M. Jones, Jr.",
     "years": "1925 - 1940\n[Data unknown/missing.]",
     "beginTerm": "1925",
     "endTerm": "1940",
@@ -316,7 +318,7 @@
   },
   {
     "representative": "Cooper Green",
-    "mayor": "Cooper Green",
+    "name": "Cooper Green",
     "years": "1940 - 1953\n[Data unknown/missing.]",
     "beginTerm": "1940",
     "endTerm": "1953",
@@ -325,7 +327,7 @@
   },
   {
     "representative": "James W. Morgan",
-    "mayor": "James W. Morgan",
+    "name": "James W. Morgan",
     "years": "1953 - 1961\n[Data unknown/missing.]",
     "beginTerm": "1953",
     "endTerm": "1961",
@@ -334,7 +336,7 @@
   },
   {
     "representative": "Art Hanes",
-    "mayor": "Art Hanes",
+    "name": "Art Hanes",
     "years": "1961 - 1963\n[Data unknown/missing.]",
     "beginTerm": "1961",
     "endTerm": "1963",
