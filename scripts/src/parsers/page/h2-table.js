@@ -94,7 +94,12 @@ function parsePage(props) {
     const rows = []
 
     console.log('era', era)
-    const rowKeys = keys.map(k => parseKey({ keyString: k, page }))
+    let prevKey
+    const rowKeys = keys.map(k => {
+      const parsedKey = parseKey({ keyString: k, page, prevKey, era })
+      prevKey = parsedKey
+      return parsedKey
+    })
     console.log('rowKeys', rowKeys)
 
     // TODO check that all values are equal length

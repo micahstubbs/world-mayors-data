@@ -1,4 +1,4 @@
-function parseKey({ keyString, page, prevKey }) {
+function parseKey({ keyString, page, prevKey, era }) {
   let currentPage = page || ''
 
   let cleanedKeyString = keyString
@@ -20,15 +20,24 @@ function parseKey({ keyString, page, prevKey }) {
   if (page === 'brussels') {
     console.log({ keyString })
     console.log({ cleanedKeyString })
+    console.log({ prevKey })
   }
 
-  // handle a few special case
+  // handle special cases involving one or more
+  // '' empty string column headers
   if (keyString === '' && page === 'edmonton') {
     return 'name'
   } else if (keyString === '' && page === 'tucson') {
     return 'noHeader'
   }
 
+  if (era === 'Kingdom of Belgium (1830–present)') {
+    if (prevKey === 'number' && cleanedKeyString === '') {
+      return 'number'
+    }
+  }
+
+  // convert many variants to standard form
   switch (cleanedKeyString) {
     case 'No.':
     case '&#x2116;':
