@@ -3,7 +3,7 @@ const parseH2ThumbUl = require('../page/h2-thumb-ul.js')
 const parseH2TableData = require('../page/h2-table.js')
 const parseH3TableData = require('../page/h3-table.js')
 const parseMwHeadlineTableData = require('../page/mw-headline-table.js')
-const parsePTableData = require('../page/p-table.js')
+const parsePTableNoH2 = require('../page/p-table-no-h2.js')
 
 function parsePage(props) {
   const { link } = props
@@ -25,8 +25,8 @@ function parsePage(props) {
         .concat(mwHeadlineTableDataUKN)
         .concat(h3TableData)
       return combinedData
-    // case '/wiki/List_of_mayors_of_Bruges':
-    //   return parsePTableData(props)
+    case '/wiki/List_of_mayors_of_Bruges':
+      return parsePTableNoH2(props)
     default:
       // return parseH2TableData(props)
       return []
