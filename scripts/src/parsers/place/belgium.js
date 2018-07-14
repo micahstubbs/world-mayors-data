@@ -35,6 +35,8 @@ function parsePage(props) {
       const h2TableData = parseH2Table(props)
       combinedData = h2UlData.concat(h2TableData)
       return combinedData
+    case '/wiki/List_of_mayors_of_Ghent':
+      return parseH2Table(props)
     default:
       // return parseH2Table(props)
       return []
