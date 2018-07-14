@@ -58,6 +58,8 @@ function parseKey({ keyString, page, prevKey, era }) {
     case 'term ended':
     case 'office left':
       return 'endTerm'
+    case 'term (election)':
+      return 'termNumber'
     case 'mayor':
     case 'lord mayor':
     case 'representative':

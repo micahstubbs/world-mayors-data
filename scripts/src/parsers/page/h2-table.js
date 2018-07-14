@@ -4,6 +4,7 @@ const cheerioTableparser = require('cheerio-tableparser')
 const logger = require('../../utils/logger.js')
 const parseTerm = require('../field/term.js')
 const parseKey = require('../field/key.js')
+const postProcessor = require('../../post-processor.js')
 
 function parsePage(props) {
   const {
@@ -160,6 +161,8 @@ function parsePage(props) {
     allRows = tablesDataByRow.reduce((accumulator, currentValue) =>
       accumulator.concat(currentValue)
     )
+
+  allRows = postProcessor(allRows)
 
   return allRows
 }
