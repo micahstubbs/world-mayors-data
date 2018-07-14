@@ -5,39 +5,12 @@ const logger = require('../../utils/logger.js')
 
 function parsePage(props) {
   const { $, category, page } = props
-  // get an array of all sectionHeaders
-  // that are followed by a table
-  const sectionHeadersText = $('h2')
-    .filter((i, el) => {
-      return $(el)
-        .next()
-        .is('ul')
-    })
-    .filter((i, el) => {
-      return (
-        $(el)
-          .text()
-          .replace(/\[edit\]/, '') !== 'See also'
-      )
-    })
-    .filter((i, el) => {
-      return (
-        $(el)
-          .text()
-          .replace(/\[edit\]/, '') !== 'External links'
-      )
-    })
-    .map((i, el) => {
-      return $(el)
-        .text()
-        .replace(/\[edit\]/, '')
-    })
-    .get()
 
   // get ul data
   // for all unordered list elements that are
   // immediately preceded by
   // an h2 element
+  const sectionHeadersTextSet = new Set()
   let allRows = []
 
   let ulIndex
@@ -75,6 +48,8 @@ function parsePage(props) {
         .prev()
         .text()
         .replace(/\[edit\]/, '')
+      sectionHeadersTextSet.add(era)
+
       const parsedRows = getRowParser(rowFormat)({
         $,
         el,
@@ -82,6 +57,8 @@ function parsePage(props) {
       })
       allRows = allRows.concat(parsedRows)
     })
+
+  const sectionHeadersText = Array.from(sectionHeadersTextSet)
 
   logger.info(category)
   logger.info(page)
