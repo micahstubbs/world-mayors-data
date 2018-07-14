@@ -6,6 +6,7 @@ function parseKey({ keyString, page, prevKey, era }) {
     .replace(/(<([^>]+)>)/gi, '')
     .replace(/\n/, ' ')
     .replace('&#x2013;', '-')
+    .replace('&#xba;', '')
 
   // if key is an <a></a> link tag,
   // use the title of the link tag as the string
@@ -52,10 +53,12 @@ function parseKey({ keyString, page, prevKey, era }) {
     case 'term in office':
     case 'took office':
     case 'term began':
+    case 'term start':
     case 'office entered':
       return 'beginTerm'
     case 'left office':
     case 'term ended':
+    case 'term end':
     case 'office left':
       return 'endTerm'
     case 'term (election)':
