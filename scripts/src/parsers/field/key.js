@@ -55,11 +55,13 @@ function parseKey({ keyString, page, prevKey, era }) {
     case 'term began':
     case 'term start':
     case 'office entered':
+    case 'from':
       return 'beginTerm'
     case 'left office':
     case 'term ended':
     case 'term end':
     case 'office left':
+    case 'to':
       return 'endTerm'
     case 'term (election)':
       return 'termNumber'

@@ -1,1 +1,494 @@
-[]
+[
+  {
+    "number": "1",
+    "name": "Jos&#xE9; Borges de Macedo",
+    "beginTerm": "1835",
+    "endTerm": "1838"
+  },
+  {
+    "number": "2",
+    "name": "C&#xE2;ndido Ferreira de Abreu",
+    "beginTerm": "1892",
+    "endTerm": "1894"
+  },
+  {
+    "number": "3",
+    "name": "Guilherme Xavier de Miranda",
+    "beginTerm": "1894",
+    "endTerm": "1894"
+  },
+  {
+    "number": "4",
+    "name": "Cyro Persiano Veloso",
+    "beginTerm": "1895",
+    "endTerm": "1895"
+  },
+  {
+    "number": "5",
+    "name": "Jorge Hermano Meyer",
+    "beginTerm": "1896",
+    "endTerm": "1896"
+  },
+  {
+    "number": "6",
+    "name": "C&#xED;cero Gon&#xE7;alves Marques",
+    "beginTerm": "1896",
+    "endTerm": "1896"
+  },
+  {
+    "number": "7",
+    "name": "Ign&#xE1;cio de Paula Fran&#xE7;a",
+    "beginTerm": "1897",
+    "endTerm": "1897"
+  },
+  {
+    "number": "8",
+    "name": "Manuel Jos&#xE9; Gon&#xE7;alves",
+    "beginTerm": "1897",
+    "endTerm": "1897"
+  },
+  {
+    "number": "9",
+    "name": "C&#xED;cero Gon&#xE7;alves Marques",
+    "beginTerm": "1897",
+    "endTerm": "1900"
+  },
+  {
+    "number": "10",
+    "name": "Artur de Souza Ferreira",
+    "beginTerm": "1900",
+    "endTerm": "1900"
+  },
+  {
+    "number": "11",
+    "name": "Luiz Ant&#xF4;nio Xavier",
+    "beginTerm": "1900",
+    "endTerm": "1907"
+  },
+  {
+    "number": "12",
+    "name": "Ant&#xF4;nio Rodrigues da Costa",
+    "beginTerm": "1907",
+    "endTerm": "1908"
+  },
+  {
+    "number": "13",
+    "name": "Joaquim Pereira de Macedo",
+    "beginTerm": "1908",
+    "endTerm": "1912"
+  },
+  {
+    "number": "14",
+    "name": "Jo&#xE3;o Ant&#xF4;nio Xavier",
+    "beginTerm": "1912",
+    "endTerm": "1912"
+  },
+  {
+    "number": "15",
+    "name": "C&#xE2;ndido Ferreira de Abreu",
+    "beginTerm": "1913",
+    "endTerm": "1916"
+  },
+  {
+    "number": "16",
+    "name": "Jo&#xE3;o Ant&#xF4;nio Xavier",
+    "beginTerm": "1916",
+    "endTerm": "1916"
+  },
+  {
+    "number": "17",
+    "name": "Claudino Rogoberto Ferreira dos Santos",
+    "beginTerm": "1916",
+    "endTerm": "1916"
+  },
+  {
+    "number": "18",
+    "name": "Jo&#xE3;o Ant&#xF4;nio Xavier",
+    "beginTerm": "1917",
+    "endTerm": "1920"
+  },
+  {
+    "number": "19",
+    "name": "Percy Withers",
+    "beginTerm": "1920",
+    "endTerm": "1920"
+  },
+  {
+    "number": "20",
+    "name": "Jo&#xE3;o Moreira Garcez",
+    "beginTerm": "1920",
+    "endTerm": "1924"
+  },
+  {
+    "number": "21",
+    "name": "Jo&#xE3;o Moreira Garcez",
+    "beginTerm": "1924",
+    "endTerm": "1928"
+  },
+  {
+    "number": "22",
+    "name": "Eurides Cunha",
+    "beginTerm": "1928",
+    "endTerm": "1930"
+  },
+  {
+    "number": "23",
+    "name": "Joaquim Pereira de Macedo",
+    "beginTerm": "1930",
+    "endTerm": "1932"
+  },
+  {
+    "number": "24",
+    "name": "Avelino Lopes (Curitiba",
+    "beginTerm": "1932",
+    "endTerm": "1932"
+  },
+  {
+    "number": "25",
+    "name": "Jorge Loth&#xE1;rio Meissner",
+    "beginTerm": "1932",
+    "endTerm": "1937"
+  },
+  {
+    "number": "26",
+    "name": "Nicolau Mader J&#xFA;nior",
+    "beginTerm": "1937",
+    "endTerm": "1937"
+  },
+  {
+    "number": "27",
+    "name": "Alu&#xED;sio Fran&#xE7;a",
+    "beginTerm": "1937",
+    "endTerm": "1937"
+  },
+  {
+    "number": "28",
+    "name": "Carlos Heller (Curitiba",
+    "beginTerm": "1937",
+    "endTerm": "1938"
+  },
+  {
+    "number": "29",
+    "name": "Oscar Borges",
+    "beginTerm": "1938",
+    "endTerm": "1938"
+  },
+  {
+    "number": "30",
+    "name": "Jo&#xE3;o Moreira Garcez",
+    "beginTerm": "1938",
+    "endTerm": "1940"
+  },
+  {
+    "number": "31",
+    "name": "&#xC2;ngelo Lopes",
+    "beginTerm": "1940",
+    "endTerm": "1940"
+  },
+  {
+    "number": "32",
+    "name": "Rozaldo Gomes de Melo Leit&#xE3;o",
+    "beginTerm": "1940",
+    "endTerm": "1943"
+  },
+  {
+    "number": "33",
+    "name": "Alexandre Beltr&#xE3;o",
+    "beginTerm": "1943",
+    "endTerm": "1944"
+  },
+  {
+    "number": "34",
+    "name": "Arnaldo Isidoro Beckert",
+    "beginTerm": "1944",
+    "endTerm": "1944"
+  },
+  {
+    "number": "35",
+    "name": "Jo&#xE3;o Macedo Sousa",
+    "beginTerm": "1945",
+    "endTerm": "1945"
+  },
+  {
+    "number": "36",
+    "name": "Al&#xF4; Guimar&#xE3;es",
+    "beginTerm": "1945",
+    "endTerm": "1945"
+  },
+  {
+    "number": "37",
+    "name": "Algacyr Munhoz Maeder",
+    "beginTerm": "1945",
+    "endTerm": "1945"
+  },
+  {
+    "number": "38",
+    "name": "Jo&#xE3;o Macedo Sousa",
+    "beginTerm": "1946",
+    "endTerm": "1946"
+  },
+  {
+    "number": "39",
+    "name": "&#xC2;ngelo Lopes",
+    "beginTerm": "1947",
+    "endTerm": "1947"
+  },
+  {
+    "number": "40",
+    "name": "Raul de Azevedo Macedo",
+    "beginTerm": "1947",
+    "endTerm": "1947"
+  },
+  {
+    "number": "41",
+    "name": "Jo&#xE3;o Kracik Neto",
+    "beginTerm": "1947",
+    "endTerm": "1947"
+  },
+  {
+    "number": "42",
+    "name": "Jo&#xE3;o Macedo Sousa",
+    "beginTerm": "1947",
+    "endTerm": "1947"
+  },
+  {
+    "number": "43",
+    "name": "Jo&#xE3;o Kracik Neto",
+    "beginTerm": "1948",
+    "endTerm": "1948"
+  },
+  {
+    "number": "44",
+    "name": "Ney Leprevost",
+    "beginTerm": "1948",
+    "endTerm": "1948"
+  },
+  {
+    "number": "45",
+    "name": "Lineu do Amaral",
+    "beginTerm": "1948",
+    "endTerm": "1951"
+  },
+  {
+    "number": "46",
+    "name": "Am&#xE2;ncio Moro",
+    "beginTerm": "1951",
+    "endTerm": "1951"
+  },
+  {
+    "number": "47",
+    "name": "Ernani Santiago de Oliveira",
+    "beginTerm": "1951",
+    "endTerm": "1951"
+  },
+  {
+    "number": "48",
+    "name": "Wallace Tadeu de Melo e Silva",
+    "beginTerm": "1951",
+    "endTerm": "1951"
+  },
+  {
+    "number": "49",
+    "name": "Erasto Gaertner",
+    "beginTerm": "1951",
+    "endTerm": "1952"
+  },
+  {
+    "number": "50",
+    "name": "Mario Afonso Alves de Camargo",
+    "beginTerm": "1952",
+    "endTerm": "1952"
+  },
+  {
+    "number": "51",
+    "name": "Jo&#xE3;o Stival",
+    "beginTerm": "1952",
+    "endTerm": "1952"
+  },
+  {
+    "number": "52",
+    "name": "Milton Anselmo da Silva",
+    "beginTerm": "1953",
+    "endTerm": "1953"
+  },
+  {
+    "number": "53",
+    "name": "Jos&#xE9; Luis Guerra Rego",
+    "beginTerm": "1953",
+    "endTerm": "1954"
+  },
+  {
+    "number": "54",
+    "name": "Ernani Santiago de Oliveira",
+    "beginTerm": "1954",
+    "endTerm": "1954"
+  },
+  {
+    "number": "55",
+    "name": "Nei Amintas de Barros Braga",
+    "beginTerm": "1954",
+    "endTerm": "1958"
+  },
+  {
+    "number": "56",
+    "name": "Aristides Sim&#xE3;o",
+    "beginTerm": "1958",
+    "endTerm": "1958"
+  },
+  {
+    "number": "57",
+    "name": "Elias Karam (Curitiba",
+    "beginTerm": "1958",
+    "endTerm": "1958"
+  },
+  {
+    "number": "58",
+    "name": "Edmundo Leinig Saporski",
+    "beginTerm": "1958",
+    "endTerm": "1958"
+  },
+  {
+    "number": "59",
+    "name": "Elias Karam (Curitiba",
+    "beginTerm": "1958",
+    "endTerm": "1958"
+  },
+  {
+    "number": "60",
+    "name": "Iber&#xEA; de Matos",
+    "beginTerm": "1958",
+    "endTerm": "1961"
+  },
+  {
+    "number": "61",
+    "name": "Aristides Ata&#xED;de J&#xFA;nior",
+    "beginTerm": "1961",
+    "endTerm": "1961"
+  },
+  {
+    "number": "62",
+    "name": "Erondi Siv&#xE9;rio",
+    "beginTerm": "1961",
+    "endTerm": "1961"
+  },
+  {
+    "number": "63",
+    "name": "Erondi Siv&#xE9;rio",
+    "beginTerm": "1962",
+    "endTerm": "1962"
+  },
+  {
+    "number": "64",
+    "name": "Ivo Arzua Pereira",
+    "beginTerm": "1962",
+    "endTerm": "1966"
+  },
+  {
+    "number": "65",
+    "name": "Erondi Siv&#xE9;rio",
+    "beginTerm": "1966",
+    "endTerm": "1966"
+  },
+  {
+    "number": "66",
+    "name": "Ivo Arzua Pereira",
+    "beginTerm": "1966",
+    "endTerm": "1967"
+  },
+  {
+    "number": "67",
+    "name": "Acyr Haffez Jos&#xE9;",
+    "beginTerm": "1967",
+    "endTerm": "1967"
+  },
+  {
+    "number": "68",
+    "name": "Omar Sabbag",
+    "beginTerm": "1967",
+    "endTerm": "1971"
+  },
+  {
+    "number": "69",
+    "name": "Edgar Dantas Pimentel",
+    "beginTerm": "1971",
+    "endTerm": "1971"
+  },
+  {
+    "number": "70",
+    "name": "Jaime Lerner",
+    "beginTerm": "1971",
+    "endTerm": "1974"
+  },
+  {
+    "number": "71",
+    "name": "Donato Gulin",
+    "beginTerm": "1974",
+    "endTerm": "1974"
+  },
+  {
+    "number": "72",
+    "name": "Saul Raiz",
+    "beginTerm": "1974",
+    "endTerm": "1979"
+  },
+  {
+    "number": "73",
+    "name": "Jaime Lerner",
+    "beginTerm": "1979",
+    "endTerm": "1983"
+  },
+  {
+    "number": "74",
+    "name": "Maur&#xED;cio Fruet",
+    "beginTerm": "1983",
+    "endTerm": "1986"
+  },
+  {
+    "number": "75",
+    "name": "Roberto Requi&#xE3;o",
+    "beginTerm": "1986",
+    "endTerm": "1988"
+  },
+  {
+    "number": "76",
+    "name": "Jaime Lerner",
+    "beginTerm": "1989",
+    "endTerm": "1992"
+  },
+  {
+    "number": "77",
+    "name": "Rafael Greca",
+    "beginTerm": "1993",
+    "endTerm": "1996"
+  },
+  {
+    "number": "78",
+    "name": "C&#xE1;ssio Taniguchi",
+    "beginTerm": "1997",
+    "endTerm": "2004"
+  },
+  {
+    "number": "79",
+    "name": "Beto Richa",
+    "beginTerm": "2005",
+    "endTerm": "2010"
+  },
+  {
+    "number": "80",
+    "name": "Luciano Ducci",
+    "beginTerm": "2010",
+    "endTerm": "2012"
+  },
+  {
+    "number": "81",
+    "name": "Gustavo Fruet",
+    "beginTerm": "2013",
+    "endTerm": "2016"
+  },
+  {
+    "number": "82",
+    "name": "Rafael Greca",
+    "beginTerm": "2017",
+    "endTerm": "-"
+  }
+]
