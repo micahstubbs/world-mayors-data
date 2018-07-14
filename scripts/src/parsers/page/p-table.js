@@ -9,27 +9,21 @@ function parsePage(props) {
   const { $, category, page } = props
   // get an array of all sectionHeaders
   // that are followed by a table
-  const sectionHeadersText = $('h2')
+  const sectionHeadersText = $('p')
     .filter((i, el) => {
-      return $(el)
-        .next()
-        .is('p')
+      return $(el).next().is('p')
     })
     .map((i, el) => {
-      return $(el)
-        .text()
-        .replace(/\[edit\]/, '')
+      return $(el).text().replace(/\[edit\]/, '')
     })
     .get()
 
   // get table data
   // for all tables that are immediately preceded by
-  // an h2 element
+  // an p element
   const tablesData = $('table')
     .filter((i, el) => {
-      return $(el)
-        .prev()
-        .is('p')
+      return $(el).prev().is('p')
     })
     .map((i, el) => {
       cheerioTableparser($)
