@@ -37,6 +37,25 @@ function parsePage(props) {
           .replace(/\[edit\]/, '') !== 'External links'
       )
     })
+    .filter((i, el) => {
+      return (
+        $(el)
+          .parent()
+          .parent()
+          .parent()
+          .attr('id') !== 'mw-navigation'
+      )
+    })
+    .filter((i, el) => {
+      return (
+        $(el)
+          .parent()
+          .parent()
+          .parent()
+          .parent()
+          .attr('id') !== 'mw-navigation'
+      )
+    })
     .find('li')
     .each((i, el) => {
       let rowFormat = 'number-term-name'
