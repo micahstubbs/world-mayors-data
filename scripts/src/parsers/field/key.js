@@ -21,6 +21,7 @@ function parseKey({ keyString, page, prevKey, era }) {
     console.log({ keyString })
     console.log({ cleanedKeyString })
     console.log({ prevKey })
+    console.log('\n')
   }
 
   // handle special cases involving one or more
