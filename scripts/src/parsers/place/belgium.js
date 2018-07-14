@@ -1,6 +1,6 @@
 const parseH2PUlData = require('../page/h2-p-ul.js')
 const parseH2ThumbUl = require('../page/h2-thumb-ul.js')
-const parseH2TableData = require('../page/h2-table.js')
+const parseH2Table = require('../page/h2-table.js')
 const parseH3TableData = require('../page/h3-table.js')
 const parseMwHeadlineTableData = require('../page/mw-headline-table.js')
 const parsePTableNoH2 = require('../page/p-table-no-h2.js')
@@ -32,10 +32,11 @@ function parsePage(props) {
       return parsePTableNoH2(props)
     case '/wiki/List_of_mayors_of_the_City_of_Brussels':
       const h2UlData = parseH2Ul(props)
-      combinedData = h2UlData.concat([])
+      const h2TableData = parseH2Table(props)
+      combinedData = h2UlData.concat(h2TableData)
       return combinedData
     default:
-      // return parseH2TableData(props)
+      // return parseH2Table(props)
       return []
   }
 }

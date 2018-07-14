@@ -1,5 +1,15 @@
 function parseKey(keyString, page) {
   let currentPage = page || ''
+
+  // page specific dev logging
+  if (page === 'brussels') {
+    console.log({ keyString })
+  }
+
+  // special cases where we want to consider html tags
+  if (keyString === 'Term<br>\n<small>(Election)</small>')
+    return 'Term (Election)'
+
   let cleanedKeyString = keyString.toLowerCase()
   // if key is a link tag, use the title of the link tag as the string
   // that is, if the table column header is a hyperlink
@@ -24,6 +34,7 @@ function parseKey(keyString, page) {
     case 'mayoral term':
     case 'in office':
     case 'year of mayorship':
+    case 'term of office':
       return 'term'
     case 'term in office':
     case 'took office':
