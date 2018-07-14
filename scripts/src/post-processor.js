@@ -10,6 +10,11 @@ function postProcessor(allRows) {
       keySeparator: '-',
       valueSeparator: '-'
     })
+    // a few special cases
+    if (outputRow.name === "Loretta Spencer, Huntsville's first female mayor") {
+      outputRow.name = 'Loretta Spencer'
+      outputRow.note = "Huntsville's first female mayor"
+    }
     return outputRow
   })
   return outputData
