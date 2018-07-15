@@ -1,13 +1,392 @@
 [
   {
+    "number": "1",
+    "name": "pt:Ant&#xF4;nio da Silva Prado",
+    "beginTerm": "January 7, 1899",
+    "endTerm": "January 15, 1911"
+  },
+  {
+    "number": "2",
+    "name": "Raimundo da Silva Duprat",
+    "beginTerm": "January 16, 1911",
+    "endTerm": "January 14, 1914"
+  },
+  {
+    "number": "3",
+    "name": "Washington Lu&#xED;s",
+    "beginTerm": "January 15, 1914",
+    "endTerm": "August 15, 1919"
+  },
+  {
+    "number": "4",
+    "name": "&#xC1;lvaro Gomes da Rocha Azevedo",
+    "beginTerm": "August 16, 1919",
+    "endTerm": "January 15, 1920"
+  },
+  {
+    "number": "5",
+    "name": "Firmiano Morais Pinto",
+    "beginTerm": "January 16, 1920",
+    "endTerm": "January 15, 1926"
+  },
+  {
+    "number": "6",
+    "name": "Jos&#xE9; Pires do Rio",
+    "beginTerm": "January 16, 1926",
+    "endTerm": "October 23, 1930"
+  },
+  {
+    "number": "7",
+    "name": "Jos&#xE9; Joaquim Cardoso de Melo Neto",
+    "beginTerm": "October 24, 1930",
+    "endTerm": "December 5, 1930"
+  },
+  {
+    "number": "8",
+    "name": "Lu&#xED;s In&#xE1;cio de Anhaia Melo",
+    "beginTerm": "December 6, 1930",
+    "endTerm": "July 25, 1931"
+  },
+  {
+    "number": "9",
+    "name": "Francisco Machado de Campos",
+    "beginTerm": "July 26, 1931",
+    "endTerm": "November 13, 1931"
+  },
+  {
+    "number": "10",
+    "name": "Lu&#xED;s In&#xE1;cio de Anhaia Melo",
+    "beginTerm": "November 14, 1931",
+    "endTerm": "December 4, 1931"
+  },
+  {
+    "number": "11",
+    "name": "Henrique Jorge Guedes",
+    "beginTerm": "December 5, 1931",
+    "endTerm": "May 23, 1932"
+  },
+  {
+    "number": "12",
+    "name": "Gofredo da Silva Teles",
+    "beginTerm": "May 24, 1932",
+    "endTerm": "October 2, 1932"
+  },
+  {
+    "number": "13",
+    "name": "Artur Sab&#xF3;ia",
+    "beginTerm": "October 3, 1932",
+    "endTerm": "December 28, 1932"
+  },
+  {
+    "number": "14",
+    "name": "Teodoro Augusto Ramos",
+    "beginTerm": "December 29, 1932",
+    "endTerm": "April 1, 1933"
+  },
+  {
+    "number": "15",
+    "name": "Artur Sab&#xF3;ia",
+    "beginTerm": "April 2, 1933",
+    "endTerm": "May 22, 1933"
+  },
+  {
+    "number": "16",
+    "name": "Osvaldo Gomes da Costa",
+    "beginTerm": "May 23, 1933",
+    "endTerm": "July 30, 1933"
+  },
+  {
+    "number": "17",
+    "name": "Carlos dos Santos Gomes",
+    "beginTerm": "July 31, 1933",
+    "endTerm": "August 21, 1933"
+  },
+  {
+    "number": "18",
+    "name": "Ant&#xF4;nio Carlos Assun&#xE7;&#xE3;o",
+    "beginTerm": "August 22, 1933",
+    "endTerm": "September 6, 1934"
+  },
+  {
+    "number": "19",
+    "name": "F&#xE1;bio da Silva Prado",
+    "beginTerm": "September 7, 1934",
+    "endTerm": "January 31, 1938"
+  },
+  {
+    "number": "20",
+    "name": "Paulo Barbosa de Campos Filho",
+    "beginTerm": "February 1, 1938",
+    "endTerm": "February 15, 1938"
+  },
+  {
+    "number": "21",
+    "name": "F&#xE1;bio da Silva Prado",
+    "beginTerm": "February 16, 1938",
+    "endTerm": "April 30, 1938"
+  },
+  {
+    "number": "22",
+    "name": "Francisco Prestes Maia",
+    "beginTerm": "May 1, 1938",
+    "endTerm": "November 10, 1945"
+  },
+  {
+    "number": "23",
+    "name": "Abra&#xE3;o Ribeiro",
+    "beginTerm": "November 11, 1945",
+    "endTerm": "March 14, 1947"
+  },
+  {
+    "number": "24",
+    "name": "Cristiano Stockler das Neves",
+    "beginTerm": "March 15, 1947",
+    "endTerm": "August 28, 1947"
+  },
+  {
+    "number": "25",
+    "name": "Paulo Lauro",
+    "beginTerm": "August 29, 1947",
+    "endTerm": "August 25, 1948"
+  },
+  {
+    "number": "26",
+    "name": "Milton Improta",
+    "beginTerm": "August 26, 1948",
+    "endTerm": "January 3, 1949"
+  },
+  {
+    "number": "27",
+    "name": "Asdr&#xFA;bal Eur&#xED;tisses da Cunha",
+    "beginTerm": "January 4, 1949",
+    "endTerm": "February 27, 1950"
+  },
+  {
+    "number": "28",
+    "name": "Lineu Prestes",
+    "beginTerm": "February 28, 1950",
+    "endTerm": "January 31, 1951"
+  },
+  {
+    "number": "29",
+    "name": "Armando de Arruda Pereira",
+    "beginTerm": "February 1, 1951",
+    "endTerm": "April 7, 1953"
+  },
+  {
+    "number": "30",
+    "name": "J&#xE2;nio da Silva Quadros",
+    "beginTerm": "April 8, 1953",
+    "endTerm": "July 6, 1954"
+  },
+  {
+    "number": "31",
+    "name": "Jos&#xE9; Porf&#xED;rio da Paz",
+    "beginTerm": "July 7, 1954",
+    "endTerm": "January 17, 1955"
+  },
+  {
+    "number": "32",
+    "name": "J&#xE2;nio da Silva Quadros",
+    "beginTerm": "January 18, 1955",
+    "endTerm": "February 5, 1955"
+  },
+  {
+    "number": "33",
+    "name": "William Salem",
+    "beginTerm": "February 6, 1955",
+    "endTerm": "May 1, 1955"
+  },
+  {
+    "number": "34",
+    "name": "Juvenal Lino de Mattos",
+    "beginTerm": "May 2, 1955",
+    "endTerm": "April 10, 1956"
+  },
+  {
+    "number": "35",
+    "name": "Vladimir de Toledo Pizza",
+    "beginTerm": "April 11, 1956",
+    "endTerm": "April 7, 1957"
+  },
+  {
+    "number": "36",
+    "name": "Ademar Pereira de Barros",
+    "beginTerm": "April 8, 1957",
+    "endTerm": "January 9, 1958"
+  },
+  {
+    "number": "37",
+    "name": "Cant&#xED;dio Nogueira Sampaio",
+    "beginTerm": "January 10, 1958",
+    "endTerm": "February 6, 1958"
+  },
+  {
+    "number": "38",
+    "name": "Ademar Pereira de Barros",
+    "beginTerm": "February 7, 1958",
+    "endTerm": "February 8, 1961"
+  },
+  {
+    "number": "39",
+    "name": "Manuel de Figueiredo Ferraz",
+    "beginTerm": "February 9, 1961",
+    "endTerm": "February 28, 1961"
+  },
+  {
+    "number": "40",
+    "name": "Ademar Pereira de Barros",
+    "beginTerm": "March 1, 1961",
+    "endTerm": "April 7, 1961"
+  },
+  {
+    "number": "34",
+    "portrait": "",
+    "elected": "&#x2014;",
+    "beginTerm": "April 8, 1965",
+    "endTerm": "April 7, 1969",
+    "politicalParty": "National Renewal Alliance ARENA",
+    "viceMayors": "Le&#xF4;ncio Ferraz Junior - ARENA",
+    "birthplace": "Rio de Janeiro, Rio de Janeiro",
+    "era": "The military dictatorship 1964–1985",
+    "mayor": "Jos&#xE9; Vicente Faria Lima",
+    "birth": "1909",
+    "death": "1969"
+  },
+  {
+    "number": "35",
+    "portrait": "",
+    "elected": "-",
+    "beginTerm": "April 7, 1969",
+    "endTerm": "April 7, 1971",
+    "politicalParty": "National Renewal Alliance ARENA",
+    "viceMayors": "",
+    "birthplace": "S&#xE3;o Paulo, S&#xE3;o Paulo",
+    "era": "The military dictatorship 1964–1985",
+    "mayor": "Paulo Maluf",
+    "birth": "1931",
+    "death": ""
+  },
+  {
+    "number": "36",
+    "portrait": "",
+    "elected": "-",
+    "beginTerm": "April 7, 1969",
+    "endTerm": "August 21, 1973",
+    "politicalParty": "National Renewal Alliance ARENA",
+    "viceMayors": "",
+    "birthplace": "Campinas, S&#xE3;o Paulo",
+    "era": "The military dictatorship 1964–1985",
+    "mayor": "Jos&#xE9; Carlos de F. Ferraz",
+    "birth": "1918",
+    "death": "1994"
+  },
+  {
+    "number": "37",
+    "portrait": "",
+    "elected": "-",
+    "beginTerm": "August 21, 1973",
+    "endTerm": "August 26, 1973",
+    "politicalParty": "National Renewal Alliance ARENA",
+    "viceMayors": "",
+    "birthplace": "S&#xE3;o Paulo, S&#xE3;o Paulo",
+    "era": "The military dictatorship 1964–1985",
+    "mayor": "Jos&#xE9; Brasil Vita",
+    "birth": "1922",
+    "death": "2017"
+  },
+  {
+    "number": "38",
+    "portrait": "",
+    "elected": "-",
+    "beginTerm": "August 26, 1973",
+    "endTerm": "August 16, 1975",
+    "politicalParty": "National Renewal Alliance ARENA",
+    "viceMayors": "",
+    "birthplace": "S&#xE3;o Paulo, S&#xE3;o Paulo",
+    "era": "The military dictatorship 1964–1985",
+    "mayor": "Miguel Colasuonno",
+    "birth": "1939",
+    "death": "2013"
+  },
+  {
+    "number": "39",
+    "portrait": "",
+    "elected": "-",
+    "beginTerm": "August 16, 1975",
+    "endTerm": "June 11, 1979",
+    "politicalParty": "National Renewal Alliance ARENA",
+    "viceMayors": "",
+    "birthplace": "S&#xE3;o Paulo, S&#xE3;o Paulo",
+    "era": "The military dictatorship 1964–1985",
+    "mayor": "Olavo Set&#xFA;bal",
+    "birth": "1923",
+    "death": "2008"
+  },
+  {
+    "number": "40",
+    "portrait": "",
+    "elected": "-",
+    "beginTerm": "June 11, 1979",
+    "endTerm": "May 14, 1982",
+    "politicalParty": "National Renewal Alliance ARENA",
+    "viceMayors": "",
+    "birthplace": "S&#xE3;o Paulo, S&#xE3;o Paulo",
+    "era": "The military dictatorship 1964–1985",
+    "mayor": "Reynaldo de Barros",
+    "birth": "1931",
+    "death": "2011"
+  },
+  {
+    "number": "41",
+    "portrait": "",
+    "elected": "-",
+    "beginTerm": "May 14, 1982",
+    "endTerm": "March 14, 1983",
+    "politicalParty": "Democratic Social Party PDS",
+    "viceMayors": "",
+    "birthplace": "Avar&#xE9;, S&#xE3;o Paulo",
+    "era": "The military dictatorship 1964–1985",
+    "mayor": "Ant&#xF4;nio Salim Curiati",
+    "birth": "1928",
+    "death": ""
+  },
+  {
+    "number": "42",
+    "portrait": "",
+    "elected": "-",
+    "beginTerm": "March 14, 1983",
+    "endTerm": "May 10, 1983",
+    "politicalParty": "Brazilian Democratic Movement Party PMDB",
+    "viceMayors": "",
+    "birthplace": "Saboeiro, Cear&#xE1;",
+    "era": "The military dictatorship 1964–1985",
+    "mayor": "Francisco Altino Lima",
+    "birth": "1924",
+    "death": "1989"
+  },
+  {
+    "number": "43",
+    "portrait": "",
+    "elected": "-",
+    "beginTerm": "May 10, 1983",
+    "endTerm": "January 1, 1986",
+    "politicalParty": "Brazilian Democratic Movement Party PMDB",
+    "viceMayors": "",
+    "birthplace": "Santos, S&#xE3;o Paulo",
+    "era": "The military dictatorship 1964–1985",
+    "mayor": "M&#xE1;rio Covas",
+    "birth": "1930",
+    "death": "2001"
+  },
+  {
     "number": "44",
     "portrait": "",
     "elected": "1985",
     "beginTerm": "January 1, 1986",
     "endTerm": "January 1, 1989",
     "politicalParty": "Brazilian Labour Party PTB",
-    "vice mayor(s)": "",
-    "emptyString": "Arthur Alves Pinto - PMDB",
+    "viceMayors": "Arthur Alves Pinto - PMDB",
     "birthplace": "Campo Grande, Mato Grosso do Sul",
     "era": "The New Republic 1985–present",
     "mayor": "J&#xE2;nio Quadros",
@@ -21,8 +400,7 @@
     "beginTerm": "January 1, 1989",
     "endTerm": "January 1, 1993",
     "politicalParty": "Workers&apos; Party PT",
-    "vice mayor(s)": "",
-    "emptyString": "Luiz Eduardo Greenhalgh - PT",
+    "viceMayors": "Luiz Eduardo Greenhalgh - PT",
     "birthplace": "Uira&#xFA;na, Para&#xED;ba",
     "era": "The New Republic 1985–present",
     "mayor": "Luiza Erundina",
@@ -36,8 +414,7 @@
     "beginTerm": "January 1, 1993",
     "endTerm": "January 1, 1997",
     "politicalParty": "Progressive Party PPB",
-    "vice mayor(s)": "",
-    "emptyString": "S&#xF3;lon Borges dos Reis - PPB",
+    "viceMayors": "S&#xF3;lon Borges dos Reis - PPB",
     "birthplace": "S&#xE3;o Paulo, S&#xE3;o Paulo",
     "era": "The New Republic 1985–present",
     "mayor": "Paulo Maluf",
@@ -51,8 +428,7 @@
     "beginTerm": "January 1, 1997",
     "endTerm": "January 1, 2001",
     "politicalParty": "Progressive Party PPB",
-    "vice mayor(s)": "",
-    "emptyString": "R&#xE9;gis de Oliveira - PPB",
+    "viceMayors": "R&#xE9;gis de Oliveira - PPB",
     "birthplace": "Rio de Janeiro, Rio de Janeiro",
     "era": "The New Republic 1985–present",
     "mayor": "Celso Pitta",
@@ -66,8 +442,7 @@
     "beginTerm": "January 1, 2001",
     "endTerm": "January 1, 2005",
     "politicalParty": "Workers&apos; Party PT",
-    "vice mayor(s)": "",
-    "emptyString": "H&#xE9;lio Bicudo - PT",
+    "viceMayors": "H&#xE9;lio Bicudo - PT",
     "birthplace": "S&#xE3;o Paulo, S&#xE3;o Paulo",
     "era": "The New Republic 1985–present",
     "mayor": "Marta Suplicy",
@@ -81,8 +456,7 @@
     "beginTerm": "January 1, 2005",
     "endTerm": "March 31, 2006",
     "politicalParty": "Brazilian Social Democracy Party PSDB",
-    "vice mayor(s)": "",
-    "emptyString": "Gilberto Kassab - PFL",
+    "viceMayors": "Gilberto Kassab - PFL",
     "birthplace": "S&#xE3;o Paulo, S&#xE3;o Paulo",
     "era": "The New Republic 1985–present",
     "mayor": "Jos&#xE9; Serra",
@@ -96,8 +470,7 @@
     "beginTerm": "March 31, 2006 - January 1, 2009",
     "endTerm": "January 1, 2009 - January 1, 2013",
     "politicalParty": "Liberal Front Party PFL",
-    "vice mayor(s)": "",
-    "emptyString": "Alda Marco Ant&#xF4;nio - PMDB",
+    "viceMayors": "Alda Marco Ant&#xF4;nio - PMDB",
     "birthplace": "S&#xE3;o Paulo, S&#xE3;o Paulo",
     "era": "The New Republic 1985–present",
     "mayor": "Gilberto Kassab",
@@ -111,8 +484,7 @@
     "beginTerm": "January 1, 2013",
     "endTerm": "January 1, 2017",
     "politicalParty": "Workers&apos; Party PT",
-    "vice mayor(s)": "",
-    "emptyString": "N&#xE1;dia Campe&#xE3;o - PCdoB",
+    "viceMayors": "N&#xE1;dia Campe&#xE3;o - PCdoB",
     "birthplace": "S&#xE3;o Paulo, S&#xE3;o Paulo",
     "era": "The New Republic 1985–present",
     "mayor": "Fernando Haddad",
@@ -126,8 +498,7 @@
     "beginTerm": "January 1, 2017",
     "endTerm": "April 6, 2018",
     "politicalParty": "Brazilian Social Democracy Party PSDB",
-    "vice mayor(s)": "",
-    "emptyString": "Bruno Covas - PSDB",
+    "viceMayors": "Bruno Covas - PSDB",
     "birthplace": "S&#xE3;o Paulo, S&#xE3;o Paulo",
     "era": "The New Republic 1985–present",
     "mayor": "Jo&#xE3;o Doria",
@@ -137,12 +508,11 @@
   {
     "number": "53",
     "portrait": "",
-    "elected": "&#x2014;",
+    "elected": "-",
     "beginTerm": "April 6, 2018",
     "endTerm": "Incumbent",
     "politicalParty": "Brazilian Social Democracy Party PSDB",
-    "vice mayor(s)": "Vacant",
-    "emptyString": "",
+    "viceMayors": "",
     "birthplace": "S&#xE3;o Paulo, S&#xE3;o Paulo",
     "era": "The New Republic 1985–present",
     "mayor": "Bruno Covas",

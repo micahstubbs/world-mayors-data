@@ -1,14 +1,43 @@
+const cheerio = require('cheerio')
 const cheerioTableparser = require('cheerio-tableparser')
 
 const logger = require('../../utils/logger.js')
 const parseTerm = require('../field/term.js')
 const parseKey = require('../field/key.js')
+const postProcessor = require('../../post-processor.js')
 
 function parsePage(props) {
-  const { $, category, page } = props
+  const { $, category, page, headerInnerHTML } = props
+  console.log({ headerInnerHTML })
+
   // get an array of all sectionHeaders
   // that are followed by a table
-  const sectionHeadersText = ['']
+  const sectionHeadersText = $('h2')
+    .filter((i, el) => {
+      return $(el)
+        .next()
+        .is('div')
+    })
+    .filter((i, el) => {
+      return $(el)
+        .next()
+        .next()
+        .is('table')
+    })
+    .filter((i, el) => {
+      if (headerInnerHTML) {
+        console.log('$(el).text()', $(el).text())
+        console.log({ headerInnerHTML })
+        return $(el).text() === headerInnerHTML
+      }
+      return true
+    })
+    .map((i, el) => {
+      return $(el)
+        .text()
+        .replace(/\[edit\]/, '')
+    })
+    .get()
 
   // get table data
   // for all tables that are immediately preceded by
@@ -17,15 +46,19 @@ function parsePage(props) {
     .filter((i, el) => {
       return $(el)
         .prev()
-        .is('p')
+        .prev()
+        .is('h2')
     })
     .filter((i, el) => {
-      const prevH2Text = $(el)
+      return $(el)
         .prev()
-        .prev()
-        .text()
-      console.log('prevH2Text', prevH2Text)
-      return prevH2Text !== 'Living former mayors[edit]'
+        .is('div')
+    })
+    .filter((i, el) => {
+      if (headerInnerHTML) {
+        return $(el).text() === headerInnerHTML
+      }
+      return true
     })
     .map((i, el) => {
       cheerioTableparser($)
@@ -35,31 +68,43 @@ function parsePage(props) {
 
   // get table data by row
   const tableCount = sectionHeadersText.length
+  console.log({ sectionHeadersText })
+  console.log('tablesData.length', tablesData.length)
+  console.log({ tableCount })
+
   const columnsCount = tablesData.length / tableCount
   const tablesDataByTable = []
+
   tablesData.forEach((col, i) => {
+    // console.log('columnsCount', columnsCount)
+    // console.log('columnsCount % (i + 1)', columnsCount % (i + 1))
     if (columnsCount % (i + 1) === 0) tablesDataByTable.push([])
     const tableIndex = Math.floor(i / columnsCount)
-    tablesDataByTable[tableIndex].push(col)
+    // console.log({ tableIndex })
+    // console.log({ tablesDataByTable })
+    if (tableIndex < tablesDataByTable.length) {
+      tablesDataByTable[tableIndex].push(col)
+    }
   })
 
   const tablesDataByRow = tablesDataByTable.map((table, i) => {
     return stitchTableData(table, sectionHeadersText[i])
   })
 
-  function stitchTableData(tableData) {
+  function stitchTableData(tableData, era) {
     if (tableData.length === 0) return tableData
     const keys = tableData.map(col => col[0])
     const values = tableData.map(col => col.splice(1, col.length))
     const rows = []
 
+    console.log('era', era)
+    let prevKey
     const rowKeys = keys.map(k => {
-      if (k === '' && page === 'edmonton') {
-        return 'name'
-      } else {
-        return parseKey({ keyString: k, page })
-      }
+      const parsedKey = parseKey({ keyString: k, page, prevKey, era })
+      prevKey = parsedKey
+      return parsedKey
     })
+    console.log('rowKeys', rowKeys)
 
     // TODO check that all values are equal length
     // in other words handle missing values case
@@ -68,58 +113,30 @@ function parsePage(props) {
       for (let j = 0; j < rowKeys.length; j += 1) {
         const currentKey = rowKeys[j]
 
-        // console.log('values[j][i]', values[j][i])
-
-        let currentValue = values[j][i]
-        if (/<a\shref/.test(currentValue)) {
-          const match = currentValue.match(
-            /title=\"[\w\s=\\"\/\.\?&;\(\)-:%#]*\"/
-          )
-          if (match !== null)
-            currentValue = match[0].replace(/title=\"/, '').replace(/\"/, '')
-          else currentValue = ''
-        } else if (currentValue) {
-          // remove html tags from values
+        // console.log('values[j]', values[j])
+        // console.log('values[j].length', values[j].length)
+        // console.log('i', i)
+        // protect against index values that are too high
+        let currentValue = ''
+        if (i < values[j].length) {
+          // remove html tags & quotes from values
           currentValue = values[j][i]
             .replace(/<[\w\s=\\"\/\.\?&;\(\)-:%#"]*>/g, '')
-            .replace(/\[.*\]/, '')
-            .replace(/[\(\)]/, '')
-            .replace('(page does not exist)', '')
-            .replace('(mayor)', '')
-        } else {
-          currentValue = ''
+            .replace(/&quot;/g, '')
         }
+        rowObject[currentKey] = currentValue
 
-        // console.log('currentKey', currentKey)
-        // console.log('currentValue', currentValue)
-
-        // TODO handle multiple discontinuous terms described in one cell
-        // example: `1928, 1932,[6][not in citation given] 1934 [7]`
         if (currentKey === 'years' || currentKey === 'term') {
           const { beginTerm, endTerm } = parseTerm(currentValue)
           rowObject.beginTerm = beginTerm
           rowObject.endTerm = endTerm
         }
-
-        // if else block starts here
-        if (currentKey === 'name') {
-          const name = currentValue.split('\n')
-          rowObject.name = name[0]
-            .replace(/&quot;/g, '')
-            .replace('(page does not exist)', '')
-            .replace('(mayor)', '')
-            .replace(/\(Curitiba/, '')
-            .replace(/\)/g, '')
-            .trim()
-          if (name.length > 1) {
-            const lifespan = parseTerm(name[1])
-            rowObject.birth = lifespan.beginTerm
-            rowObject.death = lifespan.endTerm
-          }
-        } else {
-          rowObject[currentKey] = currentValue
-        }
       }
+      rowObject.era = era
+
+      // if we have parsed out the beginTerm and endTerm
+      // delete the original long string term property
+      if (rowObject.beginTerm && rowObject.endTerm) delete rowObject.term
       rows.push(rowObject)
     }
 
@@ -147,6 +164,8 @@ function parsePage(props) {
     allRows = tablesDataByRow.reduce((accumulator, currentValue) =>
       accumulator.concat(currentValue)
     )
+
+  allRows = postProcessor(allRows)
 
   return allRows
 }

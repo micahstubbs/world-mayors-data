@@ -43,6 +43,14 @@ function postProcessor(allRows) {
       outputRow = spaceNewline({ row: outputRow })
     }
 
+    const viceMayorEmptyStringEras = [
+      'The military dictatorship 1964–1985',
+      'The New Republic 1985–present'
+    ]
+    if (viceMayorEmptyStringEras.indexOf(outputRow.era) > -1) {
+      delete outputRow['vice mayor(s)']
+    }
+
     return outputRow
   })
 

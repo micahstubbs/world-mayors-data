@@ -17,8 +17,8 @@ function parsePage(props) {
   } = props
   const headerSelectorString = headerSelector || 'h2'
   const dataPrevSelectorString = dataPrevSelector || 'h2'
-  console.log({ headerInnerHTML })
-  console.log({ headerSelectorString })
+  // console.log({ headerInnerHTML })
+  // console.log({ headerSelectorString })
   // get an array of all sectionHeaders
   // that are followed by a table
   const sectionHeadersText = $(headerSelectorString)
@@ -29,8 +29,8 @@ function parsePage(props) {
     })
     .filter((i, el) => {
       if (headerInnerHTML) {
-        console.log('$(el).text()', $(el).text())
-        console.log({ headerInnerHTML })
+        // console.log('$(el).text()', $(el).text())
+        // console.log({ headerInnerHTML })
         return $(el).text() === headerInnerHTML
       }
       return true
@@ -120,6 +120,7 @@ function parsePage(props) {
           currentValue = values[j][i]
             .replace(/<[\w\s=\\"\/\.\?&;\(\)-:%#"]*>/g, '')
             .replace(/&quot;/g, '')
+            .replace('&#x2014;', '-')
         }
         rowObject[currentKey] = currentValue
 

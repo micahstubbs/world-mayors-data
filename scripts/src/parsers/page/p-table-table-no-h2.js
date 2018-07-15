@@ -110,8 +110,8 @@ function parsePage(props) {
           currentValue = ''
         }
 
-        console.log('currentKey', currentKey)
-        console.log('currentValue', currentValue)
+        // console.log('currentKey', currentKey)
+        // console.log('currentValue', currentValue)
 
         // TODO handle multiple discontinuous terms described in one cell
         // example: `1928, 1932,[6][not in citation given] 1934 [7]`

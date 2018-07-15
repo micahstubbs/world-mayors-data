@@ -18,7 +18,11 @@ function parseKey({ keyString, page, prevKey, era }) {
   }
 
   // page specific dev logging
-  if (page === 'brussels' || page === 'rio_de_janeiro') {
+  if (
+    page === 'brussels' ||
+    page === 'rio_de_janeiro' ||
+    page === 's%c3%a3o_paulo'
+  ) {
     console.log({ keyString })
     console.log({ cleanedKeyString })
     console.log({ prevKey })
@@ -52,6 +56,16 @@ function parseKey({ keyString, page, prevKey, era }) {
     if (cleanedKeyString === 'term of office') return 'beginTerm'
     if (prevKey === 'beginTerm' && cleanedKeyString === '') {
       return 'endTerm'
+    }
+  }
+
+  const viceMayorEmptyStringEras = [
+    'The military dictatorship (1964–1985)',
+    'The New Republic (1985–present)'
+  ]
+  if (viceMayorEmptyStringEras.indexOf(era) > -1) {
+    if (cleanedKeyString === '' && prevKey === 'vice mayor(s)') {
+      return 'viceMayors'
     }
   }
 
