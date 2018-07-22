@@ -9,7 +9,10 @@ const parseTerm = require('../field/term.js')
 function parseRow(props) {
   const { $, el, era } = props
 
-  const rowString = $(el).text().replace(/\(\w*\)/, '').replace('SDAPÖ)', '')
+  const rowString = $(el)
+    .text()
+    .replace(/\(\w*\)/, '')
+    .replace('SDAPÖ)', '')
 
   // early return for missing entries
   if (rowString.trim() === '?') return []
@@ -25,7 +28,10 @@ function parseRow(props) {
   } else if (wordDigitBorderIndex > -1) {
     const separatorIndex = wordDigitBorderIndex + 1
     console.log('separatorIndex', separatorIndex)
-    const name = rowString.slice(0, separatorIndex).trim()
+    const name = rowString
+      .slice(0, separatorIndex)
+      .replace(/"/g, "'")
+      .trim()
     const term = rowString.slice(separatorIndex + 1, rowString.length).trim()
     row = [name, term]
   } else {
@@ -38,7 +44,10 @@ function parseRow(props) {
   let name
   let terms
   if (row.length > 1) {
-    name = row.shift().replace(/\[.*\]/, '').trim()
+    name = row
+      .shift()
+      .replace(/\[.*\]/, '')
+      .trim()
     terms = row[0].split(',')
   } else {
     name = row[0]
