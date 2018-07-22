@@ -1,0 +1,377 @@
+[
+  {
+    "name": "Henry Braun",
+    "town": "Abbotsford",
+    "note": ""
+  },
+  {
+    "name": "Derek Corrigan",
+    "town": "Burnaby",
+    "note": ""
+  },
+  {
+    "name": "Andy Adams",
+    "town": "Campbell River",
+    "note": ""
+  },
+  {
+    "name": "Lawrence Chernoff",
+    "town": "Castlegar",
+    "note": ""
+  },
+  {
+    "name": "Ryan Windsor",
+    "town": "Central Saanich",
+    "note": ""
+  },
+  {
+    "name": "Sharon Gaetz",
+    "town": "Chilliwack",
+    "note": ""
+  },
+  {
+    "name": "Jim Garlick",
+    "town": "Coldstream",
+    "note": ""
+  },
+  {
+    "name": "Carol Hamilton",
+    "town": "Colwood",
+    "note": ""
+  },
+  {
+    "name": "Paul Ives",
+    "town": "Comox",
+    "note": ""
+  },
+  {
+    "name": "Richard Stewart",
+    "town": "Coquitlam",
+    "note": ""
+  },
+  {
+    "name": "Greg Phelps",
+    "town": "Courtenay",
+    "note": ""
+  },
+  {
+    "name": "Scott Manjak",
+    "town": "Cranbrook",
+    "note": ""
+  },
+  {
+    "name": "Dale Bumstead",
+    "town": "Dawson Creek",
+    "note": ""
+  },
+  {
+    "name": "Lois Jackson",
+    "town": "Delta",
+    "note": ""
+  },
+  {
+    "name": "Barbara Desjardins",
+    "town": "Esquimalt",
+    "note": ""
+  },
+  {
+    "name": "Lori Ackerman",
+    "town": "Fort St. John",
+    "note": ""
+  },
+  {
+    "name": "Laurie French",
+    "town": "Hope",
+    "note": ""
+  },
+  {
+    "name": "Peter Milobar",
+    "town": "Kamloops",
+    "note": ""
+  },
+  {
+    "name": "Colin Basran",
+    "town": "Kelowna",
+    "note": ""
+  },
+  {
+    "name": "James E. Ogilvie",
+    "town": "Kimberley",
+    "note": ""
+  },
+  {
+    "name": "Joanne Monaghan",
+    "town": "Kitimat",
+    "note": ""
+  },
+  {
+    "name": "Aaron Stone",
+    "town": "Ladysmith",
+    "note": ""
+  },
+  {
+    "name": "James Baker",
+    "town": "Lake Country",
+    "note": ""
+  },
+  {
+    "name": "Stewart Young",
+    "town": "Langford",
+    "note": ""
+  },
+  {
+    "name": "Ted Schaffer",
+    "town": "Langley",
+    "note": ""
+  },
+  {
+    "name": "Jack Froese",
+    "town": "Langley District",
+    "note": ""
+  },
+  {
+    "name": "Nicole Read",
+    "town": "Maple Ridge",
+    "note": ""
+  },
+  {
+    "name": "Andrew Merilees",
+    "town": "Masset",
+    "note": ""
+  },
+  {
+    "name": "David Laird",
+    "town": "Merritt",
+    "note": ""
+  },
+  {
+    "name": "Randy Hawes",
+    "town": "Mission",
+    "note": ""
+  },
+  {
+    "name": "Bill McKay",
+    "town": "Nanaimo",
+    "note": ""
+  },
+  {
+    "name": "Deb Kozak",
+    "town": "Nelson",
+    "note": ""
+  },
+  {
+    "name": "Jonathan X. Coté",
+    "town": "New Westminster",
+    "note": ""
+  },
+  {
+    "name": "Jon Lefebure",
+    "town": "North Cowichan",
+    "note": ""
+  },
+  {
+    "name": "Alice Finall",
+    "town": "North Saanich",
+    "note": ""
+  },
+  {
+    "name": "Darrell Mussatto",
+    "town": "North Vancouver",
+    "note": ""
+  },
+  {
+    "name": "Richard Walton",
+    "town": "North Vancouver District",
+    "note": ""
+  },
+  {
+    "name": "Nils Jensen",
+    "town": "Oak Bay",
+    "note": ""
+  },
+  {
+    "name": "Ed F. Mayne",
+    "town": "Parksville",
+    "note": ""
+  },
+  {
+    "name": "Andrew Jakubeit",
+    "town": "Penticton",
+    "note": ""
+  },
+  {
+    "name": "John Becker",
+    "town": "Pitt Meadows",
+    "note": ""
+  },
+  {
+    "name": "Ken McRae",
+    "town": "Port Alberni",
+    "note": ""
+  },
+  {
+    "name": "Greg Moore",
+    "town": "Port Coquitlam",
+    "note": ""
+  },
+  {
+    "name": "Mike Clay",
+    "town": "Port Moody",
+    "note": ""
+  },
+  {
+    "name": "Dave Formosa",
+    "town": "Powell River",
+    "note": ""
+  },
+  {
+    "name": "Lyn Hall",
+    "town": "Prince George",
+    "note": ""
+  },
+  {
+    "name": "Herb Pond",
+    "town": "Prince Rupert",
+    "note": ""
+  },
+  {
+    "name": "Teunis Westbroek",
+    "town": "Qualicum Beach",
+    "note": ""
+  },
+  {
+    "name": "Mary Sjostrom",
+    "town": "Quesnel",
+    "note": ""
+  },
+  {
+    "name": "David Raven",
+    "town": "Revelstoke",
+    "note": ""
+  },
+  {
+    "name": "Malcolm Brodie",
+    "town": "Richmond",
+    "note": ""
+  },
+  {
+    "name": "Richard Atwell",
+    "town": "Saanich",
+    "note": ""
+  },
+  {
+    "name": "Nancy Cooper",
+    "town": "Salmon Arm",
+    "note": ""
+  },
+  {
+    "name": "Bruce Milne",
+    "town": "Sechelt",
+    "note": ""
+  },
+  {
+    "name": "Steve Price",
+    "town": "Sidney",
+    "note": ""
+  },
+  {
+    "name": "Taylor Bachrach",
+    "town": "Smithers",
+    "note": ""
+  },
+  {
+    "name": "Maja Tait",
+    "town": "Sooke",
+    "note": ""
+  },
+  {
+    "name": "Will Hansma",
+    "town": "Spallumcheen",
+    "note": ""
+  },
+  {
+    "name": "Patricia Heintzman",
+    "town": "Squamish",
+    "note": ""
+  },
+  {
+    "name": "Galina Durant",
+    "town": "Stewart",
+    "note": ""
+  },
+  {
+    "name": "Janice Perrino",
+    "town": "Summerland",
+    "note": ""
+  },
+  {
+    "name": "Linda Hepner",
+    "town": "Surrey",
+    "note": ""
+  },
+  {
+    "name": "Dave Pernarowski",
+    "town": "Terrace",
+    "note": ""
+  },
+  {
+    "name": "Dieter Bogs",
+    "town": "Trail",
+    "note": ""
+  },
+  {
+    "name": "Chief Robert Louie",
+    "town": "Tsinstikeptum (Westbank First Nation)",
+    "note": ""
+  },
+  {
+    "name": "Gregor Robertson",
+    "town": "Vancouver",
+    "note": ""
+  },
+  {
+    "name": "Andru McCracken",
+    "town": "Valemount",
+    "note": ""
+  },
+  {
+    "name": "Robert Sawatzky",
+    "town": "Vernon",
+    "note": ""
+  },
+  {
+    "name": "Lisa Helps",
+    "town": "Victoria",
+    "note": ""
+  },
+  {
+    "name": "David Screech",
+    "town": "View Royal",
+    "note": ""
+  },
+  {
+    "name": "Robin Sharpe",
+    "town": "Wells",
+    "note": ""
+  },
+  {
+    "name": "Michael Smith",
+    "town": "West Vancouver",
+    "note": ""
+  },
+  {
+    "name": "Nancy Wilhelm-Morden",
+    "town": "Whistler",
+    "note": ""
+  },
+  {
+    "name": "Wayne Baldwin",
+    "town": "White Rock",
+    "note": ""
+  },
+  {
+    "name": "Kerry Cook",
+    "town": "Williams Lake",
+    "note": ""
+  }
+]
