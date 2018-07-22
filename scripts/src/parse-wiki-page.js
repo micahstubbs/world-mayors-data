@@ -18,9 +18,19 @@ function parseWikiPage({ body, link, category }) {
       .toLowerCase()
   )
 
+  const suffixSplit = link.split('(')
+  let suffix
+  if (suffixSplit.length > 0) {
+    suffix = suffixSplit[suffixSplit.length - 1].replace(')', '')
+  }
+
   const result = getParser(category)({ $, category, page, link })
 
-  writeJSON(result, `./data/${category}-${page}-data.json`)
+  let filename = `./data/${category}-${page}-data.json`
+  if (typeof suffix !== 'undefined')
+    filename = `./data/${category}-${page}-${suffix}-data.json`
+
+  writeJSON(result, filename)
 }
 
 module.exports = parseWikiPage
