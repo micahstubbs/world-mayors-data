@@ -19,14 +19,6 @@ function parsePage(props) {
         .prev()
         .is('p')
     })
-    .filter((i, el) => {
-      const prevH2Text = $(el)
-        .prev()
-        .prev()
-        .text()
-      console.log('prevH2Text', prevH2Text)
-      return prevH2Text !== 'Living former mayors[edit]'
-    })
     .map((i, el) => {
       cheerioTableparser($)
       return $(el).parsetable()
