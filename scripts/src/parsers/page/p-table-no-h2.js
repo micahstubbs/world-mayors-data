@@ -63,13 +63,18 @@ function parsePage(props) {
         // console.log('values[j][i]', values[j][i])
 
         let currentValue = values[j][i]
-        if (/<a\shref/.test(currentValue)) {
-          const match = currentValue.match(
-            /title=\"[\w\s=\\"\/\.\?&;\(\)-:%#]*\"/
-          )
-          if (match !== null)
-            currentValue = match[0].replace(/title=\"/, '').replace(/\"/, '')
-          else currentValue = ''
+        if (currentKey === 'name') {
+          console.log('currentKey', currentKey)
+          console.log('currentValue', currentValue)
+        }
+
+        // do this test first to handle the case where
+        // there is a footnote <a> tag that does not contain the name
+        const titleMatch = currentValue.match(
+          /title=\"[\w\s=\\"\/\.\?&;\(\)-:%#]*\"/
+        )
+        if (/<a\shref/.test(currentValue) && titleMatch !== null) {
+          currentValue = titleMatch[0].replace(/title=\"/, '').replace(/\"/, '')
         } else if (currentValue) {
           // remove html tags from values
           currentValue = values[j][i]
@@ -78,12 +83,16 @@ function parsePage(props) {
             .replace(/[\(\)]/, '')
             .replace('(page does not exist)', '')
             .replace('(mayor)', '')
+            .replace('&#x201C;', "'")
+            .replace('&#x201D;', "'")
         } else {
           currentValue = ''
         }
 
-        // console.log('currentKey', currentKey)
-        // console.log('currentValue', currentValue)
+        if (currentKey === 'name') {
+          console.log('currentKey', currentKey)
+          console.log('currentValue', currentValue)
+        }
 
         // TODO handle multiple discontinuous terms described in one cell
         // example: `1928, 1932,[6][not in citation given] 1934 [7]`
