@@ -1,1 +1,432 @@
-[]
+[
+  {
+    "number": "1",
+    "name": "Malcolm A. MacLean",
+    "beginTerm": "1886",
+    "endTerm": "1887",
+    "terms": "2",
+    "&#xa0;": "",
+    "party": "Independent",
+    "era": "List"
+  },
+  {
+    "number": "2",
+    "name": "David Oppenheimer",
+    "beginTerm": "1888",
+    "endTerm": "1891",
+    "terms": "4",
+    "&#xa0;": "",
+    "party": "Independent",
+    "era": "List"
+  },
+  {
+    "number": "3",
+    "name": "Frederick Cope",
+    "beginTerm": "1892",
+    "endTerm": "1893",
+    "terms": "2",
+    "&#xa0;": "",
+    "party": "Independent",
+    "era": "List"
+  },
+  {
+    "number": "4",
+    "name": "Robert A. Anderson",
+    "beginTerm": "1894",
+    "endTerm": "1894",
+    "terms": "1",
+    "&#xa0;": "",
+    "party": "Independent",
+    "era": "List"
+  },
+  {
+    "number": "5",
+    "name": "Henry Collins",
+    "beginTerm": "1895",
+    "endTerm": "1896",
+    "terms": "2",
+    "&#xa0;": "",
+    "party": "Independent",
+    "era": "List"
+  },
+  {
+    "number": "6",
+    "name": "William Templeton",
+    "beginTerm": "1897",
+    "endTerm": "1897",
+    "terms": "1",
+    "&#xa0;": "",
+    "party": "Independent",
+    "era": "List"
+  },
+  {
+    "number": "7",
+    "name": "James Garden",
+    "beginTerm": "1898",
+    "endTerm": "1900",
+    "terms": "3",
+    "&#xa0;": "",
+    "party": "Independent",
+    "era": "List"
+  },
+  {
+    "number": "8",
+    "name": "Thomas Townley",
+    "beginTerm": "1901",
+    "endTerm": "1901",
+    "terms": "1",
+    "&#xa0;": "",
+    "party": "Independent",
+    "era": "List"
+  },
+  {
+    "number": "9",
+    "name": "Thomas Neelands",
+    "beginTerm": "1902",
+    "endTerm": "1903",
+    "terms": "2",
+    "&#xa0;": "",
+    "party": "Independent",
+    "era": "List"
+  },
+  {
+    "number": "10",
+    "name": "William McGuigan",
+    "beginTerm": "1904",
+    "endTerm": "1904",
+    "terms": "1",
+    "&#xa0;": "",
+    "party": "Independent",
+    "era": "List"
+  },
+  {
+    "number": "11",
+    "name": "Frederick Buscombe",
+    "beginTerm": "1905",
+    "endTerm": "1906",
+    "terms": "2",
+    "&#xa0;": "",
+    "party": "Independent",
+    "era": "List"
+  },
+  {
+    "number": "12",
+    "name": "Alexander Bethune",
+    "beginTerm": "1907",
+    "endTerm": "1908",
+    "terms": "2",
+    "&#xa0;": "",
+    "party": "Independent",
+    "era": "List"
+  },
+  {
+    "number": "13",
+    "name": "Charles Douglas",
+    "beginTerm": "1909",
+    "endTerm": "1909",
+    "terms": "1",
+    "&#xa0;": "",
+    "party": "Conservative",
+    "era": "List"
+  },
+  {
+    "number": "14",
+    "name": "Louis D. Taylor",
+    "beginTerm": "1910",
+    "endTerm": "1911",
+    "terms": "2",
+    "&#xa0;": "",
+    "party": "Liberal[2]",
+    "era": "List"
+  },
+  {
+    "number": "15",
+    "name": "James Findlay",
+    "beginTerm": "1912",
+    "endTerm": "1912",
+    "terms": "1",
+    "&#xa0;": "",
+    "party": "Conservative",
+    "era": "List"
+  },
+  {
+    "number": "16",
+    "name": "Truman S. Baxter",
+    "beginTerm": "1913",
+    "endTerm": "1914",
+    "terms": "2",
+    "&#xa0;": "",
+    "party": "Liberal",
+    "era": "List"
+  },
+  {
+    "number": "14",
+    "name": "Louis D. Taylor",
+    "beginTerm": "1915",
+    "endTerm": "1915",
+    "terms": "&#x200B;1&#x2044;2",
+    "&#xa0;": "",
+    "party": "Liberal",
+    "era": "List"
+  },
+  {
+    "number": "17",
+    "name": "Malcolm P. McBeath",
+    "beginTerm": "1915",
+    "endTerm": "1917",
+    "terms": "3",
+    "&#xa0;": "",
+    "party": "Liberal",
+    "era": "List"
+  },
+  {
+    "number": "18",
+    "name": "Robert Gale",
+    "beginTerm": "1918",
+    "endTerm": "1921",
+    "terms": "4",
+    "&#xa0;": "",
+    "party": "Conservative",
+    "era": "List"
+  },
+  {
+    "number": "19",
+    "name": "Charles E. Tisdall",
+    "beginTerm": "1922",
+    "endTerm": "1923",
+    "terms": "2",
+    "&#xa0;": "",
+    "party": "Conservative",
+    "era": "List"
+  },
+  {
+    "number": "20",
+    "name": "William R. Owen",
+    "beginTerm": "1924",
+    "endTerm": "1924",
+    "terms": "1",
+    "&#xa0;": "",
+    "party": "Conservative",
+    "era": "List"
+  },
+  {
+    "number": "14",
+    "name": "Louis D. Taylor",
+    "beginTerm": "1925",
+    "endTerm": "1928",
+    "terms": "4",
+    "&#xa0;": "",
+    "party": "Liberal",
+    "era": "List"
+  },
+  {
+    "number": "21",
+    "name": "William H. Malkin",
+    "beginTerm": "1929",
+    "endTerm": "1930",
+    "terms": "2",
+    "&#xa0;": "",
+    "party": "Conservative",
+    "era": "List"
+  },
+  {
+    "number": "14",
+    "name": "Louis D. Taylor",
+    "beginTerm": "1931",
+    "endTerm": "1934",
+    "terms": "4",
+    "&#xa0;": "",
+    "party": "Liberal",
+    "era": "List"
+  },
+  {
+    "number": "22",
+    "name": "Gerry McGeer",
+    "beginTerm": "1935",
+    "endTerm": "1936",
+    "terms": "2",
+    "&#xa0;": "",
+    "party": "Liberal",
+    "era": "List"
+  },
+  {
+    "number": "23",
+    "name": "George C. Miller",
+    "beginTerm": "1937",
+    "endTerm": "1938",
+    "terms": "2",
+    "&#xa0;": "",
+    "party": "Conservative",
+    "era": "List"
+  },
+  {
+    "number": "24",
+    "name": "James L. Telford",
+    "beginTerm": "1939",
+    "endTerm": "1940",
+    "terms": "2",
+    "&#xa0;": "",
+    "party": "Independent",
+    "era": "List"
+  },
+  {
+    "number": "25",
+    "name": "Jonathan W. Cornett",
+    "beginTerm": "1941",
+    "endTerm": "1946",
+    "terms": "6",
+    "&#xa0;": "",
+    "party": "NPA",
+    "era": "List"
+  },
+  {
+    "number": "22",
+    "name": "Gerry McGeer &#x2020;",
+    "beginTerm": "1947",
+    "endTerm": "1947",
+    "terms": "&#x200B;1&#x2044;2",
+    "&#xa0;": "",
+    "party": "NPA",
+    "era": "List"
+  },
+  {
+    "number": "26",
+    "name": "Charles E. Jones &#x2020;",
+    "beginTerm": "1947",
+    "endTerm": "1948",
+    "terms": "1 &#x200B;1&#x2044;2",
+    "&#xa0;": "",
+    "party": "NPA",
+    "era": "List"
+  },
+  {
+    "number": "27",
+    "name": "Charles E. Thompson",
+    "beginTerm": "1949",
+    "endTerm": "1950",
+    "terms": "2",
+    "&#xa0;": "",
+    "party": "NPA",
+    "era": "List"
+  },
+  {
+    "number": "28",
+    "name": "Frederick Hume",
+    "beginTerm": "1951",
+    "endTerm": "1958",
+    "terms": "2",
+    "&#xa0;": "",
+    "party": "NPA",
+    "era": "List"
+  },
+  {
+    "number": "29",
+    "name": "Albert T. Alsbury",
+    "beginTerm": "1959",
+    "endTerm": "1962",
+    "terms": "1",
+    "&#xa0;": "",
+    "party": "NPA",
+    "era": "List"
+  },
+  {
+    "number": "30",
+    "name": "William Rathie",
+    "beginTerm": "1963",
+    "endTerm": "1966",
+    "terms": "1",
+    "&#xa0;": "",
+    "party": "NPA",
+    "era": "List"
+  },
+  {
+    "number": "31",
+    "name": "Tom Campbell 1",
+    "beginTerm": "1966",
+    "endTerm": "1972",
+    "terms": "2",
+    "&#xa0;": "",
+    "party": "Independent",
+    "era": "List"
+  },
+  {
+    "number": "32",
+    "name": "Arthur Phillips",
+    "beginTerm": "1973",
+    "endTerm": "1976",
+    "terms": "1",
+    "&#xa0;": "",
+    "party": "TEAM",
+    "era": "List"
+  },
+  {
+    "number": "33",
+    "name": "Jack Volrich",
+    "beginTerm": "1977",
+    "endTerm": "1980",
+    "terms": "1",
+    "&#xa0;": "",
+    "party": "TEAM",
+    "era": "List"
+  },
+  {
+    "number": "34",
+    "name": "Mike Harcourt",
+    "beginTerm": "1981",
+    "endTerm": "1986",
+    "terms": "1 &#x200B;1&#x2044;2",
+    "&#xa0;": "",
+    "party": "COPE",
+    "era": "List"
+  },
+  {
+    "number": "35",
+    "name": "Gordon Campbell",
+    "beginTerm": "1987",
+    "endTerm": "1993",
+    "terms": "2",
+    "&#xa0;": "",
+    "party": "NPA",
+    "era": "List"
+  },
+  {
+    "number": "36",
+    "name": "Philip Owen",
+    "beginTerm": "1993",
+    "endTerm": "2002",
+    "terms": "3",
+    "&#xa0;": "",
+    "party": "NPA",
+    "era": "List"
+  },
+  {
+    "number": "37",
+    "name": "Larry Campbell",
+    "beginTerm": "2002",
+    "endTerm": "2005",
+    "terms": "1",
+    "&#xa0;": "",
+    "party": "COPE",
+    "era": "List"
+  },
+  {
+    "number": "38",
+    "name": "Sam Sullivan",
+    "beginTerm": "2005",
+    "endTerm": "2008",
+    "terms": "1",
+    "&#xa0;": "",
+    "party": "NPA",
+    "era": "List"
+  },
+  {
+    "number": "39",
+    "name": "Gregor Robertson",
+    "beginTerm": "2008",
+    "endTerm": "Incumbent",
+    "terms": "2 &#x200B;1&#x2044;2",
+    "&#xa0;": "",
+    "party": "Vision",
+    "era": "List"
+  }
+]

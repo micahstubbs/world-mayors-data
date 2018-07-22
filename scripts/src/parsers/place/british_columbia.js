@@ -3,6 +3,7 @@ const h2UlAlphabetList = require('../page/h2-ul-alphabet-list.js')
 const elList = require('../page/el-list.js')
 const pTableNoH2 = require('../page/p-table-no-h2.js')
 const table = require('../page/table.js')
+const h2ThumbTable = require('../page/h2-thumb-table.js')
 
 function parsePage(props) {
   const { link } = props
@@ -26,6 +27,8 @@ function parsePage(props) {
       return pTableNoH2(props)
     case '/wiki/List_of_mayors_of_Qualicum_Beach,_British_Columbia':
       return table(props)
+    case '/wiki/List_of_mayors_of_Vancouver':
+      return h2ThumbTable(props)
     default:
       return h2Table(props)
   }
