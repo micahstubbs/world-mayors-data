@@ -63,10 +63,6 @@ function parsePage(props) {
         // console.log('values[j][i]', values[j][i])
 
         let currentValue = values[j][i]
-        if (currentKey === 'name') {
-          console.log('currentKey', currentKey)
-          console.log('currentValue', currentValue)
-        }
 
         // do this test first to handle the case where
         // there is a footnote <a> tag that does not contain the name
@@ -87,11 +83,6 @@ function parsePage(props) {
             .replace('&#x201D;', "'")
         } else {
           currentValue = ''
-        }
-
-        if (currentKey === 'name') {
-          console.log('currentKey', currentKey)
-          console.log('currentValue', currentValue)
         }
 
         // TODO handle multiple discontinuous terms described in one cell
