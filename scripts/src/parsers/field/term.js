@@ -20,6 +20,7 @@ function parseTerm(termString) {
   } else {
     term = cleanedTermString.split('-')
   }
+  console.log('term from term.js', term)
 
   const beginTerm = term[0]
     .replace(/\[.*\]/g, '')
@@ -39,6 +40,9 @@ function parseTerm(termString) {
     endTerm = term[0]
       .replace(/\[.*\]/g, '')
       .replace(/[\(\)]/g, '')
+      // .replace(/\s-\s\s-\s/g, '')
+      // .replace(/\n\n/g, '')
+
       .trim()
   // TODO refactor variable names to make using
   // this to parse lifespans feel comfortable too
