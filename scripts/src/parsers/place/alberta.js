@@ -2,7 +2,7 @@ const parseH2TableData = require('../page/h2-table.js')
 const parseH2UlAlphabetList = require('../page/h2-ul-alphabet-list.js')
 const parsePTableNoH2ThumbnailsData = require('../page/p-table-no-h2-thumbnails.js')
 const parsePTableNoH2Data = require('../page/p-table-no-h2.js')
-const elUl = require('../page/el-ul.js')
+const elUl = require('../page/el-list.js')
 const parsePUlData = require('../page/p-ul.js')
 
 function parsePage(props) {

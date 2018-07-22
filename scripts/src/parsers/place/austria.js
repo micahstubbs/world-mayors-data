@@ -1,4 +1,4 @@
-const elUl = require('../page/el-ul.js')
+const elUl = require('../page/el-list.js')
 const parseDlTableData = require('../page/dl-table.js')
 
 function parsePage(props) {

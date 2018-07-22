@@ -12,9 +12,11 @@ function parsePage(props) {
   // an the element specified in props.el
   const sectionHeadersTextSet = new Set()
   let allRows = []
+  let listElement = 'ul'
+  if (typeof props.listEl !== 'undefined') listElement = props.listEl
 
   let listIndex
-  $(props.listEl)
+  $(listElement)
     .filter((i, el) => {
       listIndex = i
       return $(el)

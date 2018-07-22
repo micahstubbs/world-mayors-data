@@ -1,7 +1,7 @@
 const h2Table = require('../page/h2-table.js')
 const h2DivTable = require('../page/h2-div-table.js')
 const pTableNoH2 = require('../page/p-table-no-h2.js')
-const elUl = require('../page/el-ul.js')
+const elUl = require('../page/el-list.js')
 
 function parsePage(props) {
   const { link } = props

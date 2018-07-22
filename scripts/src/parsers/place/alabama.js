@@ -1,6 +1,6 @@
 const parseH2TableData = require('../page/h2-table.js')
 const parseTableTableData = require('../page/table-table.js')
-const elUl = require('../page/el-ul.js')
+const elUl = require('../page/el-list.js')
 const parsePUlData = require('../page/p-ul.js')
 // const parseDivUlData = require('../page/div-ul.js')
 const parseCollapsibleDivUl = require('../page/collapsible-div-ul.js')
