@@ -20,7 +20,6 @@ function parseTerm(termString) {
   } else {
     term = cleanedTermString.split('-')
   }
-  console.log('term from term.js', term)
 
   const beginTerm = term[0]
     .replace(/\[.*\]/g, '')
