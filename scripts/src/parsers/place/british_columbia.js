@@ -15,6 +15,7 @@ function parsePage(props) {
       props.listEl = 'ol'
       return elList(props)
     case '/wiki/List_of_mayors_of_Langley,_British_Columbia_(city)':
+    case '/wiki/List_of_mayors_of_Langley,_British_Columbia_(district_municipality)':
       return pTableNoH2(props)
     default:
       return h2Table(props)

@@ -1,1 +1,62 @@
-[]
+[
+  {
+    "number": "1",
+    "beginTerm": "1967",
+    "endTerm": "1971",
+    "name": "David William 'Bill' Poppy"
+  },
+  {
+    "number": "2",
+    "beginTerm": "1972",
+    "endTerm": "1976",
+    "name": "George Preston"
+  },
+  {
+    "number": "3",
+    "beginTerm": "1976",
+    "endTerm": "1981",
+    "name": "George Driediger"
+  },
+  {
+    "number": "4",
+    "beginTerm": "1981",
+    "endTerm": "1985",
+    "name": "W.C. 'Bill' Blair"
+  },
+  {
+    "number": "5",
+    "beginTerm": "1985",
+    "endTerm": "1987",
+    "name": "Elford Nundal"
+  },
+  {
+    "number": "6",
+    "beginTerm": "1987",
+    "endTerm": "1993",
+    "name": "John Beales"
+  },
+  {
+    "number": "7",
+    "beginTerm": "1993",
+    "endTerm": "1999",
+    "name": "John Scholtens"
+  },
+  {
+    "number": "8",
+    "beginTerm": "1999",
+    "endTerm": "2008",
+    "name": "Kurt Alberts"
+  },
+  {
+    "number": "9",
+    "beginTerm": "2008",
+    "endTerm": "2011",
+    "name": "Rick Green"
+  },
+  {
+    "number": "10",
+    "beginTerm": "2011",
+    "endTerm": "Present",
+    "name": "Jack Froese"
+  }
+]
