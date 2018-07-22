@@ -1,1 +1,80 @@
-[]
+[
+  {
+    "name": "Lee M. Newgard",
+    "beginTerm": "1957",
+    "endTerm": "1964",
+    "era": "Chairmen"
+  },
+  {
+    "name": "Elmer A. Everson",
+    "beginTerm": "1964",
+    "endTerm": "1968",
+    "era": "Chairmen"
+  },
+  {
+    "name": "Lee Bremner",
+    "beginTerm": "1968",
+    "endTerm": "1969",
+    "era": "Chairmen"
+  },
+  {
+    "name": "Claude L. Parrish",
+    "beginTerm": "1969",
+    "endTerm": "1971",
+    "era": "Mayors"
+  },
+  {
+    "name": "Lee Bremner August",
+    "beginTerm": "1971",
+    "endTerm": "December 1971",
+    "era": "Mayors"
+  },
+  {
+    "name": "Charles T. Sullivan",
+    "beginTerm": "1972",
+    "endTerm": "1974",
+    "era": "Mayors"
+  },
+  {
+    "name": "Jack Kempf",
+    "beginTerm": "1974",
+    "endTerm": "1977",
+    "era": "Mayors"
+  },
+  {
+    "name": "Bas E. Studer",
+    "beginTerm": "1977",
+    "endTerm": "1979",
+    "era": "Mayors"
+  },
+  {
+    "name": "Adrian Meeuwissen",
+    "beginTerm": "1979",
+    "endTerm": "1983",
+    "era": "Mayors"
+  },
+  {
+    "name": "Bill Mikaelsson",
+    "beginTerm": "1983",
+    "endTerm": "1985",
+    "era": "Mayors"
+  },
+  {
+    "name": "Adrian Meeuwissen",
+    "beginTerm": "1985",
+    "endTerm": "1986",
+    "era": "Mayors"
+  },
+  {
+    "name": "Tom Euverman",
+    "beginTerm": "1986",
+    "endTerm": "2002",
+    "era": "Mayors"
+  },
+  {
+    "name": "Sharon Smith",
+    "beginTerm": "2002",
+    "endTerm": "present",
+    "era": "Mayors"
+  }
+]
