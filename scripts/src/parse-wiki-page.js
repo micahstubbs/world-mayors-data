@@ -20,7 +20,7 @@ function parseWikiPage({ body, link, category }) {
 
   const suffixSplit = link.split('(')
   let suffix
-  if (suffixSplit.length > 0) {
+  if (suffixSplit.length > 1) {
     suffix = suffixSplit[suffixSplit.length - 1].replace(')', '')
   }
 

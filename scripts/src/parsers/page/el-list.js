@@ -62,7 +62,12 @@ function parsePage(props) {
     .each((i, el) => {
       let rowFormat = 'number-term-name'
       if (page === 'linz') rowFormat = 'term-name'
-      if (page === 'vienna' || page === 'rio_de_janeiro' || page === 'houston')
+      if (
+        page === 'vienna' ||
+        page === 'rio_de_janeiro' ||
+        page === 'houston' ||
+        page === 'white_rock'
+      )
         rowFormat = 'name-term'
 
       const era = $(el)
