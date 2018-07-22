@@ -1,1 +1,230 @@
-[]
+[
+  {
+    "name": "Alfred Wade",
+    "beginTerm": "1909",
+    "endTerm": "1909",
+    "era": "Reeves"
+  },
+  {
+    "name": "Edwin Foley-Bennett",
+    "beginTerm": "1910",
+    "endTerm": "11",
+    "era": "Reeves"
+  },
+  {
+    "name": "Ivan Stevens",
+    "beginTerm": "1912",
+    "endTerm": "1912",
+    "era": "Reeves"
+  },
+  {
+    "name": "Edwin Foley-Bennett",
+    "beginTerm": "1913",
+    "endTerm": "1913",
+    "era": "Reeves"
+  },
+  {
+    "name": "Robert Scott Conklin",
+    "beginTerm": "1914",
+    "endTerm": "1916",
+    "era": "Reeves"
+  },
+  {
+    "name": "William Alexander McKenzie",
+    "beginTerm": "1917",
+    "endTerm": "1917",
+    "era": "Reeves"
+  },
+  {
+    "name": "Frederick Maurice Smith",
+    "beginTerm": "1918",
+    "endTerm": "1919",
+    "era": "Reeves"
+  },
+  {
+    "name": "Edward John Chambers",
+    "beginTerm": "1920",
+    "endTerm": "1923",
+    "era": "Reeves"
+  },
+  {
+    "name": "James Kirkpatrick",
+    "beginTerm": "1924",
+    "endTerm": "1925",
+    "era": "Reeves"
+  },
+  {
+    "name": "George MacDonald",
+    "beginTerm": "1926",
+    "endTerm": "1927",
+    "era": "Reeves"
+  },
+  {
+    "name": "James Kirkpatrick",
+    "beginTerm": "1928",
+    "endTerm": "1928",
+    "era": "Reeves"
+  },
+  {
+    "name": "George MacDonald",
+    "beginTerm": "1929",
+    "endTerm": "1931",
+    "era": "Reeves"
+  },
+  {
+    "name": "Charles Oliver",
+    "beginTerm": "1931",
+    "endTerm": "1935",
+    "era": "Reeves"
+  },
+  {
+    "name": "H.B. Morley",
+    "beginTerm": "1936",
+    "endTerm": "1936",
+    "era": "Reeves"
+  },
+  {
+    "name": "Gordon Wilkins",
+    "beginTerm": "1937",
+    "endTerm": "1940",
+    "era": "Reeves"
+  },
+  {
+    "name": "Robert McDougall",
+    "beginTerm": "1941",
+    "endTerm": "1942",
+    "era": "Reeves"
+  },
+  {
+    "name": "Robert Lyon",
+    "beginTerm": "1943",
+    "endTerm": "1944",
+    "era": "Reeves"
+  },
+  {
+    "name": "Robert McDougall",
+    "beginTerm": "1945",
+    "endTerm": "1945",
+    "era": "Reeves"
+  },
+  {
+    "name": "Robert Lyon",
+    "beginTerm": "1946",
+    "endTerm": "1947",
+    "era": "Reeves"
+  },
+  {
+    "name": "Robert Lyon",
+    "beginTerm": "1948",
+    "endTerm": "1949",
+    "era": "Mayors"
+  },
+  {
+    "name": "William Rathbun",
+    "beginTerm": "1950",
+    "endTerm": "1953",
+    "era": "Mayors"
+  },
+  {
+    "name": "Oscar Matson",
+    "beginTerm": "1954",
+    "endTerm": "1957",
+    "era": "Mayors"
+  },
+  {
+    "name": "Charles E. Oliver",
+    "beginTerm": "1957",
+    "endTerm": "1961",
+    "era": "Mayors"
+  },
+  {
+    "name": "Maurice Finnerty",
+    "beginTerm": "1962",
+    "endTerm": "1967",
+    "era": "Mayors"
+  },
+  {
+    "name": "F.D. Stuart",
+    "beginTerm": "1968",
+    "endTerm": "1971",
+    "era": "Mayors"
+  },
+  {
+    "name": "Frank Laird",
+    "beginTerm": "1972",
+    "endTerm": "1975",
+    "era": "Mayors"
+  },
+  {
+    "name": "Al Kenyon",
+    "beginTerm": "1976",
+    "endTerm": "1979",
+    "era": "Mayors"
+  },
+  {
+    "name": "Joe Winkelaar",
+    "beginTerm": "1979",
+    "endTerm": "1980",
+    "era": "Mayors"
+  },
+  {
+    "name": "Ivan Messmer",
+    "beginTerm": "1980",
+    "endTerm": "1986",
+    "era": "Mayors"
+  },
+  {
+    "name": "Dorothy Whittaker",
+    "beginTerm": "1986",
+    "endTerm": "1990",
+    "era": "Mayors"
+  },
+  {
+    "name": "Jake Kimberley",
+    "beginTerm": "1990",
+    "endTerm": "1996",
+    "era": "Mayors"
+  },
+  {
+    "name": "Beth Campbell",
+    "beginTerm": "1996",
+    "endTerm": "1999",
+    "era": "Mayors"
+  },
+  {
+    "name": "Mike Pearce",
+    "beginTerm": "1999",
+    "endTerm": "2002",
+    "era": "Mayors"
+  },
+  {
+    "name": "David Perry",
+    "beginTerm": "2002",
+    "endTerm": "2005",
+    "era": "Mayors"
+  },
+  {
+    "name": "Jake Kimberley",
+    "beginTerm": "2005",
+    "endTerm": "2008",
+    "era": "Mayors"
+  },
+  {
+    "name": "Dan Ashton",
+    "beginTerm": "2008",
+    "endTerm": "2013",
+    "era": "Mayors"
+  },
+  {
+    "name": "Garry Litke",
+    "beginTerm": "2013",
+    "endTerm": "2014",
+    "era": "Mayors"
+  },
+  {
+    "name": "Andrew Jakubeit",
+    "beginTerm": "2014",
+    "endTerm": "present",
+    "era": "Mayors"
+  }
+]

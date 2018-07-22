@@ -66,7 +66,8 @@ function parsePage(props) {
         page === 'vienna' ||
         page === 'rio_de_janeiro' ||
         page === 'houston' ||
-        page === 'white_rock'
+        page === 'white_rock' ||
+        page === 'penticton'
       )
         rowFormat = 'name-term'
 

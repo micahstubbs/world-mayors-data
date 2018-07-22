@@ -11,6 +11,7 @@ function parsePage(props) {
     case '/wiki/List_of_current_mayors_in_British_Columbia':
       return h2UlAlphabetList(props)
     case '/wiki/List_of_mayors_of_Houston,_British_Columbia':
+    case '/wiki/List_of_mayors_of_Penticton':
       props.el = 'h2'
       props.listEl = 'ol'
       return elList(props)
