@@ -51,6 +51,12 @@ function postProcessor(allRows) {
       delete outputRow['vice mayor(s)']
     }
 
+    // if we have successfully parsed out beginTerm and endTerm,
+    // remove the source term property
+    if (outputRow.beginTerm && outputRow.endTerm && outputRow.term) {
+      delete outputRow.term
+    }
+
     return outputRow
   })
 

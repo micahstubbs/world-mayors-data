@@ -22,6 +22,7 @@ function parsePage(props) {
       return elList(props)
     case '/wiki/List_of_mayors_of_Langley,_British_Columbia_(city)':
     case '/wiki/List_of_mayors_of_Langley,_British_Columbia_(district_municipality)':
+    case '/wiki/List_of_mayors_of_Surrey,_British_Columbia':
       return pTableNoH2(props)
     case '/wiki/List_of_mayors_of_Qualicum_Beach,_British_Columbia':
       return table(props)

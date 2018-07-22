@@ -3,6 +3,7 @@ const cheerioTableparser = require('cheerio-tableparser')
 const logger = require('../../utils/logger.js')
 const parseTerm = require('../field/term.js')
 const parseKey = require('../field/key.js')
+const postProcessor = require('../../post-processor.js')
 
 function parsePage(props) {
   const { $, category, page } = props
@@ -66,9 +67,12 @@ function parsePage(props) {
 
         // do this test first to handle the case where
         // there is a footnote <a> tag that does not contain the name
-        const titleMatch = currentValue.match(
-          /title=\"[\w\s=\\"\/\.\?&;\(\)-:%#]*\"/
-        )
+        let titleMatch = null
+        if (typeof currentValue !== 'undefined') {
+          titleMatch = currentValue.match(
+            /title=\"[\w\s=\\"\/\.\?&;\(\)-:%#]*\"/
+          )
+        }
         if (/<a\shref/.test(currentValue) && titleMatch !== null) {
           currentValue = titleMatch[0].replace(/title=\"/, '').replace(/\"/, '')
         } else if (currentValue) {
@@ -139,6 +143,8 @@ function parsePage(props) {
     allRows = tablesDataByRow.reduce((accumulator, currentValue) =>
       accumulator.concat(currentValue)
     )
+
+  allRows = postProcessor(allRows)
 
   return allRows
 }
