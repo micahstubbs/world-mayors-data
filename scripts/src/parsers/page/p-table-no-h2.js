@@ -12,7 +12,7 @@ function parsePage(props) {
 
   // get table data
   // for all tables that are immediately preceded by
-  // an h2 element
+  // a p element
   const tablesData = $('table')
     .filter((i, el) => {
       return $(el)
