@@ -61,7 +61,7 @@ function parsePage(props) {
     .find('li')
     .each((i, el) => {
       let rowFormat = 'number-term-name'
-      if (page === 'linz') rowFormat = 'term-name'
+      if (page === 'linz' || page === 'victoria') rowFormat = 'term-name'
       if (
         page === 'vienna' ||
         page === 'rio_de_janeiro' ||

@@ -18,6 +18,7 @@ function parsePage(props) {
       props.listEl = 'ol'
       return elList(props)
     case '/wiki/List_of_mayors_of_White_Rock,_British_Columbia':
+    case '/wiki/List_of_mayors_of_Victoria,_British_Columbia':
       props.el = 'p'
       props.listEl = 'ul'
       return elList(props)
