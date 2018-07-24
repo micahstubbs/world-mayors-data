@@ -17,6 +17,10 @@ function parsePage(props) {
       const elListData = elList(props)
       combinedData = combinedData.concat(pTableData).concat(elListData)
       return combinedData
+    case '/wiki/List_of_mayors_of_Berkeley,_California':
+      props.el = 'b'
+      props.listEl = 'ul'
+      return elList(props)
     default:
       return h2Table(props)
   }
