@@ -107,6 +107,7 @@ function parseKey({ keyString, page, prevKey, era }) {
     case 'representative':
     case 'alcalde':
     case 'mayor (&#x43a;&#x43c;&#x435;&#x442;, kmet)':
+    case 'mayor pro tem':
       return 'name'
     case 'town':
       return 'city'
