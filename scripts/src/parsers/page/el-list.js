@@ -2,6 +2,7 @@ const cheerio = require('cheerio')
 
 const getRowParser = require('../get-row-parser.js')
 const logger = require('../../utils/logger.js')
+const postProcessor = require('../../post-processor.js')
 
 function parsePage(props) {
   const { $, category, page } = props
@@ -19,43 +20,23 @@ function parsePage(props) {
   $(listElement)
     .filter((i, el) => {
       listIndex = i
-      return $(el)
-        .prev()
-        .is(props.el)
+      return $(el).prev().is(props.el)
+    })
+    .filter((i, el) => {
+      return $(el).prev().text().replace(/\[edit\]/, '') !== 'See also'
+    })
+    .filter((i, el) => {
+      return $(el).prev().text().replace(/\[edit\]/, '') !== 'Notes'
+    })
+    .filter((i, el) => {
+      return $(el).prev().text().replace(/\[edit\]/, '') !== 'External links'
+    })
+    .filter((i, el) => {
+      return $(el).parent().parent().parent().attr('id') !== 'mw-navigation'
     })
     .filter((i, el) => {
       return (
-        $(el)
-          .prev()
-          .text()
-          .replace(/\[edit\]/, '') !== 'See also'
-      )
-    })
-    .filter((i, el) => {
-      return (
-        $(el)
-          .prev()
-          .text()
-          .replace(/\[edit\]/, '') !== 'External links'
-      )
-    })
-    .filter((i, el) => {
-      return (
-        $(el)
-          .parent()
-          .parent()
-          .parent()
-          .attr('id') !== 'mw-navigation'
-      )
-    })
-    .filter((i, el) => {
-      return (
-        $(el)
-          .parent()
-          .parent()
-          .parent()
-          .parent()
-          .attr('id') !== 'mw-navigation'
+        $(el).parent().parent().parent().parent().attr('id') !== 'mw-navigation'
       )
     })
     .find('li')
@@ -71,11 +52,7 @@ function parsePage(props) {
       )
         rowFormat = 'name-term'
 
-      const era = $(el)
-        .parent()
-        .prev()
-        .text()
-        .replace(/\[edit\]/, '')
+      const era = $(el).parent().prev().text().replace(/\[edit\]/, '')
       sectionHeadersTextSet.add(era)
 
       const parsedRows = getRowParser(rowFormat)({
@@ -98,6 +75,7 @@ function parsePage(props) {
   console.log('eras', sectionHeadersText)
   console.log('')
 
+  allRows = postProcessor(allRows)
   return allRows
 }
 
