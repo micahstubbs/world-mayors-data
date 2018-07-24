@@ -81,6 +81,7 @@ function parseKey({ keyString, page, prevKey, era }) {
     case 'year of mayorship':
     case 'term of office':
     case 'dates':
+    case 'mandate':
       return 'term'
     case 'term in office':
     case 'took office':
