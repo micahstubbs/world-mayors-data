@@ -7,6 +7,7 @@ function parseKey({ keyString, page, prevKey, era }) {
     .replace(/\n/, ' ')
     .replace('&#x2013;', '-')
     .replace('&#xba;', '')
+    .replace(/\[.+\]/g, '')
 
   // if key is an <a></a> link tag,
   // use the title of the link tag as the string
@@ -105,6 +106,7 @@ function parseKey({ keyString, page, prevKey, era }) {
     case 'lord mayor':
     case 'representative':
     case 'alcalde':
+    case 'mayor (&#x43a;&#x43c;&#x435;&#x442;, kmet)':
       return 'name'
     case 'town':
       return 'city'

@@ -23,9 +23,7 @@ function parsePage(props) {
   // that are followed by a table
   const sectionHeadersText = $(headerSelectorString)
     .filter((i, el) => {
-      return $(el)
-        .next()
-        .is('table')
+      return $(el).next().is('table')
     })
     .filter((i, el) => {
       if (headerInnerHTML) {
@@ -36,9 +34,7 @@ function parsePage(props) {
       return true
     })
     .map((i, el) => {
-      return $(el)
-        .text()
-        .replace(/\[edit\]/, '')
+      return $(el).text().replace(/\[edit\]/, '')
     })
     .get()
 
@@ -47,9 +43,7 @@ function parsePage(props) {
   // an h2 element
   const tablesData = $('table')
     .filter((i, el) => {
-      return $(el)
-        .prev()
-        .is(dataPrevSelectorString)
+      return $(el).prev().is(dataPrevSelectorString)
     })
     .filter((i, el) => {
       if (headerInnerHTML) {
@@ -117,10 +111,16 @@ function parsePage(props) {
         let currentValue = ''
         if (i < values[j].length) {
           // remove html tags & quotes from values
-          currentValue = values[j][i]
-            .replace(/<[\w\s=\\"\/\.\?&;\(\)-:%#"]*>/g, '')
-            .replace(/&quot;/g, '')
-            .replace('&#x2014;', '-')
+          if (
+            typeof values !== 'undefined' &&
+            typeof values[j] !== 'undefined' &&
+            typeof values[j][i] !== 'undefined'
+          ) {
+            currentValue = values[j][i]
+              .replace(/<[\w\s=\\"\/\.\?&;\(\)-:%#"]*>/g, '')
+              .replace(/&quot;/g, '')
+              .replace('&#x2014;', '-')
+          }
         }
         rowObject[currentKey] = currentValue
 

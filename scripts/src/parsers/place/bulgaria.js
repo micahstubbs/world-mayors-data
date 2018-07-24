@@ -6,6 +6,8 @@ function parsePage(props) {
   let combinedData = []
 
   switch (link) {
+    case '/wiki/List_of_mayors_of_Sofia':
+      return h2Table(props)
     default:
       return pTableNoH2(props)
   }

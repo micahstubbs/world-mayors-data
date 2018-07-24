@@ -1,1 +1,514 @@
-[]
+[
+  {
+    "no.": "1",
+    "beginTerm": "10 February 1878",
+    "until": "8 June 1878",
+    "name": "Manolaki Tashev",
+    "notes": "first mayor; assigned by the - Provisional Russian Administration; died from cancer[1]",
+    "era": "List"
+  },
+  {
+    "no.": "2",
+    "beginTerm": "9 June 1878",
+    "until": "1 August 1878",
+    "name": "Dimitar Hadzhikotsev",
+    "notes": "",
+    "era": "List"
+  },
+  {
+    "no.": "3",
+    "beginTerm": "2 August 1878",
+    "until": "29 December 1878",
+    "name": "Dimitar Dimov",
+    "notes": "",
+    "era": "List"
+  },
+  {
+    "no.": "4",
+    "beginTerm": "30 December 1878",
+    "until": "13 September 1879",
+    "name": "Todoraki Peshev",
+    "notes": "",
+    "era": "List"
+  },
+  {
+    "no.": "5",
+    "beginTerm": "14 September 1879",
+    "until": "30 June 1890",
+    "name": "Dimitar Traykovich",
+    "notes": "",
+    "era": "List"
+  },
+  {
+    "no.": "6",
+    "beginTerm": "1 July 1880",
+    "until": "30 December 1880",
+    "name": "Todor Ikonomov",
+    "notes": "",
+    "era": "List"
+  },
+  {
+    "no.": "7",
+    "beginTerm": "15 February 1881",
+    "until": "30 September 1881",
+    "name": "Nikola Daskalov",
+    "notes": "",
+    "era": "List"
+  },
+  {
+    "no.": "8",
+    "beginTerm": "1 October 1881",
+    "until": "29 April 1883",
+    "name": "Ivan Hadzhienov",
+    "notes": "",
+    "era": "List"
+  },
+  {
+    "no.": "9",
+    "beginTerm": "30 April 1883",
+    "until": "27 December 1883",
+    "name": "Nikola Suknarov",
+    "notes": "",
+    "era": "List"
+  },
+  {
+    "no.": "10",
+    "beginTerm": "28 December 1883",
+    "until": "9 May 1884",
+    "name": "Dimitar Hadzhikotsev",
+    "notes": "",
+    "era": "List"
+  },
+  {
+    "no.": "11",
+    "beginTerm": "10 May 1884",
+    "until": "24 August 1885",
+    "name": "Todoraki Peshev",
+    "notes": "2nd inconsecutive term",
+    "era": "List"
+  },
+  {
+    "no.": "12",
+    "beginTerm": "25 August 1885",
+    "until": "19 October 1886",
+    "name": "Ivan Slaveykov",
+    "notes": "",
+    "era": "List"
+  },
+  {
+    "no.": "13",
+    "beginTerm": "20 October 1886",
+    "until": "1 November 1887",
+    "name": "Yosif Kovachev",
+    "notes": "",
+    "era": "List"
+  },
+  {
+    "no.": "14",
+    "beginTerm": "21 November 1887",
+    "until": "31 August 1888",
+    "name": "Nikola Daskalov",
+    "notes": "2nd nonconsecutive term",
+    "era": "List"
+  },
+  {
+    "no.": "15",
+    "beginTerm": "1 September 1888",
+    "until": "7 October 1893",
+    "name": "Dimitar Petkov",
+    "notes": "",
+    "era": "List"
+  },
+  {
+    "no.": "16",
+    "beginTerm": "18 October 1893",
+    "until": "31 May 1894",
+    "name": "Hristo Blagoev",
+    "notes": "",
+    "era": "List"
+  },
+  {
+    "no.": "17",
+    "beginTerm": "16 July 1894",
+    "until": "15 July 1895",
+    "name": "Ivan Grozev",
+    "notes": "",
+    "era": "List"
+  },
+  {
+    "no.": "18",
+    "beginTerm": "16 July 1895",
+    "until": "30 September 1896",
+    "name": "Dr. Dimitar Mollov",
+    "notes": "",
+    "era": "List"
+  },
+  {
+    "no.": "19",
+    "beginTerm": "1 October 1896",
+    "until": "7 April 1897",
+    "name": "Grigor Nachovich",
+    "notes": "",
+    "era": "List"
+  },
+  {
+    "no.": "20",
+    "beginTerm": "8 April 1897",
+    "until": "11 April 1899",
+    "name": "Dimitar Yablanski",
+    "notes": "",
+    "era": "List"
+  },
+  {
+    "no.": "21",
+    "beginTerm": "12 April 1899",
+    "until": "4 January 1901",
+    "name": "Hristo Popov",
+    "notes": "",
+    "era": "List"
+  },
+  {
+    "no.": "22",
+    "beginTerm": "4 April 1901",
+    "until": "23 September 1903",
+    "name": "Petar Chernev",
+    "notes": "",
+    "era": "List"
+  },
+  {
+    "no.": "23",
+    "beginTerm": "2 March 1904",
+    "until": "7 July 1905",
+    "name": "Petko Nikolov",
+    "notes": "",
+    "era": "List"
+  },
+  {
+    "no.": "24",
+    "beginTerm": "8 July 1905",
+    "until": "21 March 1908",
+    "name": "Martin Todorov",
+    "notes": "",
+    "era": "List"
+  },
+  {
+    "no.": "25",
+    "beginTerm": "22 March 1908",
+    "until": "31 March 1908",
+    "name": "Dr. Georgi Sarafov",
+    "notes": "shortest term, 9 days[1]",
+    "era": "List"
+  },
+  {
+    "no.": "26",
+    "beginTerm": "1 April 1908",
+    "until": "31 July 1908",
+    "name": "Atanas Hranov mayor",
+    "notes": "",
+    "era": "List"
+  },
+  {
+    "no.": "27",
+    "beginTerm": "1 August 1908",
+    "until": "18 October 1910",
+    "name": "Evstati Kirkov",
+    "notes": "",
+    "era": "List"
+  },
+  {
+    "no.": "28",
+    "beginTerm": "1 November 1910",
+    "until": "17 August 1911",
+    "name": "Konstantin Batolov",
+    "notes": "",
+    "era": "List"
+  },
+  {
+    "no.": "29",
+    "beginTerm": "27 September 1911",
+    "until": "22 May 1912",
+    "name": "Haralampi Karastoyanov",
+    "notes": "",
+    "era": "List"
+  },
+  {
+    "no.": "30",
+    "beginTerm": "23 May 1912",
+    "until": "11 February 1914",
+    "name": "Ivan Geshov",
+    "notes": "",
+    "era": "List"
+  },
+  {
+    "no.": "31",
+    "beginTerm": "12 February 1914",
+    "until": "18 March 1915",
+    "name": "Petko Todorov",
+    "notes": "",
+    "era": "List"
+  },
+  {
+    "no.": "32",
+    "beginTerm": "23 June 1915",
+    "until": "11 August 1918",
+    "name": "Radi Radev",
+    "notes": "",
+    "era": "List"
+  },
+  {
+    "no.": "33",
+    "beginTerm": "12 September 1918",
+    "until": "5 September 1920",
+    "name": "Dr. Georgi Kalinkov",
+    "notes": "",
+    "era": "List"
+  },
+  {
+    "no.": "34",
+    "beginTerm": "6 September 1920",
+    "until": "8 June 1922",
+    "name": "Konstantin Batolov",
+    "notes": "2nd nonconsecutive term",
+    "era": "List"
+  },
+  {
+    "no.": "35",
+    "beginTerm": "8 June 1922",
+    "until": "9 June 1923",
+    "name": "Krum Popov",
+    "notes": "shot during a coup d&apos;&#xE9;tat",
+    "era": "List"
+  },
+  {
+    "no.": "36",
+    "beginTerm": "10 June 1923",
+    "until": "13 July 1924",
+    "name": "Ivan Ploshtakov",
+    "notes": "",
+    "era": "List"
+  },
+  {
+    "no.": "37",
+    "beginTerm": "14 July 1924",
+    "until": "16 April 1925",
+    "name": "Paskal Paskalev",
+    "notes": "killed in the St Nedelya Church bomb attack[1]",
+    "era": "List"
+  },
+  {
+    "no.": "38",
+    "beginTerm": "10 June 1925",
+    "until": "13 November 1925",
+    "name": "Georgi Madzharov",
+    "notes": "shot on the street by a dismissed director[1]",
+    "era": "List"
+  },
+  {
+    "no.": "39",
+    "beginTerm": "7 April 1926",
+    "until": "14 March 1932",
+    "name": "Gen. Vladimir Vazov",
+    "notes": "",
+    "era": "List"
+  },
+  {
+    "no.": "40",
+    "beginTerm": "14 March 1932",
+    "until": "20 February 1933",
+    "name": "Boyan Nachov",
+    "notes": "",
+    "era": "List"
+  },
+  {
+    "no.": "41",
+    "beginTerm": "20 February 1933",
+    "until": "25 May 1934",
+    "name": "Dr. Haralampi Oroshakov",
+    "notes": "",
+    "era": "List"
+  },
+  {
+    "no.": "42",
+    "beginTerm": "25 May 1934",
+    "until": "9 September 1944",
+    "name": "Ivan Ivanov",
+    "notes": "longest term; deposed during a coup d&apos;&#xE9;tat[1]",
+    "era": "List"
+  },
+  {
+    "no.": "43",
+    "beginTerm": "10 September 1944",
+    "until": "19 September 1944",
+    "name": "Petar Slavinski",
+    "notes": "shortest term, 9 days[1]",
+    "era": "List"
+  },
+  {
+    "no.": "44",
+    "beginTerm": "23 September 1944",
+    "until": "22 March 1945",
+    "name": "Prof. Aleksi Kvartirnikov",
+    "notes": "",
+    "era": "List"
+  },
+  {
+    "no.": "45",
+    "beginTerm": "22 March 1945",
+    "until": "29 October 1945",
+    "name": "Nikola Bronzov",
+    "notes": "",
+    "era": "List"
+  },
+  {
+    "no.": "46",
+    "beginTerm": "1 November 1945",
+    "until": "2 March 1948",
+    "name": "Slavcho Stoilov",
+    "notes": "",
+    "era": "List"
+  },
+  {
+    "no.": "47",
+    "beginTerm": "2 March 1948",
+    "until": "27 May 1949",
+    "name": "Prof. Dobri Radistilov",
+    "notes": "",
+    "era": "List"
+  },
+  {
+    "no.": "48",
+    "beginTerm": "27 May 1949",
+    "until": "1 November 1949",
+    "name": "Todor Zhivkov",
+    "notes": "",
+    "era": "List"
+  },
+  {
+    "no.": "49",
+    "beginTerm": "1 November 1949",
+    "until": "22 December 1952",
+    "name": "Dr. Ivan Pashov",
+    "notes": "",
+    "era": "List"
+  },
+  {
+    "no.": "50",
+    "beginTerm": "22 December 1952",
+    "until": "7 September 1961",
+    "name": "Dimitar Popov",
+    "notes": "",
+    "era": "List"
+  },
+  {
+    "no.": "51",
+    "beginTerm": "7 September 1961",
+    "until": "20 September 1967",
+    "name": "Georgi Petkov",
+    "notes": "",
+    "era": "List"
+  },
+  {
+    "no.": "52",
+    "beginTerm": "20 September 1967",
+    "until": "11 November 1971",
+    "name": "Georgi Stoilov",
+    "notes": "",
+    "era": "List"
+  },
+  {
+    "no.": "53",
+    "beginTerm": "11 November 1971",
+    "until": "5 December 1977",
+    "name": "Ivan Panev",
+    "notes": "",
+    "era": "List"
+  },
+  {
+    "no.": "54",
+    "beginTerm": "7 March 1978",
+    "until": "15 April 1986",
+    "name": "Petar Mezhdurechki",
+    "notes": "",
+    "era": "List"
+  },
+  {
+    "no.": "55",
+    "beginTerm": "15 April 1986",
+    "until": "27 July 1990",
+    "name": "Stefan Ninov",
+    "notes": "",
+    "era": "List"
+  },
+  {
+    "no.": "56",
+    "beginTerm": "17 October 1990",
+    "until": "20 October 1991",
+    "name": "Aleksandar Karakachanov",
+    "notes": "interim; Union of Democratic Forces",
+    "era": "List"
+  },
+  {
+    "no.": "57",
+    "beginTerm": "21 October 1991",
+    "until": "1995",
+    "name": "Prof. Aleksandar Yanchulev",
+    "notes": "first elected mayor; Union of Democratic Forces[1]",
+    "era": "List"
+  },
+  {
+    "no.": "58",
+    "beginTerm": "19 November 1995",
+    "until": "29 June 2005",
+    "name": "Stefan Sofiyanski",
+    "notes": "Union of Democratic Forces and Union of Free Democrats",
+    "era": "List"
+  },
+  {
+    "no.": "59",
+    "beginTerm": "30 June 2005",
+    "until": "9 November 2005",
+    "name": "Minko Gerdzhikov",
+    "notes": "interim",
+    "era": "List"
+  },
+  {
+    "no.": "60",
+    "beginTerm": "10 November 2005",
+    "until": "29 July 2009",
+    "name": "Gen. Boyko Borisov",
+    "notes": "Independent and GERB",
+    "era": "List"
+  },
+  {
+    "no.": "61",
+    "beginTerm": "29 July 2009",
+    "until": "23 November 2009",
+    "name": "Minko Gerdzhikov",
+    "notes": "interim; GERB",
+    "era": "List"
+  },
+  {
+    "no.": "62",
+    "beginTerm": "23 November 2009",
+    "until": "6 October 2011",
+    "name": "Yordanka Fandakova",
+    "notes": "first female mayor; GERB",
+    "era": "List"
+  },
+  {
+    "no.": "63",
+    "beginTerm": "6 October 2011",
+    "until": "8 November 2011",
+    "name": "Maria Boyadzhiyska",
+    "notes": "interim; GERB",
+    "era": "List"
+  },
+  {
+    "no.": "64",
+    "beginTerm": "8 November 2011",
+    "until": "Incumbent",
+    "name": "Yordanka Fandakova",
+    "notes": "GERB; 2nd consecutive term",
+    "era": "List"
+  }
+]
