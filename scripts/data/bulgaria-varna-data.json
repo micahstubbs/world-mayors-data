@@ -1,1 +1,282 @@
-[]
+[
+  {
+    "beginTerm": "1878",
+    "endTerm": "1878",
+    "name": "Petar Popov"
+  },
+  {
+    "beginTerm": "1878",
+    "endTerm": "1879",
+    "name": "Veliko Hristov"
+  },
+  {
+    "beginTerm": "1879",
+    "endTerm": "1881",
+    "name": "Yanko Slavchev"
+  },
+  {
+    "beginTerm": "1881",
+    "endTerm": "1885",
+    "name": "Mihail Koloni"
+  },
+  {
+    "beginTerm": "1888",
+    "endTerm": "1888",
+    "name": "Haralan Angelov"
+  },
+  {
+    "beginTerm": "1888",
+    "endTerm": "1888",
+    "name": "Kiro Merazchiev"
+  },
+  {
+    "beginTerm": "1888",
+    "endTerm": "1888",
+    "name": "Haralan Angelov 2nd inconsecutive term"
+  },
+  {
+    "beginTerm": "1888",
+    "endTerm": "1890",
+    "name": "Krastyu Mirski"
+  },
+  {
+    "beginTerm": "1890",
+    "endTerm": "1893",
+    "name": "Mihail Koloni 2nd inconsecutive term"
+  },
+  {
+    "beginTerm": "1893",
+    "endTerm": "1894",
+    "name": "Rusi Mateev"
+  },
+  {
+    "beginTerm": "1894",
+    "endTerm": "1895",
+    "name": "Kosta Rankov"
+  },
+  {
+    "beginTerm": "1895",
+    "endTerm": "1895",
+    "name": "Nikola Valkanov"
+  },
+  {
+    "beginTerm": "1895",
+    "endTerm": "1896",
+    "name": "Yanko Slavchev 2nd inconsecutive term"
+  },
+  {
+    "beginTerm": "1896",
+    "endTerm": "1899",
+    "name": "Zheko Zhekov"
+  },
+  {
+    "beginTerm": "1899",
+    "endTerm": "1901",
+    "name": "Kosta Rankov"
+  },
+  {
+    "beginTerm": "1902",
+    "endTerm": "1903",
+    "name": "Panayot Kardzhiev"
+  },
+  {
+    "beginTerm": "1903",
+    "endTerm": "1904",
+    "name": "Damyan Perelingov"
+  },
+  {
+    "beginTerm": "1904",
+    "endTerm": "1905",
+    "name": "Angel Pyuskyuliev"
+  },
+  {
+    "beginTerm": "1905",
+    "endTerm": "1906",
+    "name": "Krastyu Mirski 2nd inconsecutive term"
+  },
+  {
+    "beginTerm": "1906",
+    "endTerm": "1908",
+    "name": "Dr. Angel Pyuskyuliev 2nd inconsecutive term"
+  },
+  {
+    "beginTerm": "1908",
+    "endTerm": "1909",
+    "name": "Dobri Filov"
+  },
+  {
+    "beginTerm": "1909",
+    "endTerm": "1912",
+    "name": "Ivan Tserov"
+  },
+  {
+    "beginTerm": "1912",
+    "endTerm": "1915",
+    "name": "Aleksandar Vasilev"
+  },
+  {
+    "beginTerm": "1915",
+    "endTerm": "1919",
+    "name": "Stancho Savov"
+  },
+  {
+    "beginTerm": "1919",
+    "endTerm": "1921",
+    "name": "Dimitar Kondov"
+  },
+  {
+    "beginTerm": "1921",
+    "endTerm": "1921",
+    "name": "Yurdan Pekarev"
+  },
+  {
+    "beginTerm": "1921",
+    "endTerm": "1922",
+    "name": "Teodosi Atanasov"
+  },
+  {
+    "beginTerm": "1922",
+    "endTerm": "1922",
+    "name": "Zlatan Brachkov"
+  },
+  {
+    "beginTerm": "1922",
+    "endTerm": "1923",
+    "name": "Gospodin Angelov"
+  },
+  {
+    "beginTerm": "1923",
+    "endTerm": "1923",
+    "name": "Hristo Mirski"
+  },
+  {
+    "beginTerm": "1923",
+    "endTerm": "1927",
+    "name": "Petar Stoyanov mayor of Varna"
+  },
+  {
+    "beginTerm": "1927",
+    "endTerm": "1930",
+    "name": "Nikola Popov"
+  },
+  {
+    "beginTerm": "1930",
+    "endTerm": "1932",
+    "name": "Parvan Byanov"
+  },
+  {
+    "beginTerm": "1932",
+    "endTerm": "1933",
+    "name": "Asen Brusev"
+  },
+  {
+    "beginTerm": "1933",
+    "endTerm": "1934",
+    "name": "Panayot Panayotov"
+  },
+  {
+    "beginTerm": "1934",
+    "endTerm": "1935",
+    "name": "Stancho Savov 2nd inconsecutive term"
+  },
+  {
+    "beginTerm": "1934",
+    "endTerm": "1935",
+    "name": "Yanko Mustakov"
+  },
+  {
+    "beginTerm": "1936",
+    "endTerm": "1936",
+    "name": "Yosif Stoyanov"
+  },
+  {
+    "beginTerm": "1936",
+    "endTerm": "1943",
+    "name": "Yanko Mustakov 2nd inconsecutive term"
+  },
+  {
+    "beginTerm": "1943",
+    "endTerm": "1944",
+    "name": "Nikola Dimitrov"
+  },
+  {
+    "beginTerm": "1944",
+    "endTerm": "1944",
+    "name": "Petar Stoyanov 2nd inconsecutive term"
+  },
+  {
+    "beginTerm": "1944",
+    "endTerm": "1945",
+    "name": "Lyubomir Dimov"
+  },
+  {
+    "beginTerm": "1945",
+    "endTerm": "1951",
+    "name": "Geno Gutev"
+  },
+  {
+    "beginTerm": "1956",
+    "endTerm": "1957",
+    "name": "Georgi Kostov"
+  },
+  {
+    "beginTerm": "1951",
+    "endTerm": "1956",
+    "name": "Sergey Todorov"
+  },
+  {
+    "beginTerm": "1957",
+    "endTerm": "1959",
+    "name": "Vasil Popov"
+  },
+  {
+    "beginTerm": "1959",
+    "endTerm": "1966",
+    "name": "Nikolay Boyadzhiev"
+  },
+  {
+    "beginTerm": "1966",
+    "endTerm": "1971",
+    "name": "Atanas Nikolov"
+  },
+  {
+    "beginTerm": "1971",
+    "endTerm": "1979",
+    "name": "Stanoy Yonev"
+  },
+  {
+    "beginTerm": "1979",
+    "endTerm": "1985",
+    "name": "Hristo Toshkov"
+  },
+  {
+    "beginTerm": "1985",
+    "endTerm": "1990",
+    "name": "Bogdan Karadenchev"
+  },
+  {
+    "beginTerm": "1990",
+    "endTerm": "1990",
+    "name": "Georgi Paspalev"
+  },
+  {
+    "beginTerm": "1990",
+    "endTerm": "1991",
+    "name": "Voyno Voynov"
+  },
+  {
+    "beginTerm": "1991",
+    "endTerm": "1999",
+    "name": "Hristo Kirchev"
+  },
+  {
+    "beginTerm": "1999",
+    "endTerm": "2013",
+    "name": "Kiril Yordanov"
+  },
+  {
+    "beginTerm": "2013",
+    "endTerm": "incumbent",
+    "name": "Ivan Portnih"
+  }
+]
