@@ -1,15 +1,16 @@
 const parseTerm = require('../field/term.js')
 
 // parse strings like
-// D. Henry Robinson, 1842
-// Robert Blair, 1844–1848, 1859–1861, 1872)
-// Obediah Berry, 1864–1865, 1873, 1877–1878
+// Abel Whitton (Workingman's Party) 1878–1881
+// A. McKinstry 1881–1883
+// W.C. Wright (Republican) 1883–1885
 // ?
 
 function parseRow(props) {
   const { $, el, era } = props
 
-  const rowString = $(el).text().replace(/\(\w*\)/, '').replace('SDAPÖ)', '')
+  const rowString = $(el).text()
+  console.log('rowString from name-party-term', rowString)
 
   // early return for missing entries
   if (rowString.trim() === '?') return []
@@ -18,10 +19,11 @@ function parseRow(props) {
 
   let row
   const wordDigitBorderIndex = rowString.search(/\w\s\d/)
-  if (/,/.test(rowString)) {
-    row = rowString.split(',')
-  } else if (/\(/.test(rowString)) {
+  if (/\(/.test(rowString)) {
     row = rowString.split(/\(/)
+    row = [row[0]].concat(row[1].split(/\)/))
+  } else if (/,/.test(rowString)) {
+    row = rowString.split(',')
   } else if (wordDigitBorderIndex > -1) {
     const separatorIndex = wordDigitBorderIndex + 1
     console.log('separatorIndex', separatorIndex)
@@ -32,12 +34,17 @@ function parseRow(props) {
     row = [rowString]
   }
 
-  console.log('row from name-term', row)
+  console.log('row from name-party-term', row)
 
   // parse out name, remove footnotes and whitespace
   let name
   let terms
-  if (row.length > 1) {
+  let party
+  if (row.length === 3) {
+    name = row.shift().replace(/\[.*\]/, '').trim()
+    party = row.shift().replace(/\[.*\]/, '').trim()
+    terms = row[0].split(',')
+  } else if (row.length === 2) {
     name = row.shift().replace(/\[.*\]/, '').trim()
     terms = row[0].split(',')
   } else {
@@ -51,6 +58,7 @@ function parseRow(props) {
       name,
       beginTerm,
       endTerm,
+      party,
       era
     })
   })

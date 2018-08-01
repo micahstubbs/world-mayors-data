@@ -43,7 +43,7 @@ function parsePage(props) {
     .each((i, el) => {
       let rowFormat = 'number-term-name'
       if (page === 'linz' || page === 'victoria') rowFormat = 'term-name'
-      if (
+      else if (
         page === 'vienna' ||
         page === 'rio_de_janeiro' ||
         page === 'houston' ||
@@ -51,6 +51,7 @@ function parsePage(props) {
         page === 'penticton'
       )
         rowFormat = 'name-term'
+      else if (page === 'berkeley') rowFormat = 'name-party-term'
 
       const era = $(el).parent().prev().text().replace(/\[edit\]/, '')
       sectionHeadersTextSet.add(era)

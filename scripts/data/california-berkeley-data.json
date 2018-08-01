@@ -1,206 +1,232 @@
 [
   {
-    "name": "Whitton Workingman's Party 1878–1881",
-    "beginTerm": "Abel",
-    "endTerm": "Abel",
+    "name": "Abel Whitton",
+    "beginTerm": "1878",
+    "endTerm": "1881",
+    "party": "Workingman's Party",
     "era": "Presidents"
   },
   {
-    "name": "McKinstry 1881–1883",
-    "beginTerm": "A.",
-    "endTerm": "A.",
+    "name": "A. McKinstry",
+    "beginTerm": "1881",
+    "endTerm": "1883",
     "era": "Presidents"
   },
   {
-    "name": "Wright Republican 1883–1885",
-    "beginTerm": "W.C.",
-    "endTerm": "W.C.",
+    "name": "W.C. Wright",
+    "beginTerm": "1883",
+    "endTerm": "1885",
+    "party": "Republican",
     "era": "Presidents"
   },
   {
-    "name": "Henley 1885–1887",
-    "beginTerm": "J.B.",
-    "endTerm": "J.B.",
+    "name": "J.B. Henley",
+    "beginTerm": "1885",
+    "endTerm": "1887",
     "era": "Presidents"
   },
   {
-    "name": "L. Whitney 1887–1889",
-    "beginTerm": "Henry",
-    "endTerm": "Henry",
+    "name": "Henry L. Whitney",
+    "beginTerm": "1887",
+    "endTerm": "1889",
     "era": "Presidents"
   },
   {
-    "name": "Heywood / Joseph L. Scotchler Republican 1889–1891",
-    "beginTerm": "Samuel",
-    "endTerm": "Samuel",
+    "name": "Samuel Heywood / Joseph L. Scotchler",
+    "beginTerm": "1889",
+    "endTerm": "1891",
+    "party": "Republican",
     "era": "Presidents"
   },
   {
-    "name": "Rickard Republican 1891–1893",
-    "beginTerm": "Reuben",
-    "endTerm": "Reuben",
+    "name": "Reuben Rickard",
+    "beginTerm": "1891",
+    "endTerm": "1893",
+    "party": "Republican",
     "era": "Presidents"
   },
   {
-    "name": "E. Underwood / Martin J. Acton / Charles S. Preble 1893–1895",
-    "beginTerm": "Byron",
-    "endTerm": "Byron",
+    "name": "Byron E. Underwood / Martin J. Acton / Charles S. Preble",
+    "beginTerm": "1893",
+    "endTerm": "1895",
     "era": "Presidents"
   },
   {
-    "name": "Rickard Republican 1895",
-    "beginTerm": "Reuben",
-    "endTerm": "Reuben",
+    "name": "Reuben Rickard",
+    "beginTerm": "1895",
+    "endTerm": "1895",
+    "party": "Republican",
     "era": "Presidents"
   },
   {
-    "name": "W. Richards 1895–1899",
-    "beginTerm": "John",
-    "endTerm": "John",
+    "name": "John W. Richards",
+    "beginTerm": "1895",
+    "endTerm": "1899",
     "era": "Presidents"
   },
   {
-    "name": "H. Marston 1899–1903",
-    "beginTerm": "William",
-    "endTerm": "William",
+    "name": "William H. Marston",
+    "beginTerm": "1899",
+    "endTerm": "1903",
     "era": "Presidents"
   },
   {
-    "name": "Rickard Republican 1903–1909",
-    "beginTerm": "Thomas",
-    "endTerm": "Thomas",
+    "name": "Thomas Rickard",
+    "beginTerm": "1903",
+    "endTerm": "1909",
+    "party": "Republican",
     "era": "Presidents"
   },
   {
-    "name": "L. Hodghead Democrat 1909–1911",
-    "beginTerm": "Beverly",
-    "endTerm": "Beverly",
+    "name": "Beverly L. Hodghead",
+    "beginTerm": "1909",
+    "endTerm": "1911",
+    "party": "Democrat",
     "era": "Mayors"
   },
   {
-    "name": "Stitt Wilson Socialist 1911–1913",
-    "beginTerm": "J.",
-    "endTerm": "J.",
+    "name": "J. Stitt Wilson",
+    "beginTerm": "1911",
+    "endTerm": "1913",
+    "party": "Socialist",
     "era": "Mayors"
   },
   {
-    "name": "D. Heywood Republican 1913–1915",
-    "beginTerm": "Charles",
-    "endTerm": "Charles",
+    "name": "Charles D. Heywood",
+    "beginTerm": "1913",
+    "endTerm": "1915",
+    "party": "Republican",
     "era": "Mayors"
   },
   {
-    "name": "C. Irving Democrat 1915–1919",
-    "beginTerm": "Samuel",
-    "endTerm": "Samuel",
+    "name": "Samuel C. Irving",
+    "beginTerm": "1915",
+    "endTerm": "1919",
+    "party": "Democrat",
     "era": "Mayors"
   },
   {
-    "name": "Bartlett Republican 1919–1923",
-    "beginTerm": "Louis",
-    "endTerm": "Louis",
+    "name": "Louis Bartlett",
+    "beginTerm": "1919",
+    "endTerm": "1923",
+    "party": "Republican",
     "era": "Mayors"
   },
   {
-    "name": "D. Stringham Republican 1923–1927",
-    "beginTerm": "Frank",
-    "endTerm": "Frank",
+    "name": "Frank D. Stringham",
+    "beginTerm": "1923",
+    "endTerm": "1927",
+    "party": "Republican",
     "era": "Mayors"
   },
   {
-    "name": "B. Driver Republican 1927–1930",
-    "beginTerm": "Michael",
-    "endTerm": "Michael",
+    "name": "Michael B. Driver",
+    "beginTerm": "1927",
+    "endTerm": "1930",
+    "party": "Republican",
     "era": "Mayors"
   },
   {
-    "name": "E. Caldecott Republican 1930–1932",
-    "beginTerm": "Thomas",
-    "endTerm": "Thomas",
+    "name": "Thomas E. Caldecott",
+    "beginTerm": "1930",
+    "endTerm": "1932",
+    "party": "Republican",
     "era": "Mayors"
   },
   {
-    "name": "N. Ament Republican 1932–1939",
-    "beginTerm": "Edward",
-    "endTerm": "Edward",
+    "name": "Edward N. Ament",
+    "beginTerm": "1932",
+    "endTerm": "1939",
+    "party": "Republican",
     "era": "Mayors"
   },
   {
-    "name": "S. Gaines Republican 1939–1943",
-    "beginTerm": "Frank",
-    "endTerm": "Frank",
+    "name": "Frank S. Gaines",
+    "beginTerm": "1939",
+    "endTerm": "1943",
+    "party": "Republican",
     "era": "Mayors"
   },
   {
-    "name": "Robertson Republican 1943–1946",
-    "beginTerm": "Fitch",
-    "endTerm": "Fitch",
+    "name": "Fitch Robertson",
+    "beginTerm": "1943",
+    "endTerm": "1946",
+    "party": "Republican",
     "era": "Mayors"
   },
   {
-    "name": "L. Hoyt Republican 1947 January–April",
-    "beginTerm": "Carrie",
-    "endTerm": "Carrie",
+    "name": "Carrie L. Hoyt",
+    "beginTerm": "1947",
+    "endTerm": "1947",
+    "party": "Republican",
     "era": "Mayors"
   },
   {
-    "name": "L. Cross Democrat 1947–1955",
-    "beginTerm": "Laurance",
-    "endTerm": "Laurance",
+    "name": "Laurance L. Cross",
+    "beginTerm": "1947",
+    "endTerm": "1955",
+    "party": "Democrat",
     "era": "Mayors"
   },
   {
-    "name": "B. Hutchison Republican 1955–1963",
-    "beginTerm": "Claude",
-    "endTerm": "Claude",
+    "name": "Claude B. Hutchison",
+    "beginTerm": "1955",
+    "endTerm": "1963",
+    "party": "Republican",
     "era": "Mayors"
   },
   {
-    "name": "Johnson Republican 1963–1971",
-    "beginTerm": "Wallace",
-    "endTerm": "Wallace",
+    "name": "Wallace Johnson",
+    "beginTerm": "1963",
+    "endTerm": "1971",
+    "party": "Republican",
     "era": "Mayors"
   },
   {
-    "name": "Widener Democrat 1971–1979",
-    "beginTerm": "Warren",
-    "endTerm": "Warren",
+    "name": "Warren Widener",
+    "beginTerm": "1971",
+    "endTerm": "1979",
+    "party": "Democrat",
     "era": "Mayors"
   },
   {
-    "name": "Newport, Berkeley Citizens Action 1979–1986",
-    "beginTerm": "Gus",
-    "endTerm": "Gus",
+    "name": "Gus Newport,",
+    "beginTerm": "1979",
+    "endTerm": "1986",
+    "party": "Berkeley Citizens Action",
     "era": "Mayors"
   },
   {
-    "name": "Hancock, Berkeley Citizens Action 1986–1994",
-    "beginTerm": "Loni",
-    "endTerm": "Loni",
+    "name": "Loni Hancock,",
+    "beginTerm": "1986",
+    "endTerm": "1994",
+    "party": "Berkeley Citizens Action",
     "era": "Mayors"
   },
   {
-    "name": "Shattuck Leiter, 1994 March–December",
-    "beginTerm": "Jeffrey",
-    "endTerm": "Jeffrey",
+    "name": "Jeffrey Shattuck Leiter, 1994",
+    "beginTerm": "",
+    "endTerm": "",
+    "party": "March–December",
     "era": "Mayors"
   },
   {
-    "name": "Dean, Berkeley Democrat Club 1994–2002",
-    "beginTerm": "Shirley",
-    "endTerm": "Shirley",
+    "name": "Shirley Dean,",
+    "beginTerm": "1994",
+    "endTerm": "2002",
+    "party": "Berkeley Democrat Club",
     "era": "Mayors"
   },
   {
-    "name": "Bates, 2002–2016",
-    "beginTerm": "Tom",
-    "endTerm": "Tom",
+    "name": "Tom Bates",
+    "beginTerm": "2002",
+    "endTerm": "2016",
     "era": "Mayors"
   },
   {
-    "name": "Arreguin, 2016-",
-    "beginTerm": "Jesse",
-    "endTerm": "Jesse",
+    "name": "Jesse Arreguin",
+    "beginTerm": "2016",
+    "endTerm": "",
     "era": "Mayors"
   }
 ]
