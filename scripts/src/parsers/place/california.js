@@ -4,6 +4,7 @@ const elList = require('../page/el-list.js')
 const pTableNoH2 = require('../page/p-table-no-h2.js')
 const table = require('../page/table.js')
 const h2ThumbTable = require('../page/h2-thumb-table.js')
+const thumbTable = require('../page/thumb-table.js')
 
 function parsePage(props) {
   const { link } = props
@@ -21,6 +22,8 @@ function parsePage(props) {
       props.el = 'b'
       props.listEl = 'ul'
       return elList(props)
+    case '/wiki/List_of_mayors_of_Beverly_Hills,_California':
+      return thumbTable(props)
     default:
       return h2Table(props)
   }
