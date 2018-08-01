@@ -83,6 +83,7 @@ function parseKey({ keyString, page, prevKey, era }) {
     case 'term of office':
     case 'dates':
     case 'mandate':
+    case 'years in office':
       return 'term'
     case 'term in office':
     case 'took office':
