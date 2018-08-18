@@ -7,6 +7,7 @@ function parseKey({ keyString, page, prevKey, era }) {
     .replace(/\n/, ' ')
     .replace('&#x2013;', '-')
     .replace('&#xba;', '')
+    .replace(/&#xa0;/g, ' ')
     .replace(/\[.+\]/g, '')
 
   // if key is an <a></a> link tag,
@@ -92,6 +93,7 @@ function parseKey({ keyString, page, prevKey, era }) {
     case 'office entered':
     case 'from':
     case 'home of mandate':
+    case 'beginning of term':
       return 'beginTerm'
     case 'left office':
     case 'term ended':
@@ -99,6 +101,7 @@ function parseKey({ keyString, page, prevKey, era }) {
     case 'office left':
     case 'to':
     case 'end of mandate':
+    case 'end of term':
       return 'endTerm'
     case 'term (election)':
     case 'term (elected)':

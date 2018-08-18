@@ -9,10 +9,11 @@ const thumbTable = require('../page/thumb-table.js')
 function parsePage(props) {
   const { link } = props
   let combinedData = []
+  let pTableData
 
   switch (link) {
     case '/wiki/List_of_mayors_of_Anaheim,_California':
-      const pTableData = pTableNoH2(props)
+      pTableData = pTableNoH2(props)
       props.el = 'h2'
       props.listEl = 'ul'
       const elListData = elList(props)
@@ -24,6 +25,10 @@ function parsePage(props) {
       return elList(props)
     case '/wiki/List_of_mayors_of_Beverly_Hills,_California':
       return thumbTable(props)
+    case '/wiki/List_of_mayors_of_Chico,_California':
+      pTableData = pTableNoH2(props)
+      combinedData = pTableData
+      return combinedData
     default:
       return h2Table(props)
   }
